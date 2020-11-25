@@ -1,10 +1,10 @@
+import { ListMusicComponent } from './list-music/list-music.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { ListComponent } from './list/list.component';
 import { IonicModule } from '@ionic/angular';
 import { HttpClientModule } from '@angular/common/http';
 import { BannerComponent } from './banner/banner.component';
@@ -16,20 +16,20 @@ import { SliderComponent } from './slider/slider.component';
     declarations: [
       HeaderComponent,
       FooterComponent,
-      ListComponent,
       BannerComponent,
       MenuComponent,
       TabComponent,
-      SliderComponent
+      SliderComponent,
+      ListMusicComponent
     ],
     exports: [
       HeaderComponent,
       FooterComponent,
-      ListComponent,
       BannerComponent,
       MenuComponent,
       TabComponent,
-      SliderComponent
+      SliderComponent,
+      ListMusicComponent
     ],
     imports: [
       CommonModule,

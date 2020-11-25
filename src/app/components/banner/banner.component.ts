@@ -17,7 +17,7 @@ export class BannerComponent implements OnInit {
   
   ngOnInit() {
     this.BannerType(this.type);
-    this.bannerService.getAll(this.type).subscribe(res => {
+    this.bannerService.getListByType(this.type).subscribe(res => {
       this.bannersList = res;
       console.log('banner a', this.bannersList);
     })
@@ -25,21 +25,21 @@ export class BannerComponent implements OnInit {
 
   public BannerType(type?: number) {
     if(type == 1) {
-      this.bannerService.getAll(this.typeEnum.Cinema).subscribe(res => {
+      this.bannerService.getListByType(this.typeEnum.Cinema).subscribe(res => {
             this.bannersList = res;
             console.log('banner', this.bannersList);
           });
     } else if (type == 2) {
-      this.bannerService.getAll(this.typeEnum.Game).subscribe(res => {
+      this.bannerService.getListByType(this.typeEnum.Game).subscribe(res => {
             this.bannersList = res;
             console.log('banner', this.bannersList);
       });
     } else if (type == 3) {
-      this.bannerService.getAll(this.typeEnum.Sport).subscribe(res => {
+      this.bannerService.getListByType(this.typeEnum.Sport).subscribe(res => {
         this.bannersList = res;
       })
     } else {
-      this.bannerService.getAll(this.typeEnum.Music).subscribe(res => {
+      this.bannerService.getListByType(this.typeEnum.Music).subscribe(res => {
         this.bannersList = res;
       })
     }

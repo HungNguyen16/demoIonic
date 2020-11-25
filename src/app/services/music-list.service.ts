@@ -11,7 +11,7 @@ export class MusicListService {
 
   constructor(private _http: HttpClient) { }
   
-  getAll(): Observable<ListMusic[]> {
+  getListByType(): Observable<ListMusic[]> {
     return this._http.get<ListMusic[]>("assets/data/data-list.json");
   }
 }

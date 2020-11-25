@@ -16,7 +16,7 @@ export class BannerService {
   public url = "assets/data/data-itel.json";
   constructor(private _http: HttpClient) {}
 
-  getAll(type: number): Observable<Banner[]> {
+  getListByType(type: number): Observable<Banner[]> {
     return this._http.get<Banner[]>("assets/data/data-banner.json").pipe(
       map((res: Banner[]) => {
         {
@@ -32,17 +32,5 @@ export class BannerService {
   getList(): Observable<Banner> {
     return this._http.get<Banner>("assets/data/data-itel.json");
   }
-  // getAll(type: number): Observable<Banner[]> {
-  //   return this._http.get<Banner[]>("assets/data/data-itel.json").pipe(
-  //     map((res: Banner[]) => {
-  //       {
-  //         if (res == null) {
-  //           return res;
-  //         }
-  //         res = res.filter((a) => a.bannerType === type);
-  //          return res;
-  //       }
-  //     })
-  //   );
-  // }
+
 }

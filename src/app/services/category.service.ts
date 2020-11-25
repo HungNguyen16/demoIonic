@@ -12,7 +12,7 @@ export class CategoryService {
   // tslint:disable-next-line:variable-name
   constructor(private _http: HttpClient) { }
 
-  getAll(type?: number): Observable<Category[]> {
+  getListByType(type?: number): Observable<Category[]> {
     return this._http.get<Category[]>('assets/data/data-slide.json').pipe(
       map((res: Category[]) => {
         {

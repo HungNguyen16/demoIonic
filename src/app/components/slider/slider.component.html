@@ -1,29 +1,30 @@
 
 <div class="slide-wrapper" *ngIf="this.sprSlider == 1 else sqrSlider2">
-  <h2 class="fs-title">{{categoryName}}</h2>
 
+  <div class="fs-title">{{categoryName}}</div>
   <ion-slides class="sqrSlider1" [pager]="true" [options]="slideOpts">
     <ion-slide *ngFor="let item of cateSliders">
       <div class="slide">
-        <ion-img src="{{item.slideImg}}"></ion-img>
+        <img src="{{item.slideImg}}"/>
         <ion-label>{{item.slideCaption}}</ion-label>
         <h2>{{item.slideTitle}}</h2>
-        <p class="ion-no-padding">{{item.slideSubTitle}}</p>
+        <p>{{item.slideSubTitle}}</p>
       </div>
     </ion-slide>
   </ion-slides>
+
 </div> 
 
 <ng-template #sqrSlider2>
+
   <div class="slide-wrapper">
-    <h2 class="fs-title">{{categoryName}}</h2>
-  
+    <div class="fs-title">{{categoryName}}</div>
     <ion-slides  [options]="slideOpts">
       <ion-slide *ngFor="let item of cateSliders">
         <div class="slide">
-          <ion-img src="{{item.slideImg}}"></ion-img>
+          <img src="{{item.slideImg}}"/>
           <h2>{{item.slideTitle}}</h2>
-          <p class="ion-no-padding">{{item.slideSubTitle}}</p>
+          <p>{{item.slideSubTitle}}</p>
         </div>
       </ion-slide>
     </ion-slides>

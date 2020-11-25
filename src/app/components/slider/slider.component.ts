@@ -65,7 +65,7 @@ export class SliderComponent implements OnInit {
     }
 
     console.log(this.type);
-    this.categoryService.getAll(this.type).subscribe(res => {
+    this.categoryService.getListByType(this.type).subscribe(res => {
       this.category = res;
       this.categoryName = this.category[0].categoryName;
       this.cateSliders = this.category[0].categoryItem;
