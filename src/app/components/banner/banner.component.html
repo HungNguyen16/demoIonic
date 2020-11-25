@@ -1,8 +1,7 @@
 
-<ion-card >
-  <ng-container *ngFor="let item of bannersList">
-    <img src="{{item.bannerImg}}" />
-    <ion-card-header class="ion-padding-start">
+<ion-card class="banner" *ngFor="let item of bannersList">
+  <img src="{{item.bannerImg}}" />
+    <ion-card-header class="ion-no-padding">
       <ion-card-subtitle>{{item.bannerCaption}}</ion-card-subtitle>
       <ion-card-title>{{item.bannerTitle}}</ion-card-title>
       <p class="card-sub">{{item.bannerSub}}</p>
@@ -17,6 +16,5 @@
         Chia sẻ
       </ion-button>
     </ion-buttons>
-  </ng-container>
 </ion-card>
 

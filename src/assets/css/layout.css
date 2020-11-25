@@ -1,13 +1,30 @@
-// ion-card {
-//     position: relative;
-//     display: flex;
-//     flex-direction: column;
-//     width: 100% !important;
-//     max-width : 100% !important;
-//     margin: 0 !important;
-//     border-radius: 0;
-// }
-ion-card.banner {
+ion-header {
+    background-color: #ED1F24;
+}
+ion-toolbar {
+    --background: #ED1F24;
+}
+ion-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+.avatar {
+    position: relative;
+}
+.avatar ion-badge {
+    position: absolute;
+    top: 0;
+    right: -6px;
+    background-color: #ED1F24;
+    font-weight: 700;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 11px;
+}
+
+/*  */
+/* ion-card.banner {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -55,4 +72,4 @@ ion-buttons {
     --border-radius: 20px !important;
     --padding-start: 18px;
     --padding-end: 18px;
-}
+} */

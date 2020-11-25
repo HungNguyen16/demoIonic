@@ -8,7 +8,7 @@
         <img src="{{item.slideImg}}"/>
         <ion-label>{{item.slideCaption}}</ion-label>
         <h2>{{item.slideTitle}}</h2>
-        <p>{{item.slideSubTitle}}</p>
+        <p class="slide-sub-title">{{item.slideSubTitle}}</p>
       </div>
     </ion-slide>
   </ion-slides>
@@ -32,38 +32,3 @@
   
 </ng-template>
 
-
-
-
-<!-- 
-<div class="slide-wrapper" *ngIf="this.sprSlider == 1 else sprSlider2">
-  <h2 class="fs-title">{{categoryName}}</h2>
-
-  <ion-slides [pager]="true" [options]="slideOpts">
-    <ion-slide class="ion-padding" *ngFor="let item of cateSliders">
-      <div class="slide">
-        <ion-img src="{{item.slideImg}}"></ion-img>
-        <h2>{{item.slideTitle}}</h2>
-
-        <h3>{{item.slideTitle}}</h3>
-        <p class="ion-no-padding">{{item.slideSubTitle}}</p>
-      </div>
-    </ion-slide>
-  </ion-slides>
-</div>
-
-<ng-template #sprSlider2>
-  <div class="slide-wrapper ">
-    <h2 class="fs-title">{{categoryName}}</h2>
-  
-    <ion-slides [options]="slideOpts">
-      <ion-slide *ngFor="let item of cateSliders">
-        <div class="slide">
-          <ion-img src="{{item.slideImg}}"></ion-img>
-          <h3>{{item.slideTitle}}</h3>
-          <p class="ion-no-padding">{{item.slideSubTitle}}</p>
-        </div>
-      </ion-slide>
-    </ion-slides>
-  </div>
-</ng-template> -->
