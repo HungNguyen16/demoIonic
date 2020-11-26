@@ -11,6 +11,10 @@ import { BannerComponent } from './banner/banner.component';
 import { MenuComponent } from './menu/menu.component';
 import { TabComponent } from './tab/tab.component';
 import { SliderComponent } from './slider/slider.component';
+import { ListCheckboxComponent } from './list-checkbox/list-checkbox.component';
+import { ListRadioComponent } from './list-radio/list-radio.component';
+import { ModalFinishComponent } from './modal-finish/modal-finish.component';
+import { HeaderOneComponent } from './header-one/header-one.component';
 
 @NgModule({
     declarations: [
@@ -20,7 +24,11 @@ import { SliderComponent } from './slider/slider.component';
       MenuComponent,
       TabComponent,
       SliderComponent,
-      ListMusicComponent
+      ListMusicComponent,
+      ListCheckboxComponent,
+      ListRadioComponent,
+      ModalFinishComponent,
+      HeaderOneComponent
     ],
     exports: [
       HeaderComponent,
@@ -29,7 +37,11 @@ import { SliderComponent } from './slider/slider.component';
       MenuComponent,
       TabComponent,
       SliderComponent,
-      ListMusicComponent
+      ListMusicComponent,
+      ListCheckboxComponent,
+      ListRadioComponent,
+      ModalFinishComponent,
+      HeaderOneComponent
     ],
     imports: [
       CommonModule,

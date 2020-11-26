@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { TopupPageRoutingModule } from './topup-routing.module';
 
 import { TopupPage } from './topup.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TopupPageRoutingModule
+    TopupPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [TopupPage]
 })

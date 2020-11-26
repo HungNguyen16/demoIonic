@@ -1,9 +1,16 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>topup</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content>
+<app-header-one [title]="'Topup / Thanh toán cước'"></app-header-one>
+
+<ion-content style="background: #e5e5e5;">
+  <app-list-checkbox [sprSize]= "2"></app-list-checkbox>
+  <app-list-checkbox [sprSize]= "1"></app-list-checkbox>
+  <app-list-radio></app-list-radio>
+
+  <ion-button expand="block" (click)="openModal()">Thanh toán 200,000đ</ion-button>
 
 </ion-content>

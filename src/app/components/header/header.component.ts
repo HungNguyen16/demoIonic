@@ -10,9 +10,6 @@ import { BannerService } from 'src/app/services/banner.service';
 export class HeaderComponent implements OnInit {
 
   @Input() public title: string;
-  // @Input() 
-  // get title(): string {return this._title};
-  // private _title = '';
   constructor(private bannerService: BannerService) { }
 
   ngOnInit() {}
