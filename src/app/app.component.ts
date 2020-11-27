@@ -77,7 +77,6 @@ export class AppComponent implements OnInit {
       url: '/log-out',
       icon: '_logout'
     }
-    
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 

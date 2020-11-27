@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Nguyễn Văn Quyết",
+        "phone": "0902572962",
+        "avatar": "assets/images/banner-2.png"
+    },
+    {
+        "id": 2,
+        "name": "Nguyễn Quốc Hưng",
+        "phone": "0368836079",
+        "avatar": "assets/images/banner-2.png"
+    }
+]

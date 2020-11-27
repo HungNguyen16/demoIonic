@@ -16,6 +16,8 @@ import { ListRadioComponent } from './list-radio/list-radio.component';
 import { ModalFinishComponent } from './modal-finish/modal-finish.component';
 import { HeaderOneComponent } from './header-one/header-one.component';
 
+import { RelationPhonesComponent } from './relation-phones/relation-phones.component';
+
 @NgModule({
     declarations: [
       HeaderComponent,
@@ -28,7 +30,8 @@ import { HeaderOneComponent } from './header-one/header-one.component';
       ListCheckboxComponent,
       ListRadioComponent,
       ModalFinishComponent,
-      HeaderOneComponent
+      HeaderOneComponent,
+      RelationPhonesComponent
     ],
     exports: [
       HeaderComponent,
@@ -41,7 +44,8 @@ import { HeaderOneComponent } from './header-one/header-one.component';
       ListCheckboxComponent,
       ListRadioComponent,
       ModalFinishComponent,
-      HeaderOneComponent
+      HeaderOneComponent,
+      RelationPhonesComponent
     ],
     imports: [
       CommonModule,
