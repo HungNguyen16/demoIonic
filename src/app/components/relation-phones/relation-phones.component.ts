@@ -9,6 +9,7 @@ import { RelationPhoneService } from '../../services/relation-phones.service';
 })
 export class RelationPhonesComponent implements OnInit {
   relationPhones: RelationPhoneModel[] = [];
+  checkIndex = 0;
   constructor(private relationPhoneService: RelationPhoneService) { }
 
   ngOnInit() {
