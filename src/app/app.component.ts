@@ -18,9 +18,9 @@ export class AppComponent implements OnInit {
       icon: 'notification'
     },
     {
-      title: 'Topup',
+      title: 'Nạp thẻ',
       url: '/topup',
-      icon: 'topup'
+      icon: 'recharge-card'
     },
     {
       title: 'Tiện ích',
@@ -30,52 +30,52 @@ export class AppComponent implements OnInit {
     {
       title: 'iTel game',
       url: '/itel-game',
-      icon: 'archive'
+      icon: 'game'
     },
     {
       title: 'iTel cinema',
       url: '/itel-cinema',
-      icon: 'trash'
+      icon: 'cinema'
     },
     {
       title: 'iTel sport',
       url: '/itel-sport',
-      icon: 'warning'
+      icon: 'sport'
     },
     {
       title: 'iTel music',
       url: '/itel-music',
-      icon: 'trash'
+      icon: 'music'
     },
     {
       title: 'Tra cước',
       url: '/postage',
-      icon: 'trash'
+      icon: 'postage'
     },
     {
       title: 'Lịch sử thanh toán',
       url: '/payment-history',
-      icon: 'trash'
+      icon: 'payment-history'
     },
     {
       title: 'Lịch sử đăng ký / hủy dịch vụ',
       url: '/register-history',
-      icon: 'trash'
+      icon: 'register-history'
     },
     {
       title: 'Trung tâm hỗ trợ',
       url: '/support-center',
-      icon: '_support-center'
+      icon: 'support-center'
     },
     {
       title: 'Xếp hạng ứng dụng',
       url: '/application-rating',
-      icon: '_application-rating'
+      icon: 'application-rating'
     },
     {
       title: 'Đăng xuất',
       url: '/log-out',
-      icon: '_logout'
+      icon: 'log-out'
     }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
