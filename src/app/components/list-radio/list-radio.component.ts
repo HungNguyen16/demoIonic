@@ -7,7 +7,7 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./list-radio.component.scss'],
 })
 export class ListRadioComponent implements OnInit {
-
+  // public checkedRadio: string = 'male';
   constructor(public modalController: ModalController) { }
 
   ngOnInit() {}
