@@ -10,5 +10,16 @@
         "name": "Nguyễn Quốc Hưng",
         "phone": "0368836079",
         "avatar": "assets/images/banner-2.png"
+    },{
+        "id": 3,
+        "name": "Nguyễn Văn Quyết",
+        "phone": "0902572962",
+        "avatar": "assets/images/banner-2.png"
+    },
+    {
+        "id": 4,
+        "name": "Nguyễn Quốc Hưng",
+        "phone": "0368836079",
+        "avatar": "assets/images/banner-2.png"
     }
 ]
