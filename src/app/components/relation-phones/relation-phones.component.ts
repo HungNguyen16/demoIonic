@@ -18,5 +18,5 @@ export class RelationPhonesComponent implements OnInit {
         console.log(this.relationPhones);
     });
   }
-
 }
+

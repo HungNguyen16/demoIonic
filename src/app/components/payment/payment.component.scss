@@ -1,0 +1,34 @@
+.nap-tien-cho-so{
+    width:100%;
+}
+.nap-tien-cho-so-detail {
+    width:100%;
+    // overflow:hidden;
+    // overflow-x:auto;
+}
+.nap-tien-cho-so ion-row{
+    display:flex;
+    // flex-wrap:nowrap;
+    align-items:center;
+}
+.nap-tien-cho-so ion-col{
+    // flex:0 0 48%;
+}
+.nap-tien-cho-so ion-item{
+    width:100%;
+    --padding-start:0;
+    --inner-padding-end:0;
+}
+.ion-checkbox-customize{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.item-checkbox-checked .ion-checkbox-customize{
+    background:#f00;
+}
+.item-checkbox-checked ion-label{
+    color:#fff;
+}

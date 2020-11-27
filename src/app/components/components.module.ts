@@ -17,6 +17,8 @@ import { ModalFinishComponent } from './modal-finish/modal-finish.component';
 import { HeaderOneComponent } from './header-one/header-one.component';
 
 import { RelationPhonesComponent } from './relation-phones/relation-phones.component';
+import { ChoosePriceComponent } from './choose-price/choose-price.component';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
     declarations: [
@@ -31,7 +33,9 @@ import { RelationPhonesComponent } from './relation-phones/relation-phones.compo
       ListRadioComponent,
       ModalFinishComponent,
       HeaderOneComponent,
-      RelationPhonesComponent
+      RelationPhonesComponent,
+      ChoosePriceComponent,
+      PaymentComponent
     ],
     exports: [
       HeaderComponent,
@@ -45,7 +49,9 @@ import { RelationPhonesComponent } from './relation-phones/relation-phones.compo
       ListRadioComponent,
       ModalFinishComponent,
       HeaderOneComponent,
-      RelationPhonesComponent
+      RelationPhonesComponent,
+      ChoosePriceComponent,
+      PaymentComponent
     ],
     imports: [
       CommonModule,

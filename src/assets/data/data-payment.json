@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "paymentName": "Thanh toán với ví điện tử",
+        "paymentImg": "assets/icon/icon-payment.svg",
+        "paymentType": 1
+    },
+    {
+        "id": 1,
+        "paymentName": "Thanh toán với số dư tài khoản",
+        "paymentImg": "assets/icon/icon-payment.svg",
+        "paymentType": 2
+    }
+]
