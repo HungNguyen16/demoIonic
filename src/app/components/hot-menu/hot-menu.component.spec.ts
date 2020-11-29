@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { PaymentComponent } from './payment.component';
+import { HotMenuComponent } from './hot-menu.component';
 
-describe('PaymentComponent', () => {
-  let component: PaymentComponent;
-  let fixture: ComponentFixture<PaymentComponent>;
+describe('HotMenuComponent', () => {
+  let component: HotMenuComponent;
+  let fixture: ComponentFixture<HotMenuComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PaymentComponent ],
+      declarations: [ HotMenuComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(PaymentComponent);
+    fixture = TestBed.createComponent(HotMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

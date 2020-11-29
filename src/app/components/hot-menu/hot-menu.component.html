@@ -1,0 +1,7 @@
+<ion-row id="hot-menu" class="hot-menu">
+  <ion-col *ngFor="let item of hotMenus; let i = index" routerDirection="root" [routerLink]="[item.url]" lines="none" detail="false"
+    [class.selected]="hotIndex == i">
+    <ion-icon [ios]="item.icon + '-sharp'" [md]="item.icon + '-sharp'"></ion-icon>
+    <ion-label>{{ item.title }}</ion-label>
+  </ion-col>
+</ion-row>

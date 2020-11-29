@@ -1,14 +1,13 @@
+<ion-header id="app-header" [translucent]="true">
+  <ion-toolbar id="app-header-toolbar">
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+  <app-hot-menu [hotIndex]="0"></app-hot-menu>
+</ion-header>
 
-<app-header [title]="'itel Cinema'"></app-header>
 <ion-content>
-  <app-menu></app-menu>
-  <app-banner [type]="1"></app-banner>
-  <app-slider [type]="1" [sprSlider]="2"></app-slider>
-  <app-slider [type]="2" [sprSlider]="2"></app-slider>
-  <app-slider [type]="5" [sprSlider]="2"></app-slider>
-  <app-slider [type]="3" [sprSlider]="1"></app-slider>
+  <app-facility></app-facility>
 </ion-content>
-<app-footer></app-footer>
-
-
-

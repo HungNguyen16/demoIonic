@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { TopupPageRoutingModule } from './topup-routing.module';
+import { RechargeCardPageRoutingModule } from './recharge-card-routing.module';
 
-import { TopupPage } from './topup.page';
+import { RechargeCardPage } from './recharge-card.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    TopupPageRoutingModule,
+    RechargeCardPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [TopupPage]
+  declarations: [RechargeCardPage]
 })
-export class TopupPageModule {}
+export class RechargeCardPageModule {}

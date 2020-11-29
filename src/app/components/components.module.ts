@@ -18,7 +18,9 @@ import { HeaderOneComponent } from './header-one/header-one.component';
 
 import { RelationPhonesComponent } from './relation-phones/relation-phones.component';
 import { ChoosePriceComponent } from './choose-price/choose-price.component';
-import { PaymentComponent } from './payment/payment.component';
+//import { PaymentComponent } from './payment/payment.component';
+import { HotMenuComponent } from './hot-menu/hot-menu.component';
+import { FacilityComponent } from './facility/facility.component';
 
 @NgModule({
     declarations: [
@@ -35,7 +37,9 @@ import { PaymentComponent } from './payment/payment.component';
       HeaderOneComponent,
       RelationPhonesComponent,
       ChoosePriceComponent,
-      PaymentComponent
+      //PaymentComponent
+      HotMenuComponent,
+      FacilityComponent
     ],
     exports: [
       HeaderComponent,
@@ -51,7 +55,9 @@ import { PaymentComponent } from './payment/payment.component';
       HeaderOneComponent,
       RelationPhonesComponent,
       ChoosePriceComponent,
-      PaymentComponent
+      //PaymentComponent
+      HotMenuComponent,
+      FacilityComponent
     ],
     imports: [
       CommonModule,

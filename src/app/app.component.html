@@ -1,11 +1,10 @@
 <ion-app>
   <ion-split-pane contentId="main-content">
     <ion-menu contentId="main-content" type="overlay" side="start">
-      <div class="menu-wrap">
-      <ion-header class="ion-no-border">
+      <ion-header id="menu-header" class="ion-no-border">
         <ion-item lines="none">
           <ion-avatar>
-            <img width="33" height="33" src="assets/images/avatar.png" alt="avatar">
+            <img width="57" height="57" src="assets/images/avatar.png" alt="avatar">
           </ion-avatar>
           <ion-label class="avatar-info">
             <p class="avatar-name">Tri Thong</p>
@@ -14,7 +13,7 @@
         </ion-item>
       </ion-header>
       <ion-content>
-        <ion-list id="inbox-list">
+        <ion-list id="menu-list">
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none"
               detail="false" [class.selected]="selectedIndex == i">
@@ -31,7 +30,6 @@
           </ion-item>
         </ion-list> -->
       </ion-content>
-      </div>
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>
   </ion-split-pane>

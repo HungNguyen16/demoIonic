@@ -1,0 +1,30 @@
+.facility-box{
+    padding:0 20px;
+}
+#id-facility {
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
+#id-facility ion-col{
+    outline:none;
+    cursor:pointer;
+    color:#3f3f3f;
+    flex:0 0 auto;
+    width:auto;
+    padding:0;
+    text-align:center;
+    display:inline-block;
+}
+#id-facility ion-img{
+    display:flex;
+    width:60px;
+    height:60px;
+    padding:12px;
+    border:2px solid #ED1F24;
+    margin:0 auto 9px auto;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+}
+#id-facility ion-label{
+    line-height:14px;
+}

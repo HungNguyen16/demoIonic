@@ -3,11 +3,11 @@ import { ModalController } from '@ionic/angular';
 import { ModalFinishComponent } from 'src/app/components/modal-finish/modal-finish.component';
 
 @Component({
-  selector: 'app-topup',
-  templateUrl: './topup.page.html',
-  styleUrls: ['./topup.page.scss'],
+  selector: 'app-recharge-card',
+  templateUrl: './recharge-card.page.html',
+  styleUrls: ['./recharge-card.page.scss'],
 })
-export class TopupPage implements OnInit {
+export class RechargeCardPage implements OnInit {
 
   constructor(private modalCtrl: ModalController) { }
 

@@ -1,0 +1,30 @@
+#hot-menu {
+    padding:0 20px 16px 20px;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
+#hot-menu ion-col{
+    outline:none;
+    cursor:pointer;
+    color:#fff;
+    flex:0 0 auto;
+    width:auto;
+    padding:0;
+    text-align:center;
+    display:inline-block;
+}
+#hot-menu ion-icon{
+    width:20px;
+    height:20px;
+    padding:9px;
+    margin:0 auto 5px auto;
+    color:#fff;
+    display:flex;
+    background:#D01C20;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+}
+#hot-menu .selected ion-icon{
+    background:#fff;
+    color:#D01C20;
+}
