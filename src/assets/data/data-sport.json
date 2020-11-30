@@ -1,0 +1,119 @@
+[
+    {
+        "id": 1,
+        "categoryName": "Trận đấu hôm nay",
+        "categoryType": "tran-dau-hom-nay",
+        "categoryItems": [
+            {
+                "id": 1,
+                "img": "assets/images/sport/1.png",
+                "title": "Livestream MU vs Chelsea",
+                "type": "Live",
+                "isHome": true,
+                "isPlaylist": true
+            },
+            {
+                "id": 2,
+                "img": "assets/images/sport/2.png",
+                "title": "Bình luận Seagame",
+                "type": "Trực tiếp",
+                "isHome": false,
+                "isPlaylist": true
+            },
+            {
+                "id": 3,
+                "img": "assets/images/sport/1.png",
+                "title": "Livestream MU vs Chelsea",
+                "type": "Live",
+                "isHome": true,
+                "isPlaylist": true
+            },
+            {
+                "id": 4,
+                "img": "assets/images/sport/2.png",
+                "title": "Bình luận Seagame",
+                "type": "Trực tiếp",
+                "isHome": false,
+                "isPlaylist": true
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "categoryName": "Điểm tin thể thao",
+        "categoryType": "diem-tin-the-thao",
+        "categoryItems": [
+            {
+                "id": 5,
+                "img": "assets/images/sport/1.png",
+                "title": "Livestream MU vs Chelsea",
+                "type": "Live",
+                "isHome": true,
+                "isPlaylist": true
+            },
+            {
+                "id": 6,
+                "img": "assets/images/sport/2.png",
+                "title": "Bình luận Seagame",
+                "type": "Trực tiếp",
+                "isHome": false,
+                "isPlaylist": true
+            },
+            {
+                "id": 7,
+                "img": "assets/images/sport/1.png",
+                "title": "Livestream MU vs Chelsea",
+                "type": "Live",
+                "isHome": true,
+                "isPlaylist": true
+            },
+            {
+                "id": 8,
+                "img": "assets/images/sport/2.png",
+                "title": "Bình luận Seagame",
+                "type": "Trực tiếp",
+                "isHome": false,
+                "isPlaylist": true
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "categoryName": "Cập nhật tỉ số",
+        "categoryType": "cap-nhat-ti-so",
+        "categoryItems": [
+            {
+                "id": 9,
+                "img": "assets/images/sport/1.png",
+                "title": "Livestream MU vs Chelsea",
+                "type": "Live",
+                "isHome": true,
+                "isPlaylist": true
+            },
+            {
+                "id": 10,
+                "img": "assets/images/sport/2.png",
+                "title": "Bình luận Seagame",
+                "type": "Trực tiếp",
+                "isHome": false,
+                "isPlaylist": true
+            },
+            {
+                "id": 11,
+                "img": "assets/images/sport/1.png",
+                "title": "Livestream MU vs Chelsea",
+                "type": "Live",
+                "isHome": true,
+                "isPlaylist": true
+            },
+            {
+                "id": 12,
+                "img": "assets/images/sport/2.png",
+                "title": "Bình luận Seagame",
+                "type": "Trực tiếp",
+                "isHome": false,
+                "isPlaylist": true
+            }
+        ]
+    }
+]

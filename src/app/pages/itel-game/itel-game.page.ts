@@ -1,25 +1,46 @@
-import { Component, ContentChild, Input, OnInit, ViewEncapsulation } from '@angular/core';
-import { BannerComponent } from 'src/app/components/banner/banner.component';
-import { HeaderComponent } from 'src/app/components/header/header.component';
-import { Banner } from 'src/app/models/banner';
-import { PageTypeEnum } from 'src/app/models/enum/page-type-enum';
-import { BannerService } from 'src/app/services/banner.service';
+import { Component, OnInit } from '@angular/core';
+import { CategoryModel } from '../../models/category-model';
+import { CategoryService } from '../../services/category.service';
 
 @Component({
   selector: 'app-itel-game',
   templateUrl: './itel-game.page.html',
-  styleUrls: ['./itel-game.page.scss'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./itel-game.page.scss']
 })
 export class ItelGamePage implements OnInit {
-  @Input() banner: Banner;
-  type: number;
-  typeEnum = PageTypeEnum;
-  bannersList: Banner[];
-  constructor(private bannerComponent: BannerComponent) { }
-  xcvxcv = 'adadad'
+
+  categoryData: CategoryModel = null;
+
+  slideOptions = {
+    slidesPerView: 1,
+    initialSlide: 1,
+    speed: 400,
+    loop: true,
+    spaceBetween: 20,
+    loopAdditionalSlides: 1,
+    on: {
+      ionSlideTransitionStart() {
+        console.log('next start');
+      }, ionSlideTransitionEnd() {
+        console.log('next end');
+      }
+    }
+  };
+
+  constructor(private categoryService: CategoryService) { }
+
   ngOnInit() {
-    // this.bannerComponent.BannerType(4);
-    // console.log('abc',this.bannerComponent.BannerType(4))
+    this.categoryService.getCategoryByType('itel-game').subscribe(res => {
+      if (res && res.length > 0) {
+        this.categoryData = res[0];
+      }
+    });
+
+    /*this.gameService.getAll().subscribe(res => {
+      this.gameData = res;
+    });
+    this.gameService.getPlayList().subscribe(res => {
+      this.playlistData = res;
+    });*/
   }
 }

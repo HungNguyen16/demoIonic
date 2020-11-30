@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CinemaModel, Movie } from '../../models/cinema-model';
-import { CinemaService } from '../../services/cinema.service';
+import { CategoryModel } from '../../models/category-model';
+import { CategoryService } from '../../services/category.service';
 
 @Component({
   selector: 'app-itel-cinema',
@@ -8,8 +8,8 @@ import { CinemaService } from '../../services/cinema.service';
   styleUrls: ['./itel-cinema.page.scss'],
 })
 export class ItelCinemaPage implements OnInit {
-  cinemaData: CinemaModel[] = [];
-  movieData: Movie[] = [];
+
+  categoryData: CategoryModel = null;
 
   slideOptions = {
     slidesPerView: 1,
@@ -27,17 +27,18 @@ export class ItelCinemaPage implements OnInit {
     }
   };
 
-  constructor(private cinemaService: CinemaService) { }
+  constructor(private categoryService: CategoryService) { }
 
   ngOnInit() {
-    this.cinemaService.getAll().subscribe(res => {
-      this.cinemaData = res;
+    this.categoryService.getCategoryByType('itel-cinema').subscribe(res => {
+      if (res && res.length > 0) {
+        this.categoryData = res[0];
+      }
     });
 
-    this.cinemaService.getPlayList().subscribe(res => {
-      this.movieData = res;
-      console.log(this.movieData);
-    });
+    // this.cinemaService.getPlayList().subscribe(res => {
+    //   this.playlistData = res;
+    // });
 
   }
 

@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "img": "assets/images/game/1.png",
+        "img": "assets/images/cinema/1.png",
         "title": "The battle",
         "type": "Hành động",
         "isHome": true,
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "img": "assets/images/game/2.png",
+        "img": "assets/images/cinema/2.png",
         "title": "I Don't Care",
         "type": "Ed Sheeran",
         "isHome": false,
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "img": "assets/images/game/1.png",
+        "img": "assets/images/cinema/1.png",
         "title": "The battle",
         "type": "Hành động",
         "isHome": true,
@@ -25,7 +25,7 @@
     },
     {
         "id": 4,
-        "img": "assets/images/game/2.png",
+        "img": "assets/images/cinema/2.png",
         "title": "I Don't Care",
         "type": "Ed Sheeran",
         "isHome": false,
@@ -33,7 +33,7 @@
     },
     {
         "id": 5,
-        "img": "assets/images/game/3.png",
+        "img": "assets/images/cinema/3.png",
         "title": "The battle",
         "type": "Hành động",
         "isHome": true,
@@ -41,7 +41,7 @@
     },
     {
         "id": 6,
-        "img": "assets/images/game/4.png",
+        "img": "assets/images/cinema/4.png",
         "title": "I Don't Care",
         "type": "Ed Sheeran",
         "isHome": false,
@@ -49,7 +49,7 @@
     },
     {
         "id": 7,
-        "img": "assets/images/game/3.png",
+        "img": "assets/images/cinema/3.png",
         "title": "I Don't Care",
         "type": "Ed Sheeran",
         "isHome": false,
@@ -57,14 +57,14 @@
     },
     {
         "id": 8,
-        "img": "assets/images/game/4.png",
+        "img": "assets/images/cinema/4.png",
         "title": "I Don't Care",
         "type": "Ed Sheeran",
         "isHome": false,
         "isPlaylist": false
     },{
         "id": 9,
-        "img": "assets/images/game/5.png",
+        "img": "assets/images/cinema/5.png",
         "title": "The battle",
         "type": "Hành động",
         "isHome": false,
@@ -72,7 +72,7 @@
     },
     {
         "id": 10,
-        "img": "assets/images/game/6.png",
+        "img": "assets/images/cinema/6.png",
         "title": "I Don't Care",
         "type": "Ed Sheeran",
         "isHome": false,
@@ -80,7 +80,7 @@
     },
     {
         "id": 11,
-        "img": "assets/images/game/5.png",
+        "img": "assets/images/cinema/5.png",
         "title": "I Don't Care",
         "type": "Ed Sheeran",
         "isHome": false,
@@ -88,7 +88,7 @@
     },
     {
         "id": 12,
-        "img": "assets/images/game/6.png",
+        "img": "assets/images/cinema/6.png",
         "title": "I Don't Care",
         "type": "Ed Sheeran",
         "isHome": false,
