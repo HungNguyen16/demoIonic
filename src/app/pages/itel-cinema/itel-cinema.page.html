@@ -9,43 +9,31 @@
 </ion-header>
 
 <ion-content>
-  <div class="cinema-box" *ngIf="cinemaData.length > 0">
-    <div class="cinema-block" *ngFor="let cinema of cinemaData">
-      <h2 class="title-block">{{cinema.categoryName}}</h2>
-      <div class="horizon-box size-haft-point2 scroll" scrollX="true">
+
+  <div class="category-box" *ngIf="categoryData !== null">
+    <div class="category-block" *ngFor="let sub of categoryData.categoryItems">
+      <h2 class="title-block">{{sub.subName}}</h2>
+      <div class="horizon-box size-haft-point4">
         <ion-row>
-          <ion-col *ngFor="let movie of cinema.categoryItems">
-            <ion-img src="{{movie.img}}"></ion-img>
+          <ion-col *ngFor="let item of sub.subItems">
+            <ion-img src="{{item.img}}"></ion-img>
             <ion-label>
-              <h3>{{movie.title}}</h3>
-              <p>{{movie.type}}</p>
+              <h3>{{item.title}}</h3>
+              <p>{{item.type}}</p>
             </ion-label>
           </ion-col>
         </ion-row>
       </div>
     </div>
   </div>
-  <div class="cinema-box cinema-slide" *ngIf="movieData.length > 0">
+
+  <!-- <div class="category-box category-slide" *ngIf="playlistData.length > 0">
     <h2 class="title-block">Playlist phim hay</h2>
     <ion-slides pager="true" [options]="slideOptions">
-      <ion-slide *ngFor="let movie of movieData">
-        <ion-img src="{{movie.img}}"></ion-img>
+      <ion-slide *ngFor="let playlist of playlistData">
+        <img src="{{playlist.img}}" />
       </ion-slide>
     </ion-slides>
-  </div>
-</ion-content>
+  </div> -->
 
-<!-- 
-<app-header [title]="'itel Cinema'"></app-header>
-<h2>Cinema</h2>
-<ion-content>
-  <app-menu></app-menu>
-  <app-banner [type]="1"></app-banner>
-  <app-slider [type]="1" [sprSlider]="2"></app-slider>
-  <app-slider [type]="2" [sprSlider]="2"></app-slider>
-  <app-slider [type]="5" [sprSlider]="2"></app-slider>
-  <app-slider [type]="3" [sprSlider]="1"></app-slider>
 </ion-content>
-
-<app-footer></app-footer>
- -->

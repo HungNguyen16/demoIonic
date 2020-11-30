@@ -1,0 +1,553 @@
+[
+    {
+        "id": 1,
+        "categoryName": "itel Game",
+        "categoryType": "itel-game",
+        "categoryItems": [
+            {
+                "id": 1,
+                "categoryId": 1,
+                "subName": "Game đề xuất",
+                "subType": "game-de-xuat",
+                "subItems": [
+                    {
+                        "id": 1,
+                        "subCategoryId": 1,
+                        "img": "assets/images/game/1.png",
+                        "title": "Sucker",
+                        "type": "Jonas Brothers",
+                        "isHome": true,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 2,
+                        "subCategoryId": 1,
+                        "img": "assets/images/game/2.png",
+                        "title": "I Don’t Care",
+                        "type": "Ed Sheeran & Bieber's",
+                        "isHome": false,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 3,
+                        "subCategoryId": 1,
+                        "img": "assets/images/game/3.png",
+                        "title": "Old Town Road",
+                        "type": "Lil Nas",
+                        "isHome": true,
+                        "isPlaylist": false
+                    },
+                    {
+                        "id": 4,
+                        "subCategoryId": 1,
+                        "img": "assets/images/game/4.png",
+                        "title": "Sucker",
+                        "type": "Jonas Brothers",
+                        "isHome": false,
+                        "isPlaylist": false
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "subName": "Game thể thao",
+                "subType": "game-the-thao",
+                "subItems": [
+                    {
+                        "id": 5,
+                        "subCategoryId": 2,
+                        "img": "assets/images/game/3.png",
+                        "title": "Sucker",
+                        "type": "Jonas Brothers",
+                        "isHome": true,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 6,
+                        "subCategoryId": 2,
+                        "img": "assets/images/game/4.png",
+                        "title": "I Don’t Care",
+                        "type": "Ed Sheeran & Bieber's",
+                        "isHome": false,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 7,
+                        "subCategoryId": 2,
+                        "img": "assets/images/game/5.png",
+                        "title": "Old Town Road",
+                        "type": "Lil Nas",
+                        "isHome": true,
+                        "isPlaylist": false
+                    },
+                    {
+                        "id": 8,
+                        "subCategoryId": 2,
+                        "img": "assets/images/game/6.png",
+                        "title": "Sucker",
+                        "type": "Jonas Brothers",
+                        "isHome": false,
+                        "isPlaylist": false
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "subName": "Mới cập nhật",
+                "subType": "moi-cap-nhat",
+                "subItems": [
+                    {
+                        "id": 9,
+                        "subCategoryId": 3,
+                        "img": "assets/images/game/5.png",
+                        "title": "Sucker",
+                        "type": "Jonas Brothers",
+                        "isHome": true,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 10,
+                        "subCategoryId": 3,
+                        "img": "assets/images/game/6.png",
+                        "title": "I Don’t Care",
+                        "type": "Ed Sheeran & Bieber's",
+                        "isHome": false,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 11,
+                        "subCategoryId": 3,
+                        "img": "assets/images/game/7.png",
+                        "title": "Old Town Road",
+                        "type": "Lil Nas",
+                        "isHome": true,
+                        "isPlaylist": false
+                    },
+                    {
+                        "id": 12,
+                        "subCategoryId": 3,
+                        "img": "assets/images/game/8.png",
+                        "title": "Sucker",
+                        "type": "Jonas Brothers",
+                        "isHome": false,
+                        "isPlaylist": false
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "subName": "Dành cho bạn",
+                "subType": "danh-cho-ban",
+                "subItems": [
+                    {
+                        "id": 13,
+                        "subCategoryId": 4,
+                        "img": "assets/images/game/7.png",
+                        "title": "Sucker",
+                        "type": "Jonas Brothers",
+                        "isHome": true,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 14,
+                        "subCategoryId": 4,
+                        "img": "assets/images/game/8.png",
+                        "title": "I Don’t Care",
+                        "type": "Ed Sheeran & Bieber's",
+                        "isHome": false,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 15,
+                        "subCategoryId": 4,
+                        "img": "assets/images/game/1.png",
+                        "title": "Old Town Road",
+                        "type": "Lil Nas",
+                        "isHome": true,
+                        "isPlaylist": false
+                    },
+                    {
+                        "id": 16,
+                        "subCategoryId": 4,
+                        "img": "assets/images/game/2.png",
+                        "title": "Sucker",
+                        "type": "Jonas Brothers",
+                        "isHome": false,
+                        "isPlaylist": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "categoryName": "itel Cinema",
+        "categoryType": "itel-cinema",
+        "categoryItems": [
+            {
+                "id": 1,
+                "categoryId": 2,
+                "subName": "Đề xuất hôm nay",
+                "subType": "de-xuat-hom-nay",
+                "subItems": [
+                    {
+                        "id": 1,
+                        "subCategoryId": 1,
+                        "img": "assets/images/cinema/1.png",
+                        "title": "The battle",
+                        "type": "Hành động",
+                        "isHome": true,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 2,
+                        "subCategoryId": 1,
+                        "img": "assets/images/cinema/2.png",
+                        "title": "I Don't Care",
+                        "type": "Ed Sheeran",
+                        "isHome": false,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 3,
+                        "subCategoryId": 1,
+                        "img": "assets/images/cinema/1.png",
+                        "title": "The battle",
+                        "type": "Hành động",
+                        "isHome": true,
+                        "isPlaylist": false
+                    },
+                    {
+                        "id": 4,
+                        "subCategoryId": 1,
+                        "img": "assets/images/cinema/2.png",
+                        "title": "I Don't Care",
+                        "type": "Ed Sheeran",
+                        "isHome": false,
+                        "isPlaylist": false
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "subName": "Phim Hot",
+                "subType": "phim-hot",
+                "subItems": [
+                    {
+                        "id": 5,
+                        "subCategoryId": 2,
+                        "img": "assets/images/cinema/3.png",
+                        "title": "The battle",
+                        "type": "Hành động",
+                        "isHome": true,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 6,
+                        "subCategoryId": 2,
+                        "img": "assets/images/cinema/4.png",
+                        "title": "I Don't Care",
+                        "type": "Ed Sheeran",
+                        "isHome": false,
+                        "isPlaylist": false
+                    },
+                    {
+                        "id": 7,
+                        "subCategoryId": 2,
+                        "img": "assets/images/cinema/3.png",
+                        "title": "I Don't Care",
+                        "type": "Ed Sheeran",
+                        "isHome": false,
+                        "isPlaylist": false
+                    },
+                    {
+                        "id": 8,
+                        "subCategoryId": 2,
+                        "img": "assets/images/cinema/4.png",
+                        "title": "I Don't Care",
+                        "type": "Ed Sheeran",
+                        "isHome": false,
+                        "isPlaylist": false
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "subName": "Dành cho bạn",
+                "subType": "danh-cho-ban",
+                "subItems": [
+                    {
+                        "id": 9,
+                        "subCategoryId": 3,
+                        "img": "assets/images/cinema/5.png",
+                        "title": "The battle",
+                        "type": "Hành động",
+                        "isHome": false,
+                        "isPlaylist": false
+                    },
+                    {
+                        "id": 10,
+                        "subCategoryId": 3,
+                        "img": "assets/images/cinema/6.png",
+                        "title": "I Don't Care",
+                        "type": "Ed Sheeran",
+                        "isHome": false,
+                        "isPlaylist": false
+                    },
+                    {
+                        "id": 11,
+                        "subCategoryId": 3,
+                        "img": "assets/images/cinema/5.png",
+                        "title": "I Don't Care",
+                        "type": "Ed Sheeran",
+                        "isHome": false,
+                        "isPlaylist": false
+                    },
+                    {
+                        "id": 12,
+                        "subCategoryId": 3,
+                        "img": "assets/images/cinema/6.png",
+                        "title": "I Don't Care",
+                        "type": "Ed Sheeran",
+                        "isHome": false,
+                        "isPlaylist": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "categoryName": "itel Sport",
+        "categoryType": "itel-sport",
+        "categoryItems": [
+            {
+                "id": 1,
+                "categoryId": 3,
+                "subName": "Trận đấu hôm nay",
+                "subType": "tran-dau-hom-nay",
+                "subItems": [
+                    {
+                        "id": 1,
+                        "subCategoryId": 1,
+                        "img": "assets/images/sport/1.png",
+                        "title": "Livestream MU vs Chelsea",
+                        "type": "Live",
+                        "isHome": true,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 2,
+                        "subCategoryId": 1,
+                        "img": "assets/images/sport/2.png",
+                        "title": "Bình luận Seagame",
+                        "type": "Trực tiếp",
+                        "isHome": false,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 3,
+                        "subCategoryId": 1,
+                        "img": "assets/images/sport/1.png",
+                        "title": "Livestream MU vs Chelsea",
+                        "type": "Live",
+                        "isHome": true,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 4,
+                        "subCategoryId": 1,
+                        "img": "assets/images/sport/2.png",
+                        "title": "Bình luận Seagame",
+                        "type": "Trực tiếp",
+                        "isHome": false,
+                        "isPlaylist": true
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "categoryId": 3,
+                "subName": "Điểm tin thể thao",
+                "subType": "diem-tin-the-thao",
+                "subItems": [
+                    {
+                        "id": 5,
+                        "subCategoryId": 2,
+                        "img": "assets/images/sport/1.png",
+                        "title": "Livestream MU vs Chelsea",
+                        "type": "Live",
+                        "isHome": true,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 6,
+                        "subCategoryId": 2,
+                        "img": "assets/images/sport/2.png",
+                        "title": "Bình luận Seagame",
+                        "type": "Trực tiếp",
+                        "isHome": false,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 7,
+                        "subCategoryId": 2,
+                        "img": "assets/images/sport/1.png",
+                        "title": "Livestream MU vs Chelsea",
+                        "type": "Live",
+                        "isHome": true,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 8,
+                        "subCategoryId": 2,
+                        "img": "assets/images/sport/2.png",
+                        "title": "Bình luận Seagame",
+                        "type": "Trực tiếp",
+                        "isHome": false,
+                        "isPlaylist": true
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "categoryId": 3,
+                "subName": "Cập nhật tỉ số",
+                "subType": "cap-nhat-ti-so",
+                "subItems": [
+                    {
+                        "id": 9,
+                        "subCategoryId": 3,
+                        "img": "assets/images/sport/1.png",
+                        "title": "Livestream MU vs Chelsea",
+                        "type": "Live",
+                        "isHome": true,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 10,
+                        "subCategoryId": 3,
+                        "img": "assets/images/sport/2.png",
+                        "title": "Bình luận Seagame",
+                        "type": "Trực tiếp",
+                        "isHome": false,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 11,
+                        "subCategoryId": 3,
+                        "img": "assets/images/sport/1.png",
+                        "title": "Livestream MU vs Chelsea",
+                        "type": "Live",
+                        "isHome": true,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 12,
+                        "subCategoryId": 3,
+                        "img": "assets/images/sport/2.png",
+                        "title": "Bình luận Seagame",
+                        "type": "Trực tiếp",
+                        "isHome": false,
+                        "isPlaylist": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "categoryName": "itel Music",
+        "categoryType": "itel-music",
+        "categoryItems": [
+            {
+                "id": 1,
+                "categoryId": 4,
+                "subName": "Album để xuất",
+                "subType": "album-de-xuat",
+                "subItems": [
+                    {
+                        "id": 1,
+                        "subCategoryId": 1,
+                        "img": "assets/images/music/1.png",
+                        "title": "Sucker",
+                        "type": "Jonas Brothers",
+                        "isHome": true,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 2,
+                        "subCategoryId": 1,
+                        "img": "assets/images/music/2.png",
+                        "title": "I Don’t Care",
+                        "type": "Ed Sheeran & Bieber's",
+                        "isHome": false,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 3,
+                        "subCategoryId": 1,
+                        "img": "assets/images/music/1.png",
+                        "title": "Old Town Road",
+                        "type": "Lil Nas",
+                        "isHome": true,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 4,
+                        "subCategoryId": 1,
+                        "img": "assets/images/music/2.png",
+                        "title": "I Don’t Care",
+                        "type": "Ed Sheeran & Bieber's",
+                        "isHome": false,
+                        "isPlaylist": true
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "categoryId": 4,
+                "subName": "Album cho bạn",
+                "subType": "album-cho-ban",
+                "subItems": [
+                    {
+                        "id": 1,
+                        "subCategoryId": 2,
+                        "img": "assets/images/music/1.png",
+                        "title": "Sucker",
+                        "type": "Jonas Brothers",
+                        "isHome": true,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 2,
+                        "subCategoryId": 2,
+                        "img": "assets/images/music/2.png",
+                        "title": "I Don’t Care",
+                        "type": "Ed Sheeran & Bieber's",
+                        "isHome": false,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 3,
+                        "subCategoryId": 2,
+                        "img": "assets/images/music/1.png",
+                        "title": "Old Town Road",
+                        "type": "Lil Nas",
+                        "isHome": true,
+                        "isPlaylist": true
+                    },
+                    {
+                        "id": 4,
+                        "subCategoryId": 2,
+                        "img": "assets/images/music/2.png",
+                        "title": "I Don’t Care",
+                        "type": "Ed Sheeran & Bieber's",
+                        "isHome": false,
+                        "isPlaylist": true
+                    }
+                ]
+            }
+        ]
+    }
+]

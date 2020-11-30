@@ -8,20 +8,34 @@
   <app-hot-menu [hotIndex]="2"></app-hot-menu>
 </ion-header>
 
+
 <ion-content>
-</ion-content>
-
-
-<!-- 
-
-<app-header [title]="'itel Game'"></app-header>
-<h2>Game</h2>
-<ion-content >
-  <app-menu></app-menu>
-  <app-banner [type]="2"></app-banner>
-  <app-slider [type]="1" [sprSlider]="2"></app-slider>
-  <app-slider [type]="2" [sprSlider]="2"></app-slider>
-  <app-slider [type]="2" [sprSlider]="2"></app-slider>
-  <app-slider [type]="3" [sprSlider]="1"></app-slider>
   
-</ion-content> -->
+  <div class="category-box" *ngIf="categoryData !== null">
+    <div class="category-block" *ngFor="let sub of categoryData.categoryItems">
+      <h2 class="title-block">{{sub.subName}}</h2>
+      <div class="horizon-box size-haft-point4">
+        <ion-row>
+          <ion-col *ngFor="let item of sub.subItems">
+            <ion-img src="{{item.img}}"></ion-img>
+            <ion-label>
+              <h3>{{item.title}}</h3>
+              <p>{{item.type}}</p>
+            </ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+  </div>
+
+  <!--
+  <div class="category-box category-slide" *ngIf="playlistData.length > 0">
+    <h2 class="title-block">Playlist hay tuần</h2>
+    <ion-slides pager="true" [options]="slideOptions">
+      <ion-slide *ngFor="let playlist of playlistData">
+        <img src="{{playlist.img}}" />
+      </ion-slide>
+    </ion-slides>
+  </div>-->
+
+</ion-content>

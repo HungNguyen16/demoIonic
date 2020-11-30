@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "img": "assets/images/game/1.png",
+        "title": "Sucker",
+        "type": "Jonas Brothers",
+        "isHome": true,
+        "isPlaylist": true
+    },
+    {
+        "id": 2,
+        "img": "assets/images/game/2.png",
+        "title": "I Don’t Care",
+        "type": "Ed Sheeran & Bieber's",
+        "isHome": false,
+        "isPlaylist": true
+    },
+    {
+        "id": 3,
+        "img": "assets/images/game/3.png",
+        "title": "Old Town Road",
+        "type": "Lil Nas",
+        "isHome": true,
+        "isPlaylist": false
+    },
+    {
+        "id": 4,
+        "img": "assets/images/game/4.png",
+        "title": "Sucker",
+        "type": "Jonas Brothers",
+        "isHome": false,
+        "isPlaylist": false
+    },
+    {
+        "id": 5,
+        "img": "assets/images/game/3.png",
+        "title": "Sucker",
+        "type": "Jonas Brothers",
+        "isHome": true,
+        "isPlaylist": true
+    },
+    {
+        "id": 6,
+        "img": "assets/images/game/4.png",
+        "title": "I Don’t Care",
+        "type": "Ed Sheeran & Bieber's",
+        "isHome": false,
+        "isPlaylist": true
+    },
+    {
+        "id": 7,
+        "img": "assets/images/game/5.png",
+        "title": "Old Town Road",
+        "type": "Lil Nas",
+        "isHome": true,
+        "isPlaylist": false
+    },
+    {
+        "id": 8,
+        "img": "assets/images/game/6.png",
+        "title": "Sucker",
+        "type": "Jonas Brothers",
+        "isHome": false,
+        "isPlaylist": false
+    },
+    {
+        "id": 9,
+        "img": "assets/images/game/5.png",
+        "title": "Sucker",
+        "type": "Jonas Brothers",
+        "isHome": true,
+        "isPlaylist": true
+    },
+    {
+        "id": 10,
+        "img": "assets/images/game/6.png",
+        "title": "I Don’t Care",
+        "type": "Ed Sheeran & Bieber's",
+        "isHome": false,
+        "isPlaylist": true
+    },
+    {
+        "id": 11,
+        "img": "assets/images/game/7.png",
+        "title": "Old Town Road",
+        "type": "Lil Nas",
+        "isHome": true,
+        "isPlaylist": false
+    },
+    {
+        "id": 12,
+        "img": "assets/images/game/8.png",
+        "title": "Sucker",
+        "type": "Jonas Brothers",
+        "isHome": false,
+        "isPlaylist": false
+    },
+    {
+        "id": 13,
+        "img": "assets/images/game/7.png",
+        "title": "Sucker",
+        "type": "Jonas Brothers",
+        "isHome": true,
+        "isPlaylist": true
+    },
+    {
+        "id": 14,
+        "img": "assets/images/game/8.png",
+        "title": "I Don’t Care",
+        "type": "Ed Sheeran & Bieber's",
+        "isHome": false,
+        "isPlaylist": true
+    },
+    {
+        "id": 15,
+        "img": "assets/images/game/1.png",
+        "title": "Old Town Road",
+        "type": "Lil Nas",
+        "isHome": true,
+        "isPlaylist": false
+    },
+    {
+        "id": 16,
+        "img": "assets/images/game/2.png",
+        "title": "Sucker",
+        "type": "Jonas Brothers",
+        "isHome": false,
+        "isPlaylist": false
+    }
+]

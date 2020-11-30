@@ -9,7 +9,7 @@ import { CinemaModel, Movie } from '../models/cinema-model';
 })
 export class CinemaService {
   public url = 'assets/data/data-cinema.json';
-  public urlMovie = 'assets/data/data-movie.json';
+  public urlMovie = 'assets/data/data-cinema-basic.json';
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<CinemaModel[]> {
