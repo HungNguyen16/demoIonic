@@ -9,6 +9,7 @@
 </ion-header>
 
 <ion-content>
+
   <div class="category-box" *ngIf="categoryData !== null">
     <div class="category-block" *ngFor="let sub of categoryData.categoryItems">
       <h2 class="title-block">{{sub.subName}}</h2>
@@ -25,5 +26,15 @@
       </div>
     </div>
   </div>
+
+  <div class="category-box category-slide" *ngIf="mockupData.length > 0">
+    <h2 class="title-block">Playlist phim hay</h2>
+    <ion-slides pager="true" [options]="slideOptions">
+      <ion-slide *ngFor="let mockup of mockupData">
+        <img src="{{mockup.img}}" />
+      </ion-slide>
+    </ion-slides>
+  </div>
+
 
 </ion-content>

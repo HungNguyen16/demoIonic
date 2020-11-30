@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CategoryModel } from '../../models/category-model';
+import { CategoryModel, Mockup } from '../../models/category-model';
 import { CategoryService } from '../../services/category.service';
 
 @Component({
@@ -10,6 +10,7 @@ import { CategoryService } from '../../services/category.service';
 export class ItelGamePage implements OnInit {
 
   categoryData: CategoryModel = null;
+  mockupData: Mockup[] = [];
 
   slideOptions = {
     slidesPerView: 1,
@@ -35,12 +36,8 @@ export class ItelGamePage implements OnInit {
         this.categoryData = res[0];
       }
     });
-
-    /*this.gameService.getAll().subscribe(res => {
-      this.gameData = res;
+    this.categoryService.getPlayListByType('itel-game').subscribe(res => {
+      this.mockupData = res;
     });
-    this.gameService.getPlayList().subscribe(res => {
-      this.playlistData = res;
-    });*/
   }
 }

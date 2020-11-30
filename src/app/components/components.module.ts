@@ -8,7 +8,6 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { HttpClientModule } from '@angular/common/http';
 import { BannerComponent } from './banner/banner.component';
-import { MenuComponent } from './menu/menu.component';
 import { TabComponent } from './tab/tab.component';
 import { SliderComponent } from './slider/slider.component';
 import { ListCheckboxComponent } from './list-checkbox/list-checkbox.component';
@@ -30,7 +29,6 @@ import { PopupSuccessComponent } from './popup-success/popup-success.component';
       HeaderComponent,
       FooterComponent,
       BannerComponent,
-      MenuComponent,
       TabComponent,
       SliderComponent,
       ListMusicComponent,
@@ -52,7 +50,6 @@ import { PopupSuccessComponent } from './popup-success/popup-success.component';
       HeaderComponent,
       FooterComponent,
       BannerComponent,
-      MenuComponent,
       TabComponent,
       SliderComponent,
       ListMusicComponent,

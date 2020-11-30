@@ -472,8 +472,8 @@
                         "img": "assets/images/music/1.png",
                         "title": "Sucker",
                         "type": "Jonas Brothers",
-                        "isHome": true,
-                        "isPlaylist": true
+                        "isHome": false,
+                        "isPlaylist": false
                     },
                     {
                         "id": 2,
@@ -482,7 +482,7 @@
                         "title": "I Don’t Care",
                         "type": "Ed Sheeran & Bieber's",
                         "isHome": false,
-                        "isPlaylist": true
+                        "isPlaylist": false
                     },
                     {
                         "id": 3,
@@ -490,8 +490,8 @@
                         "img": "assets/images/music/1.png",
                         "title": "Old Town Road",
                         "type": "Lil Nas",
-                        "isHome": true,
-                        "isPlaylist": true
+                        "isHome": false,
+                        "isPlaylist": false
                     },
                     {
                         "id": 4,
@@ -499,7 +499,7 @@
                         "img": "assets/images/music/2.png",
                         "title": "I Don’t Care",
                         "type": "Ed Sheeran & Bieber's",
-                        "isHome": false,
+                        "isHome": true,
                         "isPlaylist": true
                     }
                 ]
@@ -516,8 +516,8 @@
                         "img": "assets/images/music/1.png",
                         "title": "Sucker",
                         "type": "Jonas Brothers",
-                        "isHome": true,
-                        "isPlaylist": true
+                        "isHome": false,
+                        "isPlaylist": false
                     },
                     {
                         "id": 2,
@@ -526,7 +526,7 @@
                         "title": "I Don’t Care",
                         "type": "Ed Sheeran & Bieber's",
                         "isHome": false,
-                        "isPlaylist": true
+                        "isPlaylist": false
                     },
                     {
                         "id": 3,

@@ -27,13 +27,14 @@
     </div>
   </div>
 
-  <!-- <div class="category-box category-slide" *ngIf="playlistData.length > 0">
-    <h2 class="title-block">Dành cho bạn</h2>
+  <div class="category-box category-slide" *ngIf="mockupData.length > 0">
+    <h2 class="title-block">Playlist phim hay</h2>
     <ion-slides pager="true" [options]="slideOptions">
-      <ion-slide *ngFor="let playlist of playlistData">
-        <img src="{{playlist.img}}" />
+      <ion-slide *ngFor="let mockup of mockupData">
+        <img src="{{mockup.img}}" />
       </ion-slide>
     </ion-slides>
-  </div> -->
+  </div>
+
 
 </ion-content>

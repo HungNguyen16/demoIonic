@@ -2,11 +2,12 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/internal/operators/map';
-import { CategoryModel } from '../models/category-model';
+import { CategoryModel, Mockup } from '../models/category-model';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class CategoryService {
 
   public url = 'assets/data/data-category.json';
@@ -35,19 +36,42 @@ export class CategoryService {
     );
   }
 
-  /*
-  getListByType(type?: number): Observable<Category[]> {
-    return this.http.get<Category[]>('assets/data/data-slide.json').pipe(
-      map((res: Category[]) => {
+  getPlayListByType(type: string): Observable<Mockup[]> {
+    let mockupItems: Mockup[] = [];
+    return this.http.get<CategoryModel[]>(this.url).pipe(
+      map((res: CategoryModel[]) => {
         {
-          if (res == null) {
-            return res;
+          res = res.filter((e) => e.categoryType === type);
+          for (let subItems of res[0].categoryItems) {
+            for (let item of subItems.subItems) {
+              if (item.isPlaylist) {
+                mockupItems.push(item);
+              }
+            }
           }
-          res = res.filter((a) => a.categoryType === type);
-          return res;
+          return mockupItems;
         }
       })
     );
-  }*/
+  }
+
+  getOnHomeByType(type: string): Observable<Mockup[]> {
+    let mockupItems: Mockup[] = [];
+    return this.http.get<CategoryModel[]>(this.url).pipe(
+      map((res: CategoryModel[]) => {
+        {
+          res = res.filter((e) => e.categoryType === type);
+          for (let subItems of res[0].categoryItems) {
+            for (let item of subItems.subItems) {
+              if (item.isHome) {
+                mockupItems.push(item);
+              }
+            }
+          }
+          return mockupItems;
+        }
+      })
+    );
+  }
 
 }
