@@ -1,0 +1,46 @@
+<ng-container *ngFor="let item of rentalContentData">
+  <div class="nap-tien-cho-so">
+    <h2 class="title-block">{{item.categoryName}}</h2>
+    <div class="nap-tien-cho-so-detail">
+      <ion-row *ngIf="rentalContentData.length > 0">
+        <ion-col>
+          <ion-item  lines="none" *ngFor="let item2 of item.categoryItems; let i = index">
+            <div class="ion-checkbox-customize">
+              <ion-img src="{{item2.img}}"></ion-img>
+              <div class="sale-off">
+                <span>{{item2.discount}}</span>
+              </div>
+              <ion-label>
+                <h3>{{item2.title}}</h3>
+                <p>{{item2.type}}</p>
+                <span class="price">{{item2.price}}</span>
+              </ion-label>
+              <ion-checkbox color="light" slot="end" [attr.checked]="i === 0 ? true: null"></ion-checkbox>
+            </div>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ng-container>
+
+
+
+
+<!-- <ng-container *ngIf="rentalContentData != null">
+  <ng-container *ngFor="let item of rentalContentData">
+    <ion-list lines="none" class="ion-padding-bottom">
+      <h2 class="title-block">{{item.categoryName}}</h2>
+      <ion-item *ngFor="let item2 of item.categoryItems">
+        <ion-thumbnail slot="start">
+          <img src="{{item2.img}}">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>{{item2.title}}</h2>
+          <p>{{item2.type}}</p>
+          <span>{{item2.price}}</span>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ng-container>
+</ng-container> -->

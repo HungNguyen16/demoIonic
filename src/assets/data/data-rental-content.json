@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "categoryName": "Nội dung thuê",
+        "categoryType": "noi-dung-thue",
+        "categoryItems": [
+            {
+                "id": 1,
+                "img": "assets/images/rental-content/_1.jpg",
+                "title": "Phim điện ảnh về ẩm thực",
+                "discount": "30% OFF",
+                "type": "Phim tài liệu",
+                "price": "Giá 20,000đ / 3 ngày"
+            }
+        ]
+    }
+]

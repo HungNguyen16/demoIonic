@@ -12,12 +12,11 @@ export class ListMusicComponent implements OnInit {
   musicsList: ListMusic[] = [];
 
   constructor(private musicListService: MusicListService) { }
-      
+
   ngOnInit() {
     this.musicListService.getListByType().subscribe(res => {
       this.musicsList = res;
       console.log('music', this.musicsList);
-    })
+    });
   }
-
 }

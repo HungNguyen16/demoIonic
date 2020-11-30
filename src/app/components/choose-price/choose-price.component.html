@@ -1,3 +1,17 @@
-<p>
-  choose-price works!
-</p>
+<div class="nap-tien-cho-so">
+  <h2 class="title-block">Chọn mệnh giá</h2>
+  <div class="nap-tien-cho-so-detail">
+    <ion-radio-group value="prices">
+      <ion-row *ngIf="choosePrices.length > 0">
+        <ion-col *ngFor="let item of choosePrices; let i = index">
+          <ion-item lines="none">
+            <div class="ion-checkbox-customize">
+              <ion-radio color="light" slot="start" [attr.checked]="i === 0 ? true: null"></ion-radio>
+              <ion-label>{{item.price}}</ion-label>
+            </div>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-radio-group>
+  </div>
+</div>

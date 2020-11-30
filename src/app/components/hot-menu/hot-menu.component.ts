@@ -29,7 +29,7 @@ export class HotMenuComponent implements OnInit {
       url: '/itel-sport',
       icon: 'sport'
     }
-  ]
+  ];
 
   constructor() { }
 

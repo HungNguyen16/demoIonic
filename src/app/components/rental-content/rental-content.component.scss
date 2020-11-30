@@ -1,0 +1,79 @@
+.nap-tien-cho-so{
+    width:100%;
+    padding:0 20px;
+}
+.nap-tien-cho-so-detail {
+    width:100%;
+    // overflow:hidden;
+    // overflow-x:auto;
+}
+.title-block {
+    font-size: 16px;
+    color: #3c3c3c;
+    font-weight: 700;
+}
+.nap-tien-cho-so ion-row{
+    display:flex;
+    // flex-wrap:nowrap;
+    // align-items:center;
+}
+.nap-tien-cho-so ion-col{
+    // flex:0 0 48%;
+}
+.nap-tien-cho-so ion-img {
+    position: relative;
+    width: 90px;
+    height: 90px;
+}
+.nap-tien-cho-so ion-item{
+    width:100%;
+    --padding-start:0;
+    --inner-padding-end:0;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.nap-tien-cho-so ion-label h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #373737;
+}
+.nap-tien-cho-so ion-label p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #838383;
+}
+.nap-tien-cho-so ion-label .price {
+    font-size: 14px;
+    font-weight: 500;
+    color: #373737;
+}
+.ion-checkbox-customize{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    // padding: 0 15px;
+}
+.item-checkbox-checked .ion-checkbox-customize{
+    // background:#ED1F24;
+}
+.item-checkbox-checked ion-label{
+    color:#fff;
+}
+.sale-off {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ED1F24;
+    font-size: 13px;
+    color: #fff;
+    width: 79px;
+    height: 28px;
+    font-weight: 700;
+    vertical-align: middle;
+    opacity: 0.9;
+    border-radius: 0px 15px 15px 15px;;
+}
+.sale-off span{
+    padding: 11px 11px;
+}

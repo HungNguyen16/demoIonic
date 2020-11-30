@@ -8,33 +8,33 @@
 </ion-header>
 
 <ion-content>
-  <app-relation-phones></app-relation-phones>
-  <app-payment></app-payment>
-  <ion-button expand="block" (click)="openModal()">Thanh toán 200,000đ</ion-button>
-  <!-- <app-list-checkbox [sprSize]= "2"></app-list-checkbox>
-    <app-list-checkbox [sprSize]= "1"></app-list-checkbox>
-    <app-list-radio></app-list-radio>
-    <ion-button expand="block" (click)="openModal()">Thanh toán 200,000đ</ion-button>-->
+  <div class="bg-color">
+    <app-relation-phones></app-relation-phones>
+    <app-choose-price></app-choose-price>
+    <app-payment [type]="1"></app-payment>
+    <ion-button expand="block" (click)="openModal()">Thanh toán 200,000đ</ion-button>
+  </div>
 </ion-content>
 
 
 
-
-<!-- <ion-header>
-  <ion-toolbar>
-    <ion-title>topup</ion-title>
+<!-- 
+<ion-header id="app-header" [translucent]="true">
+  <ion-toolbar id="app-header-toolbar">
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Thuê nội dung</ion-title>
   </ion-toolbar>
 </ion-header> -->
+<!-- 
+<ion-content>
 
-  <!-- <app-header-one [title]="'Topup / Thanh toán cước'"></app-header-one>
-
-<ion-content style="background: #e5e5e5;">
+  <app-rental-content></app-rental-content>
   <app-relation-phones></app-relation-phones>
-  <app-payment></app-payment>
-  <ion-button expand="block" (click)="openModal()">Thanh toán 200,000đ</ion-button> -->
-  <!-- <app-list-checkbox [sprSize]= "2"></app-list-checkbox>
-  <app-list-checkbox [sprSize]= "1"></app-list-checkbox>
-  <app-list-radio></app-list-radio>
-  <ion-button expand="block" (click)="openModal()">Thanh toán 200,000đ</ion-button> -->
+  <app-payment [type]="2"></app-payment>
+  <ion-button expand="block" (click)="openModal()">Thanh toán 200,000đ</ion-button>
+</ion-content> -->
 
-  <!-- </ion-content> -->
+
+
