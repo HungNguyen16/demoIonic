@@ -28,3 +28,10 @@
     background:#fff;
     color:#D01C20;
 }
+
+
+@media (max-width: 567px) {
+    #hot-menu ion-label{
+        font-size:12px;
+    }
+}

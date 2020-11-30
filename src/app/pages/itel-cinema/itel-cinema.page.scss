@@ -1,0 +1,38 @@
+.cinema-box {
+    padding:0 20px;
+    margin-bottom:40px;
+}
+.cinema-box ion-img{
+    margin-bottom:10px;
+}
+.cinema-box ion-label h3,
+.cinema-box ion-label p{
+    font-size:16px;
+}
+.cinema-box ion-label h3{
+    font-weight:bold;
+    color:#3c3c3c;
+}
+.cinema-box ion-label p{
+    font-weight:normal;
+    color:#3F3F3F;
+}
+.cinema-slide{
+    width:80%;
+}
+.cinema-slide .swiper-container{
+    overflow:visible;
+}
+// .cinema-slide ion-slide{
+//     padding-right:20px;
+// }
+.cinema-slide ion-img,
+.cinema-slide img{
+    width:100%;
+}
+@media (max-width: 567px) {
+    .cinema-box ion-label h3,
+    .cinema-box ion-label p{
+        font-size:12px;
+    }
+}
