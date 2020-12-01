@@ -1,9 +1,10 @@
-<div class="app-box has-bg" *ngIf="promotionsData.length > 0">
+<div class="app-box" *ngIf="promotionData.length > 0">
   <div class="app-detail">
     <h2 class="app-title">Chương trình ưu đãi</h2>
+    <a class="view-all" routerDirection="root" routerLink="/promotions">Xem tất cả</a>
     <div class="horizon-box size-haft-point4">
       <ion-row>
-        <ion-col *ngFor="let item of promotionsData">
+        <ion-col *ngFor="let item of promotionData">
           <ion-img src="{{item.img}}"></ion-img>
         </ion-col>
       </ion-row>

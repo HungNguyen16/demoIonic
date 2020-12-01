@@ -1,34 +1,11 @@
-
-<div class="slide-wrapper" *ngIf="this.sprSlider == 1 else sqrSlider2">
-
-  <div class="fs-title">{{categoryName}}</div>
-  <ion-slides class="sqrSlider1" [pager]="true" [options]="slideOpts">
-    <ion-slide *ngFor="let item of cateSliders">
-      <div class="slide">
-        <img src="{{item.slideImg}}"/>
-        <ion-label>{{item.slideCaption}}</ion-label>
-        <h2>{{item.slideTitle}}</h2>
-        <p class="slide-sub-title">{{item.slideSubTitle}}</p>
-      </div>
+<div class="app-box pdr-20 app-slider size-full" *ngIf="cardData.length > 0">
+  <ion-slides [pager]="true" [options]="sliderOptions">
+    <ion-slide *ngFor="let card of cardData">
+      <img src="{{card.img}}" />
+      <ion-text *ngIf="card.title">
+        <h3>{{card.title}}</h3>
+      </ion-text>
+      <p *ngIf="card.caption">{{card.caption}}</p>
     </ion-slide>
   </ion-slides>
-
-</div> 
-
-<ng-template #sqrSlider2>
-
-  <div class="slide-wrapper">
-    <div class="fs-title">{{categoryName}}</div>
-    <ion-slides  [options]="slideOpts">
-      <ion-slide *ngFor="let item of cateSliders">
-        <div class="slide">
-          <img src="{{item.slideImg}}"/>
-          <h2>{{item.slideTitle}}</h2>
-          <p>{{item.slideSubTitle}}</p>
-        </div>
-      </ion-slide>
-    </ion-slides>
-  </div> 
-  
-</ng-template>
-
+</div>

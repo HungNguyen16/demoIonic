@@ -1,7 +1,7 @@
 <div class="app-box has-bg" *ngIf="mockupData.length > 0">
   <div class="app-detail">
-    <h2 class="app-title"><span>iTel</span> {{title}}</h2>
-    <a class="view-all">Xem tất cả</a>
+    <h2 class="app-title"><span>iTel</span> {{cate.title}}</h2>
+    <a class="view-all" routerDirection="root" [routerLink]="[cate.url]">Xem tất cả</a>
     <div class="horizon-box size-haft-point4">
       <ion-row>
         <ion-col *ngFor="let item of mockupData">

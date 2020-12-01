@@ -10,7 +10,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { BannerComponent } from './banner/banner.component';
 import { TabComponent } from './tab/tab.component';
+
 import { SliderComponent } from './slider/slider.component';
+
 import { ListCheckboxComponent } from './list-checkbox/list-checkbox.component';
 import { ListRadioComponent } from './list-radio/list-radio.component';
 import { HeaderOneComponent } from './header-one/header-one.component';
@@ -20,7 +22,7 @@ import { ChoosePriceComponent } from './choose-price/choose-price.component';
 import { HotMenuComponent } from './hot-menu/hot-menu.component';
 import { FacilityComponent } from './facility/facility.component';
 import { PackDataComponent } from './pack-data/pack-data.component';
-import { PromotionsComponent } from './promotions/promotions.component';
+import { PromotionComponent } from './promotion/promotion.component';
 import { CategoryHomeComponent } from './category-home/category-home.component';
 
 
@@ -29,62 +31,67 @@ import { ShowPopupComponent } from './show-popup/show-popup.component';
 import { RentalContentComponent } from './rental-content/rental-content.component';
 
 @NgModule({
-    declarations: [
-      HeaderComponent,
-      FooterComponent,
-      BannerComponent,
-      TabComponent,
-      SliderComponent,
-      ListMusicComponent,
-      ListCheckboxComponent,
-      ListRadioComponent,
-      HeaderOneComponent,
-      RelationPhonesComponent,
-      ChoosePriceComponent,
+  declarations: [
+    HeaderComponent,
+    FooterComponent,
+    BannerComponent,
+    TabComponent,
 
-      HotMenuComponent,
-      FacilityComponent,
-      PackDataComponent,
-      PromotionsComponent,
-      CategoryHomeComponent,
+    SliderComponent,
 
-      PaymentComponent,
-      ShowPopupComponent,
-      RentalContentComponent,
-    ],
-    exports: [
-      HeaderComponent,
-      FooterComponent,
-      BannerComponent,
-      TabComponent,
-      SliderComponent,
-      ListMusicComponent,
-      ListCheckboxComponent,
-      ListRadioComponent,
-      HeaderOneComponent,
-      RelationPhonesComponent,
-      ChoosePriceComponent,
+    ListMusicComponent,
+    ListCheckboxComponent,
+    ListRadioComponent,
+    HeaderOneComponent,
+    RelationPhonesComponent,
+    ChoosePriceComponent,
 
-      HotMenuComponent,
-      FacilityComponent,
-      PackDataComponent,
-      PromotionsComponent,
-      CategoryHomeComponent,
-      
-      PaymentComponent,
-      ShowPopupComponent,
-      RentalContentComponent,
-    ],
-    imports: [
-      CommonModule,
-      RouterModule,
-      FormsModule,
-      IonicModule,
-      HttpClientModule
-    ],
-    providers: [
-      BannerComponent
-    ]
+    HotMenuComponent,
+    FacilityComponent,
+    PackDataComponent,
+    PromotionComponent,
+    CategoryHomeComponent,
+
+    PaymentComponent,
+    ShowPopupComponent,
+    RentalContentComponent,
+  ],
+  exports: [
+    HeaderComponent,
+    FooterComponent,
+    BannerComponent,
+    TabComponent,
+
+    SliderComponent,
+
+    ListMusicComponent,
+    ListCheckboxComponent,
+    ListRadioComponent,
+    
+    HeaderOneComponent,
+    RelationPhonesComponent,
+    ChoosePriceComponent,
+
+    HotMenuComponent,
+    FacilityComponent,
+    PackDataComponent,
+    PromotionComponent,
+    CategoryHomeComponent,
+
+    PaymentComponent,
+    ShowPopupComponent,
+    RentalContentComponent,
+  ],
+  imports: [
+    CommonModule,
+    RouterModule,
+    FormsModule,
+    IonicModule,
+    HttpClientModule
+  ],
+  providers: [
+    BannerComponent
+  ]
 })
 export class ComponentsModule {
 }

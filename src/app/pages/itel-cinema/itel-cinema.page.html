@@ -27,7 +27,7 @@
     </div>
   </div>
 
-  <div class="app-box category-slide" *ngIf="mockupData.length > 0">
+  <div class="app-box app-slider app-slider-visible" *ngIf="mockupData.length > 0">
     <h2 class="app-title">Playlist phim hay</h2>
     <ion-slides pager="true" [options]="slideOptions">
       <ion-slide *ngFor="let mockup of mockupData">
