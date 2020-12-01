@@ -19,6 +19,9 @@ import { CategoryHomeComponent } from './category-home/category-home.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ShowPopupComponent } from './show-popup/show-popup.component';
 import { RentalContentComponent } from './rental-content/rental-content.component';
+import { CategoryAllComponent } from './category-all/category-all.component';
+import { PlayListComponent } from './play-list/play-list.component';
+import { CategorySingleComponent } from './category-single/category-single.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +39,9 @@ import { RentalContentComponent } from './rental-content/rental-content.componen
     PaymentComponent,
     ShowPopupComponent,
     RentalContentComponent,
+    CategoryAllComponent,
+    PlayListComponent,
+    CategorySingleComponent
   ],
   exports: [
     HeaderComponent,
@@ -52,6 +58,9 @@ import { RentalContentComponent } from './rental-content/rental-content.componen
     PaymentComponent,
     ShowPopupComponent,
     RentalContentComponent,
+    CategoryAllComponent,
+    PlayListComponent,
+    CategorySingleComponent
   ],
   imports: [
     CommonModule,

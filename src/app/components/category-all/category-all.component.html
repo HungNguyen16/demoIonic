@@ -1,0 +1,16 @@
+<div class="app-box" *ngIf="categoryData !== null">
+  <div class="app-detail" *ngFor="let sub of categoryData.categoryItems">
+    <h2 class="app-title">{{sub.subName}}</h2>
+    <div class="horizon-box size-haft-point4">
+      <ion-row>
+        <ion-col *ngFor="let item of sub.subItems">
+          <ion-img src="{{item.img}}"></ion-img>
+          <ion-label>
+            <h3>{{item.title}}</h3>
+            <p>{{item.type}}</p>
+          </ion-label>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</div>

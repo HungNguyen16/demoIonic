@@ -1,11 +1,9 @@
 
-<ng-container *ngIf="musicsList != null">
-  <ion-list lines="none" class="ion-padding-bottom">
-    <ion-list-header>
-      Bảng xếp hạng
-    </ion-list-header>
-    <ng-container *ngFor="let item of musicsList">
-      <ion-item>
+<div class="app-box pdr-20" *ngIf="musicsList != null">
+  <h2 class="app-title">Bảng xếp hạng</h2>
+  <div class="app-detail">
+    <ion-list lines="none" class="ion-padding-bottom">
+      <ion-item *ngFor="let item of musicsList">
         <ion-thumbnail slot="start">
           <img src="{{item.musicImg}}">
         </ion-thumbnail>
@@ -17,8 +15,7 @@
           {{item.musicTiming}}
         </ion-label>
       </ion-item>
-    </ng-container>
-  </ion-list>
-</ng-container>
-
+    </ion-list>
+  </div>
+</div>
 
