@@ -1,6 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Banner } from 'src/app/models/banner';
-import { BannerService } from 'src/app/services/banner.service';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +8,7 @@ import { BannerService } from 'src/app/services/banner.service';
 export class HeaderComponent implements OnInit {
 
   @Input() public title: string;
-  constructor(private bannerService: BannerService) { }
+  constructor() { }
 
   ngOnInit() {}
 

@@ -9,7 +9,7 @@ import { map } from 'rxjs/internal/operators/map';
 })
 export class SliderService {
 
-  public url = 'assets/data/data-banner.json';
+  public url = 'assets/data/data-card.json';
 
   constructor(private http: HttpClient) { }
 
