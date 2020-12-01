@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "notiAvatar": "assets/images/notification/avatar-1.png",
+        "notiTime": "February 3, 2018 2:30 AM",
+        "notiTitle": "Bạn nhận được +500 điểm từ iTel GAME",
+        "notiTitleItems": [
+            {
+                "id": 1,
+                "title": "Bạn nhận được +500 điểm từ iTel GAME",
+                "price": "50.000đ",
+                "score": "+500"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "notiAvatar": "assets/images/notification/avatar-2.png",
+        "notiTitle": "Bạn nhận được +500 điểm từ iTel GAME",
+        "notiTime": "August 28, 2019 4:04 PM"
+    },
+    {
+        "id": 3,
+        "notiAvatar": "assets/images/notification/avatar-3.png",
+        "notiTitle": "iTel CINEMA đã gửi cho bạn 1 voucher giảm giá  thuê phim trị giá 50.000đ vui lòng sử dụng trước ngày 1/1/2021",
+        "notiTime": "January 3, 2019 1:41 PM"
+    },
+    {
+        "id": 4,
+        "notiAvatar": "assets/images/notification/avatar-1.png",
+        "notiTitle": "Bạn nhận được +500 điểm từ iTel GAME",
+        "notiTime": "February 3, 2018 2:30 AM"
+    },
+    {
+        "id": 5,
+        "notiAvatar": "assets/images/notification/avatar-2.png",
+        "notiTitle": "Bạn nhận được +500 điểm từ iTel GAME",
+        "notiTime": "February 3, 2018 2:30 AM"
+    },
+    {
+        "id": 6,
+        "notiAvatar": "assets/images/notification/avatar-2.png",
+        "notiTitle": "Bạn nhận được +500 điểm từ iTel GAME",
+        "notiTime": "February 3, 2018 2:30 AM"
+    },
+    {
+        "id": 7,
+        "notiAvatar": "assets/images/notification/avatar-2.png",
+        "notiTitle": "Bạn nhận được +500 điểm từ iTel GAME",
+        "notiTime": "February 3, 2018 2:30 AM"
+    },
+    {
+        "id": 8,
+        "notiAvatar": "assets/images/notification/avatar-2.png",
+        "notiTitle": "Bạn nhận được +500 điểm từ iTel GAME",
+        "notiTime": "February 3, 2018 2:30 AM"
+    }
+]

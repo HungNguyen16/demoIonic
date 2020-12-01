@@ -31,6 +31,16 @@ ion-button {
     --background: #fff;
     --border-radius: 27px !important;
 }
+.popup-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+.popup-title-price {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+}
 .popup-inr {
     position: absolute;
     top: 50%;

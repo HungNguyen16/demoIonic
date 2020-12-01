@@ -2,13 +2,13 @@
     {
         "id": 1,
         "paymentName": "Thanh toán với ví điện tử",
-        "paymentImg": "assets/icon/payment-history-sharp.svg",
+        "paymentImg": "assets/images/payment/icon-payment-1.png",
         "paymentType": 1
     },
     {
         "id": 1,
         "paymentName": "Thanh toán với số dư tài khoản",
-        "paymentImg": "assets/icon/payment-history-sharp.svg",
+        "paymentImg": "assets/images/payment/icon-payment-2.svg",
         "paymentType": 2
     }
 ]
