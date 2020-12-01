@@ -472,7 +472,7 @@
                         "img": "assets/images/music/1.png",
                         "title": "Sucker",
                         "type": "Jonas Brothers",
-                        "isHome": false,
+                        "isHome": true,
                         "isPlaylist": false
                     },
                     {
@@ -516,7 +516,7 @@
                         "img": "assets/images/music/1.png",
                         "title": "Sucker",
                         "type": "Jonas Brothers",
-                        "isHome": false,
+                        "isHome": true,
                         "isPlaylist": false
                     },
                     {
@@ -534,7 +534,7 @@
                         "img": "assets/images/music/1.png",
                         "title": "Old Town Road",
                         "type": "Lil Nas",
-                        "isHome": true,
+                        "isHome": false,
                         "isPlaylist": true
                     },
                     {
