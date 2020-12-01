@@ -1,54 +1,45 @@
-.nap-tien-cho-so{
-    width:100%;
-    padding:0 20px;
-}
-.nap-tien-cho-so-detail {
-    width:100%;
-}
-.app-title {
-    font-size: 16px;
-    color: #3c3c3c;
-    font-weight: 700;
-}
-.nap-tien-cho-so ion-row{
-    display:flex;
-    // flex-wrap:nowrap;
-    // align-items:center;
-}
-.nap-tien-cho-so ion-col{
-    // flex:0 0 40%;
-}
-.nap-tien-cho-so ion-item{
-    width:100%;
-    --padding-start:0;
-    --inner-padding-end:0;
-    background-color: #fff;
-    border-radius: 10px;
-}
-.nap-tien-cho-so ion-label{
-    font-size: 20px;
-    font-weight: 700;
-    color: #3a3a3a;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-.ion-checkbox-customize{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 15px;
-}
-.item-radio-checked .ion-checkbox-customize{
-    background:#ED1F24;
-    border-radius: 10px;
-}
-.item-radio-checked ion-label{
-    color:#fff;
-}
-// .item-checkbox-checked .ion-checkbox-customize{
-//     background:#f00;
+// .nap-tien-cho-so{
+//     width:100%;
+//     padding:0 20px;
 // }
-// .item-checkbox-checked ion-label{
+// .nap-tien-cho-so-detail {
+//     width:100%;
+// }
+// .app-title {
+//     font-size: 16px;
+//     color: #3c3c3c;
+//     font-weight: 700;
+// }
+// .nap-tien-cho-so ion-row{
+//     display:flex;
+// }
+// .nap-tien-cho-so ion-col{
+// }
+// .nap-tien-cho-so ion-item{
+//     width:100%;
+//     --padding-start:0;
+//     --inner-padding-end:0;
+//     background-color: #fff;
+//     border-radius: 10px;
+// }
+// .nap-tien-cho-so ion-label{
+//     font-size: 20px;
+//     font-weight: 700;
+//     color: #3a3a3a;
+//     padding-top: 25px;
+//     padding-bottom: 25px;
+// }
+// .ion-checkbox-customize{
+//     display: flex;
+//     width: 100%;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 0 15px;
+// }
+// .item-radio-checked .ion-checkbox-customize{
+//     background:#ED1F24;
+//     border-radius: 10px;
+// }
+// .item-radio-checked ion-label{
 //     color:#fff;
 // }

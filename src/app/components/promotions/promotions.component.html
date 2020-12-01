@@ -1,3 +1,12 @@
-<p>
-  promotions works!
-</p>
+<div class="app-box has-bg" *ngIf="promotionsData.length > 0">
+  <div class="app-detail">
+    <h2 class="app-title">Chương trình ưu đãi</h2>
+    <div class="horizon-box size-haft-point4">
+      <ion-row>
+        <ion-col *ngFor="let item of promotionsData">
+          <ion-img src="{{item.img}}"></ion-img>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</div>

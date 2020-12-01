@@ -1,3 +1,18 @@
-<p>
-  pack-data works!
-</p>
+<div class="app-box pack-box has-bg" *ngIf="packData.length > 0">
+  <div class="app-detail">
+    <h2 class="app-title">Gói cước</h2>
+    <a class="view-all">Xem tất cả</a>
+    <div class="horizon-box size-haft-point4">
+      <ion-row>
+        <ion-col *ngFor="let item of packData">
+          <ion-text>
+            <h3>{{item.title}}</h3>
+            <span>{{item.price}}</span>
+          </ion-text>
+          <p>{{item.brief}}</p>
+          <ion-button>Đăng ký</ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</div>

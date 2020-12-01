@@ -1,15 +1,12 @@
-<div class="nap-tien-cho-so">
+<div class="app-box pdr-20">
   <h2 class="app-title">Hình thức thanh toán</h2>
-  <div class="nap-tien-cho-so-detail">
-    <ion-row *ngIf="payments.length > 0">
+  <div class="app-detail">
+    <ion-row class="check-box bg-white pdt-15" *ngIf="payments.length > 0">
       <ion-col *ngFor="let item of payments; let i = index">
         <ion-item lines="none">
-          <div class="ion-checkbox-customize">
-            <ion-icon src="{{item.paymentImg}}"></ion-icon>
             <!-- <ion-img src="{{item.paymentImg}}"></ion-img> -->
             <ion-label>{{item.paymentName}}</ion-label>
             <ion-checkbox color="light" slot="end" [attr.checked]="i === 0 ? true: null"></ion-checkbox>
-          </div>
         </ion-item>
       </ion-col>
     </ion-row>
