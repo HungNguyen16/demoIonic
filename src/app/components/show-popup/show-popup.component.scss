@@ -11,8 +11,9 @@ ion-label {
     font-size: 48px;
     color: #fff;
     font-weight: 700;
+    margin-bottom: 17px;
 }
-ion-text h4 {
+ion-label h4 {
     font-size: 20px;
     font-weight: 400;
     color: #fff;
@@ -21,10 +22,13 @@ ion-content p {
     font-size: 16px;
     font-weight: 400;
     color: #fff;
+    line-height: 22px;
+    margin-bottom: 25px;
 }
 ion-button {
-    width: 230px;
-    height: 48px;
+    // width: 350px;
+    width: 60%;
+    margin: auto;
     color: #ED1F24;
     font-size: 20px;
     font-weight: 700;
@@ -52,4 +56,5 @@ ion-button {
     width: 115px;
     height: 115px;
     margin: auto;
+    margin-bottom: 26px;
 }
