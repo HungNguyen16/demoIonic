@@ -18,6 +18,7 @@ export class ItelSportPage implements OnInit {
     speed: 400,
     loop: true,
     spaceBetween: 20,
+    scrollbar: true,
     loopAdditionalSlides: 1,
     on: {
       ionSlideTransitionStart() {

@@ -12,19 +12,19 @@ export class HotMenuComponent implements OnInit {
       title: 'Sim số',
       url: '/home',
       icon: 'phone'
-    },{
+    }, {
       title: 'Music',
       url: '/itel-music',
       icon: 'music'
-    },{
+    }, {
       title: 'Game',
       url: '/itel-game',
       icon: 'game'
-    },{
+    }, {
       title: 'Cinema',
       url: '/itel-cinema',
       icon: 'cinema'
-    },{
+    }, {
       title: 'Sport',
       url: '/itel-sport',
       icon: 'sport'
@@ -33,6 +33,6 @@ export class HotMenuComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
 }

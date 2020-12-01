@@ -66,7 +66,15 @@ const routes: Routes = [
   {
     path: 'log-out',
     loadChildren: () => import('./pages/log-out/log-out.module').then( m => m.LogOutPageModule)
+  },  {
+    path: 'packs',
+    loadChildren: () => import('./pages/packs/packs.module').then( m => m.PacksPageModule)
+  },
+  {
+    path: 'promotions',
+    loadChildren: () => import('./pages/promotions/promotions.module').then( m => m.PromotionsPageModule)
   }
+
 ];
 
 @NgModule({
