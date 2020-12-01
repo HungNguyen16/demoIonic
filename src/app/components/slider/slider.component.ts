@@ -5,12 +5,12 @@ import { Slide } from '../../models/slide';
 // import { Category } from 'src/app/models/category';
 // import { CategoryTypeEnum } from 'src/app/models/enum/page-type-enum';
 // import { CategoryService } from 'src/app/services/category.service';
-
 @Component({
   selector: 'app-slider',
   templateUrl: './slider.component.html',
   styleUrls: ['./slider.component.scss'],
 })
+
 export class SliderComponent implements OnInit {
   category: Category[] = [];
   @Input() type: number;

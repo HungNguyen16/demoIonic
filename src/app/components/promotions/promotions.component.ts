@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PromotionsService } from '../../services/promotions.service';
+import { PromotionsModel } from '../../models/promotions-model';
 
 @Component({
   selector: 'app-promotions',
@@ -6,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./promotions.component.scss'],
 })
 export class PromotionsComponent implements OnInit {
+  promotionsData: PromotionsModel[] = [];
 
-  constructor() { }
+  constructor(private promotionsService: PromotionsService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.promotionsService.getAll().subscribe(res => {
+      this.promotionsData = res;
+    });
+  }
 
 }

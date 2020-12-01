@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PackService } from '../../services/pack.service';
+import { PackModel } from '../../models/pack-model';
 
 @Component({
   selector: 'app-pack-data',
@@ -7,8 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PackDataComponent implements OnInit {
 
-  constructor() { }
+  packData: PackModel[] = [];
 
-  ngOnInit() {}
+  constructor(private packService: PackService) { }
+
+  ngOnInit() {
+    this.packService.getAll().subscribe(res => {
+      this.packData = res;
+    });
+  }
 
 }

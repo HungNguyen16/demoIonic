@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "MAY",
+        "price": "77.000đ",
+        "brief": "3GB data / ngày"
+    }, {
+        "id": 2,
+        "title": "ITEL79",
+        "price": "79.000đ",
+        "brief": "3GB data / ngày"
+    },{
+        "id": 3,
+        "title": "MAY",
+        "price": "77.000đ",
+        "brief": "3GB data / ngày"
+    }, {
+        "id": 4,
+        "title": "ITEL79",
+        "price": "79.000đ",
+        "brief": "3GB data / ngày"
+    }
+]

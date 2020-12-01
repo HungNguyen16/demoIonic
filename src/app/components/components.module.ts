@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { HttpClientModule } from '@angular/common/http';
+
 import { BannerComponent } from './banner/banner.component';
 import { TabComponent } from './tab/tab.component';
 import { SliderComponent } from './slider/slider.component';
@@ -16,8 +17,14 @@ import { ModalFinishComponent } from './modal-finish/modal-finish.component';
 import { HeaderOneComponent } from './header-one/header-one.component';
 import { RelationPhonesComponent } from './relation-phones/relation-phones.component';
 import { ChoosePriceComponent } from './choose-price/choose-price.component';
+
 import { HotMenuComponent } from './hot-menu/hot-menu.component';
 import { FacilityComponent } from './facility/facility.component';
+import { PackDataComponent } from './pack-data/pack-data.component';
+import { PromotionsComponent } from './promotions/promotions.component';
+import { CategoryHomeComponent } from './category-home/category-home.component';
+
+
 import { PaymentComponent } from './payment/payment.component';
 import { ShowPopupComponent } from './show-popup/show-popup.component';
 import { MessageSuccessComponent } from './message-success/message-success.component';
@@ -38,8 +45,13 @@ import { PopupSuccessComponent } from './popup-success/popup-success.component';
       HeaderOneComponent,
       RelationPhonesComponent,
       ChoosePriceComponent,
+
       HotMenuComponent,
       FacilityComponent,
+      PackDataComponent,
+      PromotionsComponent,
+      CategoryHomeComponent,
+
       PaymentComponent,
       ShowPopupComponent,
       MessageSuccessComponent,
@@ -59,8 +71,13 @@ import { PopupSuccessComponent } from './popup-success/popup-success.component';
       HeaderOneComponent,
       RelationPhonesComponent,
       ChoosePriceComponent,
+
       HotMenuComponent,
       FacilityComponent,
+      PackDataComponent,
+      PromotionsComponent,
+      CategoryHomeComponent,
+      
       PaymentComponent,
       ShowPopupComponent,
       MessageSuccessComponent,

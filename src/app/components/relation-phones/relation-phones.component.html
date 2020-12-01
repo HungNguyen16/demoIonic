@@ -1,15 +1,15 @@
-<div class="nap-tien-cho-so">
+<div class="app-box">
   <h2 class="app-title">Nạp tiền cho số</h2>
-  <div class="nap-tien-cho-so-detail">
-    <ion-row *ngIf="relationPhones.length > 0">
-      <ion-col *ngFor="let item of relationPhones; let i = index">
-        <ion-item lines="none">
-          <div class="ion-checkbox-customize">
+  <div class="app-detail">
+    <div class="horizon-box size-one-point8">
+      <ion-row class="check-box" *ngIf="relationPhones.length > 0">
+        <ion-col *ngFor="let item of relationPhones; let i = index">
+          <ion-item lines="none">
             <ion-label>{{item.phone}}</ion-label>
             <ion-checkbox color="light" [attr.checked]="i === 0 ? true: null"></ion-checkbox>
-          </div>
-        </ion-item>
-      </ion-col>
-    </ion-row>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </div>
   </div>
 </div>
