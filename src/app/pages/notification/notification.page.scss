@@ -1,10 +1,12 @@
 ion-avatar {
+    position: relative;
+    width: 40px;
+    height: 40px;
     border: 1px solid rgba(228, 228, 228, 0.6);
     margin-right: 23px;
 }
 ion-button {
-    font-size: 14px;
-    color: #ED1F24;
+    
 }
 .app-title {
     font-size: 16px;
@@ -13,9 +15,10 @@ ion-button {
 }
 .app-noti-title {
     font-size: 13px;
-    line-height: 18px;
     color: #151522;
     font-weight: 700;
+    padding-bottom: 5px;
+    line-height: 18px;
 }
 .app-noti-time {
     font-size: 11px;
@@ -24,6 +27,39 @@ ion-button {
     font-weight: 400;
 }
 .has-border {
-    border-bottom: 2px solid red;
-    // border-bottom: 1px solid rgba(228, 228, 228, 0.3);
+    border-bottom:  1px solid rgba(228, 228, 228, 0.3);
+    // border-bottom: 1px solid red;
+}
+.sub-title {
+    color: #ED1F24;
+    font-size: 13px;
+    font-weight: 700;
+}
+.is-online  {
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #00C48C;
+    border: 2px solid #fff;
+}
+.app-noti {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.view-all {
+    font-size: 14px;
+    color: #ED1F24;
+    width:0;
+    --background: #fff;
+    // --padding-top:15px;
+    // --padding-bottom:15px;
+    // --border-radius:30px;
+    // color:#fff;
+    // font-size:26px;
+    height:auto;
 }

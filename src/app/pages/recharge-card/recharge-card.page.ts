@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { ModalFinishComponent } from 'src/app/components/modal-finish/modal-finish.component';
 import { ShowPopupComponent } from 'src/app/components/show-popup/show-popup.component';
 
 @Component({

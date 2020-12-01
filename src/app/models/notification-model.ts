@@ -4,6 +4,7 @@ export class NotificationModel {
         public notiAvatar: string = '',
         public notiTitle: string = '',
         public notiTime: string = '',
+        public isOnline: boolean,
         public notiTitleItems: Notification[] = []
     ) {}
 }
