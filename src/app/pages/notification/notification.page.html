@@ -6,7 +6,26 @@
     <ion-title>Thông báo</ion-title>
   </ion-toolbar>
 </ion-header>
-
+  
 <ion-content>
+  <ion-list-header>
+    <!-- <ion-label class="app-title">Thông báo gần đây</ion-label> -->
+    <ion-label >
+      <h2 class="app-title">Thông báo gần đây</h2>
+    </ion-label>
+    <ion-button class="view-all">Đã xem tất cả</ion-button>
+  </ion-list-header>
+  <ion-item class="app-noti has-border" lines="none" *ngFor="let item of notiData" >
+    <ion-avatar  slot="start">
+      <img src="{{item.notiAvatar}}" alt="">
+      <div class="is-online"></div>
+    </ion-avatar>
+    <ion-label class="ion-text-wrap ion-no-margin">
+      <h4 class="app-noti-title">        
+        {{item.notiTitle}}
+      </h4>
+      <p class="app-noti-time">{{item.notiTime}}</p>
+    </ion-label>
+  </ion-item>
 </ion-content>
 
