@@ -1,6 +1,6 @@
 <ng-container *ngFor="let item of rentalContentData">
   <div class="nap-tien-cho-so">
-    <h2 class="title-block">{{item.categoryName}}</h2>
+    <h2 class="app-title">{{item.categoryName}}</h2>
     <div class="nap-tien-cho-so-detail">
       <ion-row *ngIf="rentalContentData.length > 0">
         <ion-col>
@@ -30,7 +30,7 @@
 <!-- <ng-container *ngIf="rentalContentData != null">
   <ng-container *ngFor="let item of rentalContentData">
     <ion-list lines="none" class="ion-padding-bottom">
-      <h2 class="title-block">{{item.categoryName}}</h2>
+      <h2 class="app-title">{{item.categoryName}}</h2>
       <ion-item *ngFor="let item2 of item.categoryItems">
         <ion-thumbnail slot="start">
           <img src="{{item2.img}}">
