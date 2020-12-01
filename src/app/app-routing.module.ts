@@ -12,10 +12,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/dashboard/dashboard.module').then( m => m.DashboardPageModule)
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
-  },
-  {
     path: 'notification',
     loadChildren: () => import('./pages/notification/notification.module').then( m => m.NotificationPageModule)
   },
@@ -66,7 +62,8 @@ const routes: Routes = [
   {
     path: 'log-out',
     loadChildren: () => import('./pages/log-out/log-out.module').then( m => m.LogOutPageModule)
-  },  {
+  },
+  {
     path: 'packs',
     loadChildren: () => import('./pages/packs/packs.module').then( m => m.PacksPageModule)
   },
