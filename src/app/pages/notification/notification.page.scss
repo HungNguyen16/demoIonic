@@ -5,8 +5,8 @@ ion-avatar {
     border: 1px solid rgba(228, 228, 228, 0.6);
     margin-right: 23px;
 }
-ion-button {
-    
+ion-list-header {
+    padding: 0 25px;
 }
 .app-title {
     font-size: 16px;
@@ -51,15 +51,8 @@ ion-button {
     padding-top: 16px;
     padding-bottom: 16px;
 }
-.view-all {
+.seen-all {
     font-size: 14px;
     color: #ED1F24;
-    width:0;
-    --background: #fff;
-    // --padding-top:15px;
-    // --padding-bottom:15px;
-    // --border-radius:30px;
-    // color:#fff;
-    // font-size:26px;
-    height:auto;
+    text-decoration: none;
 }
