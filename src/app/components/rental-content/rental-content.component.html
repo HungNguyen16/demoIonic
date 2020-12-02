@@ -1,41 +1,24 @@
-<ng-container *ngFor="let item of rentalContentData">
-  <div class="nap-tien-cho-so">
-    <h2 class="app-title">{{item.categoryName}}</h2>
-    <div class="nap-tien-cho-so-detail">
-      <ion-row *ngIf="rentalContentData.length > 0">
-        <ion-col>
-          <ion-item  lines="none" *ngFor="let item2 of item.categoryItems; let i = index">
-            <div class="ion-checkbox-customize">
-              <ion-img src="{{item2.img}}"></ion-img>
-              <div class="sale-off">
-                <span>{{item2.discount}}</span>
-              </div>
-              <ion-label>
-                <h3>{{item2.title}}</h3>
-                <p>{{item2.type}}</p>
-                <span class="price">{{item2.price}}</span>
-              </ion-label>
-              <ion-checkbox color="light" slot="end" [attr.checked]="i === 0 ? true: null"></ion-checkbox>
-            </div>
-          </ion-item>
-        </ion-col>
-      </ion-row>
-    </div>
-  </div>
-</ng-container>
 
-<!-- <div class="app-box">
-  <h2 class="app-title">Nạp tiền cho số</h2>
+
+<div class="app-box pdr-20" *ngFor="let item of rentalContentData">
+  <h2 class="app-title">{{item.categoryName}}</h2>
   <div class="app-detail">
-    <div class="horizon-box size-one-point8">
-      <ion-row class="check-box" *ngIf="rentalContentData.length > 0">
-        <ion-col *ngFor="let item of rentalContentData; let i = index">
-          <ion-item lines="none">
-            <ion-label>{{item.phone}}</ion-label>
-            <ion-checkbox color="light" [attr.checked]="i === 0 ? true: null"></ion-checkbox>
-          </ion-item>
-        </ion-col>
-      </ion-row>
-    </div>
+    <ion-row class="check-box bg-white">
+      <ion-col *ngFor="let item2 of item.categoryItems; let i = index">
+        <ion-item lines="none">
+          <ion-img src="{{item2.img}}"></ion-img>
+          <div class="sale-off">
+            <span>{{item2.discount}}</span>
+          </div>
+          <ion-label class="ion-text-wrap">
+            <h3>{{item2.title}}</h3>
+            <p>{{item2.type}}</p>
+            <span class="price">{{item2.price}}</span>
+          </ion-label>
+          <ion-checkbox color="light" slot="end" [attr.checked]="i === 0 ? true: null"></ion-checkbox>
+        </ion-item>
+      </ion-col>
+    </ion-row>
   </div>
-</div> -->
+</div>
+

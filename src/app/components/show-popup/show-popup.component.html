@@ -1,5 +1,5 @@
 
-<ion-content>
+<ion-content *ngIf="this.typePopup == 1; else typePopup2">
   <div class="popup-inr">
     <ion-img src="assets/images/icon-checkmark.png" ></ion-img>
     <ion-label>
@@ -12,7 +12,76 @@
       Khám phá ngay iTel với nhiều ưu đãi dành <br> cho thuê bao cùng kho nội dung hấp dẫn!
     </p>
     <div class="app-box pdr-20">
-      <ion-button expand="block">Đến trang tài khoản</ion-button>
-  </div>
+      <ion-button expand="block" href="">Đến trang tài khoản</ion-button>
+    </div>
   </div>
 </ion-content>
+
+<ng-template #typePopup2>
+  <ion-content>
+    <div class="popup-inr">
+      <ion-img src="assets/images/icon-checkmark.png" ></ion-img>
+      <ion-label>
+        <h3 class="popup-title-success">Thuê thành công</h3>
+        <h4>087 038 38 40 đã có thể <br> sử dụng nội dung này</h4>
+      </ion-label>
+      <p>
+        Bạn có thể quản lý nội dung đã thuê ở <br> phần quản lý tài khoản
+      </p>
+      <div class="app-box pdr-20">
+        <ion-button expand="block" href="">
+          <ion-icon slot="start" src="assets/images/icon-play.svg"></ion-icon>
+          Xem ngay
+        </ion-button>
+      </div>
+    </div>
+  </ion-content>
+</ng-template>
+
+<ng-template>
+  <ion-content>
+    <div class="popup-inr">
+      <ion-img src="assets/images/icon-checkmark.png" ></ion-img>
+      <ion-label>
+        <h3 class="popup-title-success">
+          MUA GÓI THÀNH CÔNG
+        </h3>
+        <h4>Đã kích hoạt gói ITEL79 cho thuê<br>
+          bao 087 038 3840</h4>
+      </ion-label>
+      <div class="app-box pdr-20">
+        <ion-button expand="block" href="">
+          Về trang tài khoản
+        </ion-button>
+      </div>
+    </div>
+  </ion-content>
+</ng-template>
+
+
+<ng-template>
+  
+</ng-template>
+
+
+<!-- <ng-template #typePopup3>
+  <ng-container *ngIf="this.typePopup == 3">
+    <ion-content>
+      <div class="popup-inr">
+        <ion-img src="assets/images/icon-checkmark.png" ></ion-img>
+        <ion-label>
+          <h3 class="popup-title-success">
+            MUA GÓI THÀNH CÔNG
+          </h3>
+          <h4>Đã kích hoạt gói ITEL79 cho thuê<br>
+            bao 087 038 3840</h4>
+        </ion-label>
+        <div class="app-box pdr-20">
+          <ion-button expand="block" href="">
+            Về trang tài khoản
+          </ion-button>
+        </div>
+      </div>
+    </ion-content>
+  </ng-container>
+</ng-template> -->

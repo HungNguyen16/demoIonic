@@ -15,7 +15,10 @@ export class RechargeCardPage implements OnInit {
   }
   async openModal() {
     const modal = await this.modalCtrl.create({
-      component: ShowPopupComponent
+      component: ShowPopupComponent,
+      componentProps: {
+        typePopup: 1
+      }
     });
     return await modal.present();
   }

@@ -1,65 +1,4 @@
-.nap-tien-cho-so{
-    width:100%;
-    padding:0 20px;
-}
-.nap-tien-cho-so-detail {
-    width:100%;
-    // overflow:hidden;
-    // overflow-x:auto;
-}
-// .app-title {
-//     font-size: 16px;
-//     color: #3c3c3c;
-//     font-weight: 700;
-// }
-.nap-tien-cho-so ion-row{
-    display:flex;
-    // flex-wrap:nowrap;
-    // align-items:center;
-}
-.nap-tien-cho-so ion-col{
-    // flex:0 0 48%;
-}
-.nap-tien-cho-so ion-img {
-    position: relative;
-    width: 90px;
-    height: 90px;
-}
-.nap-tien-cho-so ion-item{
-    width:100%;
-    --padding-start:0;
-    --inner-padding-end:0;
-    background-color: #fff;
-    border-radius: 15px;
-}
-.nap-tien-cho-so ion-label h3 {
-    font-size: 14px;
-    font-weight: 700;
-    color: #373737;
-}
-.nap-tien-cho-so ion-label p {
-    font-size: 12px;
-    font-weight: 400;
-    color: #838383;
-}
-.nap-tien-cho-so ion-label .price {
-    font-size: 14px;
-    font-weight: 500;
-    color: #373737;
-}
-.ion-checkbox-customize{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    // padding: 0 15px;
-}
-.item-checkbox-checked .ion-checkbox-customize{
-    // background:#ED1F24;
-}
-.item-checkbox-checked ion-label{
-    color:#fff;
-}
+
 .sale-off {
     position: absolute;
     bottom: 0;
@@ -75,5 +14,39 @@
     border-radius: 0px 15px 15px 15px;;
 }
 .sale-off span{
-    padding: 11px 11px;
+    position: absolute;
+    top: 4px;
+    left: 11px;
+}
+//
+ion-img {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin-right: 16px;
+    margin-bottom: 0;
+}
+ion-label .price {
+    font-size: 14px;
+    font-weight: 500;
+    color: #373737;
+}
+ion-item {
+    --padding-start: 0;
+    --border-radius: 15px;
+}
+ion-label h3 {
+    font-weight: 700;
+    font-size: 14px;
+    color: #373737;
+}
+ion-label p {
+    color: #838383;
+    font-weight: 400;
+    font-size: 12px;
+}
+.rent-time {
+    position: relative;
+    background-color: #ED1F24;
+    ;
 }

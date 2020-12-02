@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastController } from '@ionic/angular';
 import { NotificationModel } from 'src/app/models/notification-model';
 import { NotificationService } from 'src/app/services/notification.service';
 
@@ -9,7 +10,7 @@ import { NotificationService } from 'src/app/services/notification.service';
 })
 export class NotificationPage implements OnInit {
   notiData: NotificationModel[] = [];
-  constructor(private notificationService: NotificationService) { }
+  constructor(private notificationService: NotificationService, public toastController: ToastController) { }
 
   ngOnInit() {
     this.notificationService.getListNoti().subscribe(res => {
@@ -17,5 +18,11 @@ export class NotificationPage implements OnInit {
       console.log('thong bao', this.notiData);
     });
   }
-
+  async presentToast() {
+    const toast = await this.toastController.create({
+      message: 'Show notification',
+      duration: 2000
+    });
+    toast.present();
+  }
 }

@@ -4,8 +4,10 @@ ion-content {
     text-align: center;
 }
 ion-icon {
-    width: 115px;
-    height: 115px;
+    width: 10;
+    height: 10px;
+    // width: 115px;
+    // height: 115px;
 }
 ion-label {
     font-size: 48px;
@@ -57,4 +59,8 @@ ion-button {
     height: 115px;
     margin: auto;
     margin-bottom: 26px;
+}
+.popup-title-success {
+    font-size: 24px;
+    color: #fff;
 }
