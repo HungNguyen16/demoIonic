@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { SupportCenterPageRoutingModule } from './support-center-routing.module';
 
 import { SupportCenterPage } from './support-center.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SupportCenterPageRoutingModule
+    SupportCenterPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [SupportCenterPage]
 })

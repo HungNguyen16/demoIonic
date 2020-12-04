@@ -1,0 +1,26 @@
+<div class="app-box pdr-20">
+  <div class="app-detail">
+    <ion-row class="check-box bg-white">
+      <ion-col>
+        <ion-item lines="none" *ngFor="let item of voucherData">
+          <ion-img src="{{item.voucherImg}}"></ion-img>
+          <ng-container *ngIf="item.isSaleOff == true else isSaleOff">
+          </ng-container>
+          <ng-template #isSaleOff>
+            <div class="sale-off">
+              <span>{{item.voucherSaleOff}}</span>
+            </div>
+          </ng-template>
+          <ion-label class="ion-text-wrap">
+            <h3>{{item.voucherTitle}}</h3>
+            <p>{{item.voucherFood}}</p>
+            <ion-note>
+              <span class="price">{{item.price}}</span>
+              <a href="#" class="use-now">Sử dụng bây giờ</a>
+            </ion-note>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </div>
+</div>

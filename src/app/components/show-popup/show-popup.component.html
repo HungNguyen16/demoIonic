@@ -1,5 +1,5 @@
 
-<ion-content *ngIf="this.typePopup == 1; else typePopup2">
+<ion-content *ngIf="this.typePopup == 1; else typePopup2 else typePopup3">
   <div class="popup-inr">
     <ion-img src="assets/images/icon-checkmark.png" ></ion-img>
     <ion-label>
@@ -38,7 +38,16 @@
   </ion-content>
 </ng-template>
 
+
 <ng-template>
+  <ion-content>
+    <div class="popup-inr">
+      <ion-img src="assets/images/icon-checkmark.png"></ion-img>
+      <ion-label></ion-label>
+    </div>
+  </ion-content>
+</ng-template>
+<!-- <ng-template #typePopup3>
   <ion-content>
     <div class="popup-inr">
       <ion-img src="assets/images/icon-checkmark.png" ></ion-img>
@@ -56,12 +65,7 @@
       </div>
     </div>
   </ion-content>
-</ng-template>
-
-
-<ng-template>
-  
-</ng-template>
+</ng-template> -->
 
 
 <!-- <ng-template #typePopup3>

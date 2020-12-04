@@ -22,6 +22,11 @@ import { RentalContentComponent } from './rental-content/rental-content.componen
 import { CategoryAllComponent } from './category-all/category-all.component';
 import { PlayListComponent } from './play-list/play-list.component';
 import { CategorySingleComponent } from './category-single/category-single.component';
+import { NetworkSwitchComponent } from './network-switch/network-switch.component';
+import { MyVoucherComponent } from './loyalty-page/my-voucher/my-voucher.component';
+import { LoyaltyComponent } from './loyalty-page/loyalty/loyalty.component';
+import { ContactUsComponent } from './support-page/contact-us/contact-us.component';
+import { FaqComponent } from './support-page/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +46,12 @@ import { CategorySingleComponent } from './category-single/category-single.compo
     RentalContentComponent,
     CategoryAllComponent,
     PlayListComponent,
-    CategorySingleComponent
+    CategorySingleComponent,
+    NetworkSwitchComponent,
+    MyVoucherComponent,
+    LoyaltyComponent,
+    ContactUsComponent,
+    FaqComponent
   ],
   exports: [
     HeaderComponent,
@@ -60,7 +70,12 @@ import { CategorySingleComponent } from './category-single/category-single.compo
     RentalContentComponent,
     CategoryAllComponent,
     PlayListComponent,
-    CategorySingleComponent
+    CategorySingleComponent,
+    NetworkSwitchComponent,
+    MyVoucherComponent,
+    LoyaltyComponent,
+    ContactUsComponent,
+    FaqComponent
   ],
   imports: [
     CommonModule,

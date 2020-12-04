@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "voucherTitle": "Giảm 50% nạp tiền",
+        "voucherImg": "assets/images/voucher/voucher-1.jpg",
+        "voucherFood": "In Pizza Mania",
+        "price": "100K",
+        "voucherSaleOff": "30% OFF",
+        "isSaleOff": true
+    },
+    {
+        "id": 2,
+        "voucherTitle": "Burger with some",
+        "voucherImg": "assets/images/voucher/voucher-2.jpg",
+        "voucherFood": "In Pizza Mania",
+        "price": "100K",
+        "voucherSaleOff": "30% OFF",
+        "isSaleOff": false
+    },
+    {
+        "id": 3,
+        "voucherTitle": "Giảm 50% nạp tiền",
+        "voucherImg": "assets/images/voucher/voucher-3.jpg",
+        "voucherFood": "In Pizza Mania",
+        "price": "100K",
+        "voucherSaleOff": "30% OFF",
+        "isSaleOff": true
+    },
+    {
+        "id": 4,
+        "voucherTitle": "Giảm 50% nạp tiền",
+        "voucherImg": "assets/images/voucher/voucher-1.jpg",
+        "voucherFood": "In Pizza Mania",
+        "price": "100K",
+        "voucherSaleOff": "30% OFF",
+        "isSaleOff": true
+    },
+    {
+        "id": 5,
+        "voucherTitle": "Giảm 50% nạp tiền",
+        "voucherImg": "assets/images/voucher/voucher-2.jpg",
+        "voucherFood": "In Pizza Mania",
+        "price": "100K",
+        "voucherSaleOff": "30% OFF",
+        "isSaleOff": false
+    },
+    {
+        "id": 6,
+        "voucherTitle": "Giảm 50% nạp tiền",
+        "voucherImg": "assets/images/voucher/voucher-3.jpg",
+        "voucherFood": "In Pizza Mania",
+        "price": "100K",
+        "voucherSaleOff": "30% OFF",
+        "isSaleOff": false
+    }
+]

@@ -1,3 +1,8 @@
+ion-note {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
 
 .sale-off {
     position: absolute;
@@ -15,7 +20,7 @@
 }
 .sale-off span{
     position: absolute;
-    top: 4px;
+    top: 7px;
     left: 11px;
 }
 //
@@ -34,6 +39,7 @@ ion-label .price {
 ion-item {
     --padding-start: 0;
     --border-radius: 15px;
+    padding-bottom: 20px;
 }
 ion-label h3 {
     font-weight: 700;
@@ -48,4 +54,9 @@ ion-label p {
 .rent-time {
     position: relative;
     background-color: #ED1F24;
+}
+.use-now {
+   color:#ED1F24;
+   font-size: 12px;
+   text-decoration: none;
 }
