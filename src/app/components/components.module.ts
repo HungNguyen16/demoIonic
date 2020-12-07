@@ -22,11 +22,14 @@ import { RentalContentComponent } from './rental-content/rental-content.componen
 import { CategoryAllComponent } from './category-all/category-all.component';
 import { PlayListComponent } from './play-list/play-list.component';
 import { CategorySingleComponent } from './category-single/category-single.component';
-import { NetworkSwitchComponent } from './network-switch/network-switch.component';
 import { MyVoucherComponent } from './loyalty-page/my-voucher/my-voucher.component';
 import { LoyaltyComponent } from './loyalty-page/loyalty/loyalty.component';
 import { ContactUsComponent } from './support-page/contact-us/contact-us.component';
 import { FaqComponent } from './support-page/faq/faq.component';
+import { SimRegistrationComponent } from './support-page/sim-registration/sim-registration.component';
+import { ConfirmOtpComponent } from './service-page/confirm-otp/confirm-otp.component';
+import { NetworkSwitchComponent } from './service-page/network-switch/network-switch.component';
+import { ConfirmInfoComponent } from './support-page/confirm-info/confirm-info.component';
 
 @NgModule({
   declarations: [
@@ -47,11 +50,14 @@ import { FaqComponent } from './support-page/faq/faq.component';
     CategoryAllComponent,
     PlayListComponent,
     CategorySingleComponent,
-    NetworkSwitchComponent,
     MyVoucherComponent,
     LoyaltyComponent,
     ContactUsComponent,
-    FaqComponent
+    FaqComponent,
+    SimRegistrationComponent,
+    ConfirmOtpComponent,
+    NetworkSwitchComponent,
+    ConfirmInfoComponent
   ],
   exports: [
     HeaderComponent,
@@ -71,11 +77,14 @@ import { FaqComponent } from './support-page/faq/faq.component';
     CategoryAllComponent,
     PlayListComponent,
     CategorySingleComponent,
-    NetworkSwitchComponent,
     MyVoucherComponent,
     LoyaltyComponent,
     ContactUsComponent,
-    FaqComponent
+    FaqComponent,
+    ConfirmOtpComponent,
+    SimRegistrationComponent,
+    NetworkSwitchComponent,
+    ConfirmInfoComponent
   ],
   imports: [
     CommonModule,

@@ -16,13 +16,13 @@ export class ShowPopupComponent implements OnInit {
   constructor(private modalCtrl: ModalController, private messageSubscribe: MessageSubscribeService) { }
 
   ngOnInit(): void {
-    this.messageSubscribe.getMessage().subscribe((dataMessage) => {
-      if ( dataMessage != null) {
-        if (dataMessage.Key === ConstantValue.KeyMessageChangePopup) {
-          this.currentPopup = dataMessage.Data;
-        }
-      }
-    });
+    // this.messageSubscribe.getMessage().subscribe((dataMessage) => {
+    //   if ( dataMessage != null) {
+    //     if (dataMessage.Key === ConstantValue.KeyMessageChangePopup) {
+    //       this.currentPopup = dataMessage.Data;
+    //     }
+    //   }
+    // });
   }
   dismiss() {
     this.modalCtrl.dismiss();

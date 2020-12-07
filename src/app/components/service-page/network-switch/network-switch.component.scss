@@ -1,0 +1,18 @@
+ion-item {
+    --padding-start: 20px;
+}
+.app-input {
+    --padding-start: 20px;
+    --placeholder-color: #424242;
+    border-radius: 5px;
+    font-size: 24px;
+    --background: #fff;
+    height: 50px;
+    border: 1px solid rgba(228, 228, 228, 0.6);
+}
+ion-button {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+}

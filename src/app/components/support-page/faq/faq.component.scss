@@ -1,15 +1,24 @@
+.app-box {
+    padding: 0 15px;
+}
+ion-item {
+    --border-radius: 5px;
+    --background: #fff;
+}
 .app-input {
-    --padding-start: 20px;
+    // --padding-start: 30px;
     --placeholder-color: #424242;
     --border-radius: 5px;
-    border: 1px solid rgba(228, 228, 228, 0.6);
     font-size: 13px;
+    --background: #fff;
     height: 50px;
 }
+
 .question-relate {
     background-color: #41D3CF ;
     padding: 21px 12px 15px 12px;
     border-radius: 8px;
+    margin-bottom: 30px;
 }
 ion-card-title {
     font-size: 17px;
@@ -20,12 +29,16 @@ ion-card-title {
 .faq-items {
     background-color: #fff;
     border-radius: 10px;
-    margin-bottom: 12px;
+    margin: 0 20px 12px 20px;
+    padding: 21px 20px 17px 0;
+    // margin-bottom: 12px;
+    // padding: 0 20px;
+}
+.faq-items:last-child {
+    margin-bottom: 27px;
 }
 .faq-item {
     --background: #fff;
-    // margin-bottom: 12px;
-    // padding-bottom: 12px;
 }
 ion-fab-button {
     --background: #fff;
@@ -47,6 +60,7 @@ p {
     font-size: 15px;
     color: #3c3c3c;
     text-align: center;
+    margin-top: 27px;
 }
 .icon-search {
     width: 18px;

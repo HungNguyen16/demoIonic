@@ -1,0 +1,29 @@
+ion-item {
+    --padding-start: 20px;
+  }
+  .app-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #151522;
+  }
+  .app-box {
+    margin-bottom: 24px;
+  }
+  p {
+    font-size: 15px;
+    color: #151522;
+    line-height: 20px;
+  }
+  .app-input {
+    --padding-start: 20px;
+    --placeholder-color: #424242;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    --background: #fff;
+    height: 50px;
+    border: 1px solid rgba(228, 228, 228, 0.6);
+  }
+  ion-input {
+    text-align: center;
+  }
