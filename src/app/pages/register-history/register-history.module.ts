@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { RegisterHistoryPageRoutingModule } from './register-history-routing.module';
 
 import { RegisterHistoryPage } from './register-history.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RegisterHistoryPageRoutingModule
+    RegisterHistoryPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [RegisterHistoryPage]
 })

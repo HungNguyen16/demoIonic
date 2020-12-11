@@ -6,54 +6,21 @@
         "paymentType": 1
     },
     {
-        "id": 1,
+        "id": 2,
         "paymentName": "Thanh toán với số dư tài khoản",
         "paymentImg": "assets/images/payment/icon-payment-2.svg",
         "paymentType": 2
     },
     {
-        "id": 1,
-        "categoryName": "Hình thức thanh toán",
-        "categoryType": 1,
-        "paymentItems": [
-            {
-                "id": 1,
-                "paymentName": "Thanh toán với ví điện tử",
-                "paymentImg": "assets/images/payment/icon-payment-1.png",
-                "isCheck": true
-            },
-            {
-                "id": 2,
-                "paymentName": "Thanh toán với số dư tài khoản",
-                "paymentImg": "assets/images/payment/icon-payment-2.svg",
-                "isCheck": true    
-            },
-            {
-                "id": 3,
-                "paymentName": "Thanh toán với Visa / Master card",
-                "paymentImg": "assets/images/payment/icon-payment-1.png",
-                "isCheck": false
-            }
-        ]
+        "id": 3,
+        "paymentName": "Thanh toán với Visa / Master card",
+        "paymentImg": "assets/images/payment/icon-payment-1.svg",
+        "paymentType": 3
     },
     {
-        "id": 2,
-        "categoryName": "Hình thức thanh toán",
-        "categoryType": 2,
-        "paymentItems": [
-            {
-                "id": 1,
-                "paymentName": "Thanh toán với ví điện tử",
-                "paymentImg": "assets/images/payment/icon-payment-1.png",
-                "isCheck": true
-            },
-            {
-                "id": 1,
-                "paymentName": "Thanh toán với số dư tài khoản",
-                "paymentImg": "assets/images/payment/icon-payment-2.svg",
-                "isCheck": true    
-            }
-        ]
+        "id": 4,
+        "paymentName": "Thanh toán chuyển khoản",
+        "paymentImg": "assets/images/payment/icon-payment-1.svg",
+        "paymentType": 4
     }
-
 ]

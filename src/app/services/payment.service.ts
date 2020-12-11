@@ -27,4 +27,23 @@ export class PaymentService {
   getAll(): Observable<PaymentModel[]> {
     return this.http.get<PaymentModel[]>(this.url);
   }
+
+  // getPlayListByType(type: string): Observable<Mockup[]> {
+  //   const mockupItems: Mockup[] = [];
+  //   return this.http.get<CategoryModel[]>(this.url).pipe(
+  //     map((res: CategoryModel[]) => {
+  //       {
+  //         res = res.filter((e) => e.categoryType === type);
+  //         for (const subItems of res[0].categoryItems) {
+  //           for (const item of subItems.subItems) {
+  //             if (item.isPlaylist) {
+  //               mockupItems.push(item);
+  //             }
+  //           }
+  //         }
+  //         return mockupItems;
+  //       }
+  //     })
+  //   );
+  // }
 }

@@ -1,0 +1,71 @@
+.app-box {
+    margin-top: 28px;
+}
+.app-title {
+    font-size: 16px;
+    color: #222222;
+    font-weight: 400;
+}
+.has-bg::before {
+    border-radius: 10px;
+}
+.horizon-box {
+    padding-right: 27px;
+}
+.faq-items {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 13px;
+}
+.faq-items:last-child {
+    margin-bottom: 0 !important;
+}
+.faq-item {
+    --background: #fff;
+    border-radius: 1px solid black;
+}
+.ion-arrow {
+    height: 18px;
+}
+.faq-items ion-label {
+    margin-left: 19px;
+}
+ion-card {
+    position: relative;
+    --background: #fff;
+    --border-radius: 8px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    padding: 12px 10px 10px 12px;
+    margin: 0;
+    z-index: 1000;
+}
+ion-button {
+    color: #fff;
+    --background: #ED1F24;
+    --border-radius: 27px;
+    font-weight: 700;
+}
+ion-badge {
+    position: absolute;
+    border-radius: 50%;
+    --background: #f3f3f3;
+    top: -10px;
+    right: -10px;
+    width: 33px;
+    height: 33px;
+}
+.app-dismiss {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ion-img {
+    margin-bottom: 0;
+}
+.horizon-box {
+    padding-bottom: 0;
+}

@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./support-center.page.scss'],
 })
 export class SupportCenterPage implements OnInit {
+  newMsg = '';
 
   constructor() { }
 
   ngOnInit() {
   }
-
+  sendMessage() {
+      
+  }
 }

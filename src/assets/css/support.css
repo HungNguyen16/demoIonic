@@ -1,0 +1,43 @@
+.app-box {
+    margin-top: 28px;
+}
+.app-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #151522;
+}
+.has-bg::before {
+    border-radius: 10px;
+}
+.horizon-box {
+    padding-right: 27px;
+}
+.faq-items {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 13px;
+}
+.faq-items:last-child {
+    margin-bottom: 0 !important;
+}
+.faq-item {
+    --background: #fff;
+    border-radius: 1px solid black;
+}
+.ion-arrow {
+    height: 18px;
+}
+.faq-items ion-label {
+    margin-left: 19px;
+}
+/* ion-button {
+    color: #fff;
+    --background: #D0D0D0;
+    --border-radius: 27px;
+    font-weight: 700;
+} */
+.number-identity {
+    font-size: 16px;
+    color: #424242;
+}

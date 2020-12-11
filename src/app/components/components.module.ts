@@ -1,3 +1,4 @@
+
 import { ListMusicComponent } from './list-music/list-music.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -30,6 +31,14 @@ import { SimRegistrationComponent } from './support-page/sim-registration/sim-re
 import { ConfirmOtpComponent } from './service-page/confirm-otp/confirm-otp.component';
 import { NetworkSwitchComponent } from './service-page/network-switch/network-switch.component';
 import { ConfirmInfoComponent } from './support-page/confirm-info/confirm-info.component';
+import { LiveChatComponent } from './support-page/live-chat/live-chat.component';
+import { TakePhotoComponent } from './support-page/take-photo/take-photo.component';
+import { IdentityCardComponent } from './support-page/identity-card/identity-card.component';
+import { SimRegistration1Component } from './support-page/sim-registration1/sim-registration1.component';
+import { ContactPhoneComponent } from './support-page/contact-phone/contact-phone.component';
+import { ChooseDocumentTypeComponent } from './support-page/choose-document-type/choose-document-type.component';
+import { ConfirmShoppingCartComponent } from './support-page/confirm-shopping-cart/confirm-shopping-cart.component';
+import { PayComponent } from './support-page/pay/pay.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +66,15 @@ import { ConfirmInfoComponent } from './support-page/confirm-info/confirm-info.c
     SimRegistrationComponent,
     ConfirmOtpComponent,
     NetworkSwitchComponent,
-    ConfirmInfoComponent
+    ConfirmInfoComponent,
+    LiveChatComponent,
+    TakePhotoComponent,
+    IdentityCardComponent,
+    SimRegistration1Component,
+    ContactPhoneComponent,
+    ChooseDocumentTypeComponent,
+    ConfirmShoppingCartComponent,
+    PayComponent
   ],
   exports: [
     HeaderComponent,
@@ -84,7 +101,15 @@ import { ConfirmInfoComponent } from './support-page/confirm-info/confirm-info.c
     ConfirmOtpComponent,
     SimRegistrationComponent,
     NetworkSwitchComponent,
-    ConfirmInfoComponent
+    ConfirmInfoComponent,
+    LiveChatComponent,
+    TakePhotoComponent,
+    IdentityCardComponent,
+    SimRegistration1Component,
+    ContactPhoneComponent,
+    ChooseDocumentTypeComponent,
+    ConfirmShoppingCartComponent,
+    PayComponent
   ],
   imports: [
     CommonModule,

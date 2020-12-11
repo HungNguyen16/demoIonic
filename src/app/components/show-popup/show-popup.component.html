@@ -39,7 +39,7 @@
 </ng-template>
 
 <ng-template #typePopup3>
-  <ion-content>
+  <ion-content *ngIf="this.typePopup == 3; else typePopup4">
     <div class="popup-inr">
       <ion-img src="assets/images/icon-checkmark.png" ></ion-img>
       <ion-label>
@@ -52,6 +52,46 @@
         vui lòng liên hệ Fanpage @itel.fan để được <br>
         hỗ trợ sớm nhất
       </p>
+      <div class="app-box pdr-20">
+        <ion-button expand="block" href="">
+          Về trang chủ
+        </ion-button>
+      </div>
+    </div>
+  </ion-content>
+</ng-template>
+
+<ng-template #typePopup4>
+  <ion-content *ngIf="this.typePopup == 4 else typePopup5">
+    <div class="popup-inr">
+      <ion-img src="assets/images/icon-checkmark.png"></ion-img>
+      <ion-label>
+        <h3 class="popup-title-success">Gửi yêu cầu thành công!
+        </h3>
+      </ion-label>
+      <p>
+        iTel đã nhận được yêu cầu đăng ký TTTB của bạn, thuê bao sẽ tự động được đăng ký thông tin sau 30 phút làm việc, cảm ơn bạn đã sử dụng dịch vụ của iTel
+      </p>
+      <div class="app-box pdr-20">
+        <ion-button expand="block" href="">
+          Về trang chủ
+        </ion-button>
+      </div>
+    </div>
+  </ion-content>
+</ng-template>
+
+<!-- popup success esim -->
+<ng-template #typePopup5>
+  <ion-content>
+    <div class="popup-inr">
+      <ion-img src="assets/images/icon-checkmark.png"></ion-img>
+      <ion-label>
+        <h3 class="popup-title-success">Gửi yêu cầu thành công!
+        </h3>
+      </ion-label>
+      <p>
+        iTel đã nhận được yêu cầu cấp đổi lại eSIM của bạn, thuê bao sẽ tự động được đăng ký thông tin sau 30 phút làm việc, cảm ơn bạn đã sử dụng dịch vụ của iTel      </p>
       <div class="app-box pdr-20">
         <ion-button expand="block" href="">
           Về trang chủ
