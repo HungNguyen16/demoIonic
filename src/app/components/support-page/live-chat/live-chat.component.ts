@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IonContent, IonInfiniteScrollContent } from '@ionic/angular';
 
 @Component({
   selector: 'app-live-chat',
@@ -22,14 +23,29 @@ export class LiveChatComponent implements OnInit {
       createdAt: 17854254,
       msg: 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet'
     },
+    {
+      user: '',
+      createdAt: 1452585,
+      msg: 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet'
+    }
   ];
   currentUser = 'Hung Nguyen';
   newMsg = '';
+  @ViewChild(IonContent) content: IonContent;
   constructor() { }
 
   ngOnInit() {}
 
   sendMessage() {
-    
+    this.messages.push({
+      user: 'messi',
+      createdAt: new Date().getTime(),
+      msg: this.newMsg
+    });
+
+    this.newMsg = '';
+    setTimeout(() => {
+      this.content.scrollToBottom(200);
+    });
   }
 }

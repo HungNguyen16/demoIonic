@@ -6,7 +6,55 @@
     <ion-title>Lịch sử đăng ký / Hủy dịch vụ</ion-title>
   </ion-toolbar>
 </ion-header>
-<!-- 
+
+
 <ion-content>
-</ion-content> -->
-<app-live-chat></app-live-chat>
+    
+  <div class="app-box pack-box has-bg pdr-20">
+    <div class="app-detail" (click)="photoService.addNewToGallery()">
+      <h2 class="app-title">Ảnh chân dung</h2>
+      <div class="horizon-box size-one-point8">
+        <ion-list class="faq-items">
+          <ion-item lines="none" class="faq-item">
+            <ion-icon src="assets/images/support/icon-camera.svg"></ion-icon>
+            <ion-label class="ion-text-wrap">Chọn / Chụp ảnh chân dung</ion-label>
+            <ion-icon class="ion-arrow" src="assets/images/support/icon-arrow-right.svg"></ion-icon>
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+  </div>
+
+  
+<div class="app-box">
+  <h2 class="app-title">Ảnh mặt trước</h2>
+  <div class="app-detail">
+      <div class="horizon-box size-one-point8">
+          <ng-container *ngIf="photos != null">
+            <ion-card class="ion-no-padding" *ngFor="let photo of photoService.photos; index as position">
+              <ion-badge>
+                  <ion-icon class="app-dismiss" src="assets/images/support/icon-dismiss.svg"></ion-icon>
+              </ion-badge>
+              <ion-img [src]="photo.webviewPath"></ion-img>
+          </ion-card>
+          </ng-container>
+      </div>
+  </div>
+</div>
+
+<!--   
+  <ion-grid>
+    <ion-row>
+    <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
+      <ion-img [src]="photo.webviewPath"></ion-img>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="photoService.addNewToGallery()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab> -->
+
+</ion-content>
