@@ -1,25 +1,89 @@
 .message {
-    padding: 10px;
+    padding: 13px 12px 13px 12px;
     border-radius: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 13px;
     white-space: pre-wrap;
+    box-shadow: 0px 4px 4px rgba(50, 50, 71, 0.08), 0px 4px 8px rgba(50, 50, 71, 0.06);
+    border-radius: 20px;
 }
 .other-message {
     background-color: #fff;
-    color: #232326;
+    color: #151522;
+    font-weight: 300;
     font-size: 13px;
+    box-shadow: 0px 4px 4px rgba(50, 50, 71, 0.08), 0px 4px 8px rgba(50, 50, 71, 0.06);
+    border-radius: 20px;
 }
 .my-message {
     background-color: #ED1F24;
     color: #fff;
-}
-.time {
-    
-}
-.message-input {
-
+    font-size: 13px;
 }
 .msg-btn {
     --padding-start: 0.5rem;
     --padding-end: 0.5rem;
+}
+.time-chat {
+    color: #999999;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+    background-color: #F2F2F2;
+    width: 122px;
+    margin: auto;
+    padding: 6px 14px;
+    border-radius: 99px;
+}
+ion-avatar {
+    margin-right: 10px;
+}
+ion-toolbar {
+    --background: #e4e4e4;
+}
+ion-item {
+    --background: #e4e4e4;
+}
+.app-textarea {
+    --placeholder-color: #424242;
+    --placeholder-font-weight: 300;
+    color: #424242;
+    border-radius: 99px;
+    font-size: 16px;
+    --background: #fff;
+    height: 35px;
+    border: 1px solid rgba(228, 228, 228, 0.6);
+}
+// .app-utility {
+//     --background: #e4e4e4;
+// }
+ion-textarea {
+    --background: #fff;
+    height: 35px;
+}
+
+ion-button {
+    width: 30px;
+    height: 30px;
+    --border-radius: 20px;
+    margin-right: 15px;
+}
+.send-message {
+    padding: 12px 0;
+}
+.message-sender {
+    --background: #fff;
+}
+.app-input {
+    --placeholder-color: #424242;
+    --placeholder-font-weight: 300;
+    color: #424242;
+    border-radius: 99px;
+    font-size: 16px;
+    --background: #fff;
+    height: 50px;
+    border: 1px solid rgba(228, 228, 228, 0.6);
+}
+ion-textarea {
+    --background: #fff;
+    height: 50px;
 }

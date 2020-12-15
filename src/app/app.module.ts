@@ -11,7 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ComponentsModule } from './components/components.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AutosizeModule } from 'ngx-autosize';
-
+import { SpeechRecognition } from '@ionic-native/speech-recognition/ngx';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -26,7 +26,8 @@ import { AutosizeModule } from 'ngx-autosize';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    SpeechRecognition
   ],
   bootstrap: [AppComponent]
 })

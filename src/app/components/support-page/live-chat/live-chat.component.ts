@@ -11,7 +11,7 @@ export class LiveChatComponent implements OnInit {
     {
       user: 'Hung Nguyen',
       createdAt: 17854252,
-      msg: 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet'
+      msg: 'Hey there! First, thanks for asking. May I know how many designers ?'
     },
     {
       user: 'Hung Nguyen 1',
