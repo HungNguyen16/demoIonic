@@ -39,6 +39,7 @@ export class SupportCenterPage implements OnInit {
     this.stepPage = step;
   }
 
+  // tslint:disable-next-line:use-lifecycle-interface
   ngOnDestroy(): void {
     if (this.subscribe != null) {
       this.subscribe.unsubscribe();

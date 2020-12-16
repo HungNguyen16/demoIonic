@@ -2,6 +2,7 @@ import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { CameraResultType, CameraSource, Capacitor, Plugins } from '@capacitor/core';
 import { Platform } from '@ionic/angular';
+import { StepSupportPageEnum } from 'src/app/models/step-support-page-enum';
 const { Camera } = Plugins;
 
 @Component({
@@ -11,11 +12,11 @@ const { Camera } = Plugins;
 })
 export class IdentityCardComponent implements OnInit {
   @Input() title: string;
-
   @ViewChild('filePicker', {static: false}) filePickRef: ElementRef<HTMLInputElement>;
   identityBefore: SafeResourceUrl;
   identityAfter: SafeResourceUrl;
   isDesktop: boolean;
+  stepEnum = StepSupportPageEnum;
   constructor(private platform: Platform, private sanitizer: DomSanitizer) { }
 
   ngOnInit() {}

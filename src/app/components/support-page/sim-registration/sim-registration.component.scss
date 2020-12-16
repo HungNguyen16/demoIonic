@@ -31,12 +31,13 @@
 // .faq-items ion-label {
 //     margin-left: 19px;
 // }
-// ion-button {
-//     color: #fff;
-//     --background: #D0D0D0;
-//     --border-radius: 27px;
-//     font-weight: 700;
-// }
+.button-disabled {
+    color: #fff;
+    --background: #D0D0D0;
+    --border-radius: 27px;
+    font-weight: 700;
+}
+
 .faq-items {
     background-color: #fff;
     border-radius: 10px;

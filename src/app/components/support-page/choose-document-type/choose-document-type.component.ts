@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StepSupportPageEnum } from 'src/app/models/step-support-page-enum';
 
 @Component({
   selector: 'app-choose-document-type',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./choose-document-type.component.scss'],
 })
 export class ChooseDocumentTypeComponent implements OnInit {
-
+  stepEnum = StepSupportPageEnum;
   constructor() { }
 
   ngOnInit() {}

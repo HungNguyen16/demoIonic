@@ -1,5 +1,5 @@
 export enum StepSupportPageEnum {
     SimRegistration = 1,
-    ConfirmInfo = 2,
-    
+    TakeCamera = 2,
+    ConfirmInfo = 3,
 }
