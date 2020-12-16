@@ -1,3 +1,26 @@
 input[type="file"] {
     display: none;
 }
+ion-card {
+    padding: 12px 12px;
+}
+ion-card-content {
+    text-align: center;
+    background: #C4C4C4;
+}
+ion-card-content img {
+    height: 160px;
+    object-fit: cover;
+}
+.app-dismiss {
+    width: 33px;
+    height: 33px;
+    border: 2px solid #fff;
+    --background: #fff;
+}
+.wrap-icon {
+    width: 23px;
+    height: 23px;
+    background: #F3F3F3;
+    transform: rotate(45deg);
+}

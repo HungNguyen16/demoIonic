@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { StepServicePageEnum } from 'src/app/models/step-service-page-enum';
+import { StepSupportPageEnum } from 'src/app/models/step-support-page-enum';
 
 @Component({
   selector: 'app-sim-registration',
@@ -7,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SimRegistrationComponent implements OnInit {
 
+  stepEnum = StepSupportPageEnum;
   constructor() { }
 
   ngOnInit() {}
-
 }

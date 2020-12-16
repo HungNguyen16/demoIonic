@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./network-switch.component.scss'],
 })
 export class NetworkSwitchComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {}

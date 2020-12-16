@@ -24,12 +24,14 @@
   <input type="file" *ngIf="isDesktop" #filePicker (change)="onFileChoose($event)"/>
 
   <ion-card *ngIf="photo">
+    <!-- <ion-button>
+      <ion-icon src="assets/images/support/icon-dismiss.svg"></ion-icon>
+    </ion-button> -->
     <ion-card-content>
       <img [src]="photo">
     </ion-card-content>
   </ion-card>
 
 </ion-content>
-<ion-content>
-</ion-content>
+
 

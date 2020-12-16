@@ -46,4 +46,7 @@ export class PostagePage implements OnInit {
     };
     reader.readAsDataURL(file);
   }
+  // deleteImg(index) {
+
+  // }
 }

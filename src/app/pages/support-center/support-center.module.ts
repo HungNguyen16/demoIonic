@@ -8,6 +8,7 @@ import { SupportCenterPageRoutingModule } from './support-center-routing.module'
 
 import { SupportCenterPage } from './support-center.page';
 import { ComponentsModule } from 'src/app/components/components.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
