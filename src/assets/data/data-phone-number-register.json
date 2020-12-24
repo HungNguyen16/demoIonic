@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "title": "Số thuê bao bạn cần đăng ký",
+        "utilityType": "sim-registration",
+        "phoneItems": [
+            {
+                "id": 1,
+                "phone":"090 257 29 62"
+            },
+            {
+                "id": 2,
+                "phone":"090 257 29 62"
+            },
+            {
+                "id": 3,
+                "phone":"036 883 60 79"
+            },
+            {
+                "id": 4,
+                "phone":"036 884 92 93"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Số thuê bao bạn cần đăng ký đổi SIM",
+        "utilityType": "change-esim",
+        "phoneItems": [
+            {
+                "id": 1,
+                "phone":"036 884 92 93"
+            },
+            {
+                "id": 2,
+                "phone":"036 883 60 79"
+            },
+            {
+                "id": 3,
+                "phone":"090 257 29 62"
+            },
+            {
+                "id": 4,
+                "phone":"036 883 60 79"
+            }
+        ]
+    }
+]

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { StepServicePageEnum } from 'src/app/models/step-service-page-enum';
 import { StepSupportPageEnum } from 'src/app/models/step-support-page-enum';
 
@@ -8,7 +8,7 @@ import { StepSupportPageEnum } from 'src/app/models/step-support-page-enum';
   styleUrls: ['./sim-registration.component.scss'],
 })
 export class SimRegistrationComponent implements OnInit {
-
+  @Input() title: string;
   stepEnum = StepSupportPageEnum;
   constructor() { }
 

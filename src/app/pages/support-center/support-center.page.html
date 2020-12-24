@@ -1,17 +1,25 @@
-<ion-header id="app-header" [translucent]="true">
+<!-- <ion-header id="app-header" [translucent]="true">
   <ion-toolbar id="app-header-toolbar">
     <ion-buttons slot="end">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>Trung tâm hỗ trợ</ion-title>
   </ion-toolbar> 
-</ion-header>
-<!-- <app-live-chat></app-live-chat> -->
+</ion-header> -->
 
+
+<!-- 
+<app-header-sub [title]="'Đăng ký TTTB'" *ngIf="stepPage == stepSupportPageEnum.SimRegistrationeader"</app-header-sub> -->
+
+<app-header-sub [title]="'Đăng ký TTTB'" *ngIf="stepPage == stepSupportPageEnum.SimRegistration"></app-header-sub>
+<app-header-sub [title]="'Chứng minh nhân dân'" *ngIf="stepPage == stepSupportPageEnum.TakeCamera"></app-header-sub>
+<app-header-sub [title]="'Xác nhận thông tin CMND'" *ngIf="stepPage == stepSupportPageEnum.ConfirmInfo"></app-header-sub>
+<app-header-sub [title]="'Đăng ký TTTB'" *ngIf="stepPage == stepSupportPageEnum.CompleteSimRegistration"></app-header-sub>
 <ion-content>
-  <!-- <app-identity-card></app-identity-card> -->
+  
   <app-sim-registration *ngIf="stepPage == stepSupportPageEnum.SimRegistration"></app-sim-registration>
   <app-confirm-info *ngIf="stepPage == stepSupportPageEnum.ConfirmInfo"></app-confirm-info>
   <app-identity-card *ngIf="stepPage == stepSupportPageEnum.TakeCamera"></app-identity-card>
-  <!-- <app-choose-document-type *ngIf="stepPage == stepSupportPageEnum.TakeCamera"></app-choose-document-type> -->
+  <app-sim-registration1 *ngIf="stepPage == stepSupportPageEnum.CompleteSimRegistration"></app-sim-registration1>
+  <!-- <app-confirm-shopping-cart></app-confirm-shopping-cart> -->
 </ion-content>

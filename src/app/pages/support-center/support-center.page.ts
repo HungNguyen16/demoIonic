@@ -9,6 +9,7 @@ import { StepSupportPageEnum } from '../../models/step-support-page-enum';
   styleUrls: ['./support-center.page.scss'],
 })
 export class SupportCenterPage implements OnInit {
+  currentPage = 1;
   stepPage: number;
   stepSupportPageEnum = StepSupportPageEnum;
   subscribe: Subscription = new Subscription();

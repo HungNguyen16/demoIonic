@@ -28,17 +28,24 @@ import { LoyaltyComponent } from './loyalty-page/loyalty/loyalty.component';
 import { ContactUsComponent } from './support-page/contact-us/contact-us.component';
 import { FaqComponent } from './support-page/faq/faq.component';
 import { SimRegistrationComponent } from './support-page/sim-registration/sim-registration.component';
-import { ConfirmOtpComponent } from './service-page/confirm-otp/confirm-otp.component';
-import { NetworkSwitchComponent } from './service-page/network-switch/network-switch.component';
-import { ConfirmInfoComponent } from './support-page/confirm-info/confirm-info.component';
+import { ConfirmOtpComponent } from './utility-page/confirm-otp/confirm-otp.component';
+import { NetworkSwitchComponent } from './utility-page/network-switch/network-switch.component';
+import { ConfirmInfoComponent } from './utility-page/confirm-info/confirm-info.component';
 import { LiveChatComponent } from './support-page/live-chat/live-chat.component';
 import { TakePhotoComponent } from './support-page/take-photo/take-photo.component';
-import { IdentityCardComponent } from './support-page/identity-card/identity-card.component';
+import { IdentityCardComponent } from './utility-page/identity-card/identity-card.component';
 import { SimRegistration1Component } from './support-page/sim-registration1/sim-registration1.component';
-import { ContactPhoneComponent } from './support-page/contact-phone/contact-phone.component';
-import { ChooseDocumentTypeComponent } from './support-page/choose-document-type/choose-document-type.component';
+import { ContactPhoneComponent } from './utility-page/contact-phone/contact-phone.component';
+import { ChooseDocumentTypeComponent } from './utility-page/choose-document-type/choose-document-type.component';
 import { ConfirmShoppingCartComponent } from './support-page/confirm-shopping-cart/confirm-shopping-cart.component';
 import { PayComponent } from './support-page/pay/pay.component';
+import { HeaderSubComponent } from './header-sub/header-sub.component';
+import { BoardingScreenComponent } from './boarding/boarding-screen/boarding-screen.component';
+import { SplashComponent } from './boarding/splash/splash.component';
+import { SignInThreadingComponent } from './boarding/sign-in-threading/sign-in-threading.component';
+import { PhoneNumberRegisterComponent } from './utility-page/phone-number-register/phone-number-register.component';
+import { ChangeLevelEsimComponent } from './utility-page/utility-page-full/change-level-esim/change-level-esim.component';
+import { RegisterInfoSubscriptionComponent } from './utility-page/utility-page-full/register-info-subscription/register-info-subscription.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +81,14 @@ import { PayComponent } from './support-page/pay/pay.component';
     ContactPhoneComponent,
     ChooseDocumentTypeComponent,
     ConfirmShoppingCartComponent,
-    PayComponent
+    PayComponent,
+    HeaderSubComponent,
+    BoardingScreenComponent,
+    SplashComponent,
+    SignInThreadingComponent,
+    PhoneNumberRegisterComponent,
+    ChangeLevelEsimComponent,
+    RegisterInfoSubscriptionComponent
   ],
   exports: [
     HeaderComponent,
@@ -109,7 +123,14 @@ import { PayComponent } from './support-page/pay/pay.component';
     ContactPhoneComponent,
     ChooseDocumentTypeComponent,
     ConfirmShoppingCartComponent,
-    PayComponent
+    PayComponent,
+    HeaderSubComponent,
+    BoardingScreenComponent,
+    SplashComponent,
+    SignInThreadingComponent,
+    PhoneNumberRegisterComponent,
+    ChangeLevelEsimComponent,
+    RegisterInfoSubscriptionComponent
   ],
   imports: [
     CommonModule,

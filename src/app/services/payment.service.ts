@@ -27,7 +27,7 @@ export class PaymentService {
   getAll(): Observable<PaymentModel[]> {
     return this.http.get<PaymentModel[]>(this.url);
   }
-
+  
   // getPlayListByType(type: string): Observable<Mockup[]> {
   //   const mockupItems: Mockup[] = [];
   //   return this.http.get<CategoryModel[]>(this.url).pipe(

@@ -35,7 +35,6 @@ export class CategoryService {
       })
     );
   }
-
   getPlayListByType(type: string): Observable<Mockup[]> {
     const mockupItems: Mockup[] = [];
     return this.http.get<CategoryModel[]>(this.url).pipe(

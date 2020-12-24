@@ -23,5 +23,9 @@ export class PaymentComponent implements OnInit {
       this.payments = res;
       console.log('thanh toan 1', this.payments);
     });
+    this.paymentService.getAll().subscribe(res2 => {
+      this.payments = res2;
+      console.log('abc', this.payments);
+    });
   }
 }

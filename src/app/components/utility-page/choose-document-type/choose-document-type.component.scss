@@ -1,0 +1,19 @@
+.button-disabled {
+    color: #fff;
+    --background: #D0D0D0;
+    --border-radius: 27px;
+    font-weight: 700;
+}
+
+.faq-items {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 13px;
+}
+.faq-items:last-child {
+    margin-bottom: 0 !important;
+}
+.faq-item {
+    --background: #fff;
+}

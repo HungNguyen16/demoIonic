@@ -1,0 +1,32 @@
+.app-slider .swiper-slide img {
+    width: auto;
+}
+.app-skip {
+    text-align: right;
+    margin-bottom: 50px;
+}
+.app-skip a {
+    color: #151522;
+    font-size: 15px;
+    text-decoration: none;
+}
+h2 {
+    font-size: 34px;
+    color: #414141;
+    font-weight: 500;
+    text-align: left;
+}
+p {
+    font-size: 16px;
+    color: #5e5e5e;
+    font-weight: 300;
+    text-align: left;
+}
+.app-slider .swiper-pagination-bullet{
+    position:relative;
+    background-color:#777777;
+    opacity:1;
+    width: 10px;
+    border-radius: 10px;
+} 
+// 

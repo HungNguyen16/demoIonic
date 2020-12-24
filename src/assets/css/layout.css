@@ -10,6 +10,10 @@ ion-menu ion-item{
     --background:transparent;
 }
 
+ion-toolbar {
+    --border-width: 0 !important;
+}
+
 #app-header{
     background: #ED1F24;
 }
@@ -137,7 +141,6 @@ ion-menu ion-item{
     -webkit-border-radius:20px;
     border-radius:20px;
 }
-
 .app-slider .swiper-container-horizontal>.swiper-pagination-bullets{
     position:relative;
     bottom:auto;

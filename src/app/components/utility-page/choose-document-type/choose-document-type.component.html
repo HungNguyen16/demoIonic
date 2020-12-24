@@ -1,0 +1,20 @@
+<div class="app-box pack-box has-bg pdr-20">
+  <div class="app-detail" *ngIf="documentData != null">
+    <div class="app-top">
+      <ion-icon 
+      ></ion-icon>
+    </div>
+    <!-- <h2 class="app-title">{{documentData.title}}</h2> -->
+    <div class="horizon-box size-one-point8">
+      <ion-list class="faq-items" *ngFor="let item of documentData.documentItems">
+        <ion-item lines="none" class="faq-item" >
+          <ion-icon src="{{item.avatar}}"></ion-icon>
+          <ion-label class="ion-text-wrap">{{item.titleSim}}</ion-label>
+          <ng-container *ngIf="item.showIcon == true ">
+            <ion-icon class="ion-arrow" src="assets/images/support/icon-arrow-right.svg"></ion-icon></ng-container>
+        </ion-item> 
+      </ion-list>
+    </div>
+  </div>
+</div>
+

@@ -10,7 +10,7 @@ export class TakePhotoComponent implements OnInit {
   constructor(public photoService: PhotoService) { }
 
   ngOnInit() {}
-  // addPhotoToGallery() {
-  //   this.photoService.addNewToGallery();
-  // }
+  addPhotoToGallery() {
+    this.photoService.addNewToGallery();
+  }
 }

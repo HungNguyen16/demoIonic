@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "title": "Hình ảnh phôi sim (mặt chứa số serial)",
+        "documentType": "sim",
+        "documentItems": [
+            {
+                "id": 1,
+                "avatar": "assets/images/support/icon-sim.svg",
+                "titleSim": "Chọn / Chụp ảnh phôi SIM",
+                "showIcon": false
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Chọn loại giấy tờ",
+        "documentType": "document",
+        "documentItems": [
+            {
+                "id": 1,
+                "avatar": "assets/images/support/icon-identity-card.svg",
+                "titleSim": "Chứng minh nhân dân",
+                "showIcon": true
+            },
+            {
+                "id": 2,
+                "avatar": "assets/images/support/icon-identity-card.svg",
+                "titleSim": "Chứng minh nhân dân",
+                "showIcon": true
+            },
+            {
+                "id": 3,
+                "avatar": "assets/images/support/icon-passport.svg",
+                "titleSim": "Hộ chiếu",
+                "showIcon": true
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Ảnh chân dung",
+        "documentType": "avatar",
+        "documentItems": [
+            {
+                "id": 1,
+                "avatar": "assets/images/support/icon-camera.svg",
+                "titleSim": "Chọn / Chụp ảnh chân dung",
+                "showIcon": false
+            }
+        ]
+    }
+]

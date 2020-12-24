@@ -1,0 +1,18 @@
+
+<div class="app-box pack-box has-bg">
+  <div class="app-detail" *ngIf="phoneNumberData != null">
+    <h2 class="app-title">{{phoneNumberData.title}}</h2>
+    <div class="horizon-box size-one-point8">
+      <ion-row class="check-box" *ngIf="phoneNumberData != null">
+        <ion-col *ngFor="let item of phoneNumberData.phoneItems; let i = index">
+          <ion-item lines="none">
+            <ion-label>{{item.phone}}</ion-label>
+            <ion-checkbox color="light" [attr.checked]="i === 0 ? true: null"></ion-checkbox>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</div>
+        
+
