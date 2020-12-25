@@ -37,8 +37,8 @@ import { IdentityCardComponent } from './utility-page/identity-card/identity-car
 import { SimRegistration1Component } from './support-page/sim-registration1/sim-registration1.component';
 import { ContactPhoneComponent } from './utility-page/contact-phone/contact-phone.component';
 import { ChooseDocumentTypeComponent } from './utility-page/choose-document-type/choose-document-type.component';
-import { ConfirmShoppingCartComponent } from './support-page/confirm-shopping-cart/confirm-shopping-cart.component';
-import { PayComponent } from './support-page/pay/pay.component';
+import { ConfirmShoppingCartComponent } from './utility-page/confirm-shopping-cart/confirm-shopping-cart.component';
+import { PayComponent } from './utility-page/pay/pay.component';
 import { HeaderSubComponent } from './header-sub/header-sub.component';
 import { BoardingScreenComponent } from './boarding/boarding-screen/boarding-screen.component';
 import { SplashComponent } from './boarding/splash/splash.component';

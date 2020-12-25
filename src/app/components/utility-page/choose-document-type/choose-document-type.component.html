@@ -1,9 +1,11 @@
 <div class="app-box pack-box has-bg pdr-20">
   <div class="app-detail" *ngIf="documentData != null">
-    <div class="app-top">
-      <ion-icon 
-      ></ion-icon>
-    </div>
+    <!-- <ion-icon class="app-icon" src="assets/images/support/icon-receive.svg"></ion-icon> -->
+    <h2 class="app-title">{{documentData.title}}</h2>
+    <!-- <div class="app-top">
+      <ion-icon class="app-icon" src="assets/images/support/icon-receive.svg"></ion-icon>
+      <h2 class="app-title">{{documentData.title}}</h2>
+    </div> -->
     <!-- <h2 class="app-title">{{documentData.title}}</h2> -->
     <div class="horizon-box size-one-point8">
       <ion-list class="faq-items" *ngFor="let item of documentData.documentItems">
