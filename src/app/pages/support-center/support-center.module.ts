@@ -12,12 +12,14 @@ import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
+    RouterModule,
     CommonModule,
     FormsModule,
     IonicModule,
     SupportCenterPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [SupportCenterPage]
+  declarations: [SupportCenterPage],
+  exports: [SupportCenterPage]
 })
 export class SupportCenterPageModule {}

@@ -13,8 +13,6 @@ export class RentalContentComponent implements OnInit {
   rentalContentData: RentalContentModel[] = [];
   checkIndex = 0;
 
-
-
   constructor(private reantalContentService: RentalContentService) { }
 
   ngOnInit() {

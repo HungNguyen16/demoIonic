@@ -8,18 +8,12 @@
 </ion-header> -->
 
 
-<!-- 
-<app-header-sub [title]="'Đăng ký TTTB'" *ngIf="stepPage == stepSupportPageEnum.SimRegistrationeader"</app-header-sub> -->
+<app-header-sub [title]="'Hỗ trợ khách hàng'"></app-header-sub>
 
-<app-header-sub [title]="'Đăng ký TTTB'" *ngIf="stepPage == stepSupportPageEnum.SimRegistration"></app-header-sub>
-<app-header-sub [title]="'Chứng minh nhân dân'" *ngIf="stepPage == stepSupportPageEnum.TakeCamera"></app-header-sub>
-<app-header-sub [title]="'Xác nhận thông tin CMND'" *ngIf="stepPage == stepSupportPageEnum.ConfirmInfo"></app-header-sub>
-<app-header-sub [title]="'Đăng ký TTTB'" *ngIf="stepPage == stepSupportPageEnum.CompleteSimRegistration"></app-header-sub>
 <ion-content>
-  
-  <app-sim-registration *ngIf="stepPage == stepSupportPageEnum.SimRegistration"></app-sim-registration>
-  <app-confirm-info *ngIf="stepPage == stepSupportPageEnum.ConfirmInfo"></app-confirm-info>
-  <app-identity-card *ngIf="stepPage == stepSupportPageEnum.TakeCamera"></app-identity-card>
-  <app-sim-registration1 *ngIf="stepPage == stepSupportPageEnum.CompleteSimRegistration"></app-sim-registration1>
-  <!-- <app-confirm-shopping-cart></app-confirm-shopping-cart> -->
+  <app-contact-us></app-contact-us>
+  <app-faq></app-faq>
+  <div class="app-box pdr-20 pdt-20">
+    <ion-button expand="block" [routerLink]="['/support-center/live-chat']" routerDirection="root">Đến trung tâm hỗ trợ</ion-button>
+  </div>
 </ion-content>

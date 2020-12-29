@@ -3,6 +3,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { CameraResultType, CameraSource, Capacitor, Plugins } from '@capacitor/core';
 import { Platform } from '@ionic/angular';
 import { StepSupportPageEnum } from 'src/app/models/step-support-page-enum';
+import { StepUtilityPageEnum } from 'src/app/models/step-utility-page-enum';
 const { Camera } = Plugins;
 @Component({
   selector: 'app-identity-card',
@@ -15,7 +16,7 @@ export class IdentityCardComponent implements OnInit {
   identityBefore: SafeResourceUrl;
   identityAfter: SafeResourceUrl;
   isDesktop: boolean;
-  stepEnum = StepSupportPageEnum;
+  stepEnum = StepUtilityPageEnum;
   constructor(private platform: Platform, private sanitizer: DomSanitizer) { }
 
   ngOnInit() {}
@@ -50,6 +51,22 @@ export class IdentityCardComponent implements OnInit {
     });
     this.identityAfter = this.sanitizer.bypassSecurityTrustResourceUrl(image && (image.dataUrl));
   }
+
+  async getImageSim(type: string) {
+    if (!Capacitor.isPluginAvailable('Camera')) {
+      this.filePickRef.nativeElement.click();
+      return;
+    }
+    const image = await Camera.getPhoto({
+      quality: 100,
+      width: 400,
+      allowEditing: true,
+      resultType: CameraResultType.DataUrl,
+      source: CameraSource.Prompt
+    });
+    this.identityAfter = this.sanitizer.bypassSecurityTrustResourceUrl(image && (image.dataUrl));
+  }
+
 
   removeFile(event = null) {
     if (event != null) {

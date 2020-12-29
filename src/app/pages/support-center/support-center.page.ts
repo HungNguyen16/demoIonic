@@ -18,8 +18,12 @@ export class SupportCenterPage implements OnInit {
              ) { }
 
   ngOnInit() {
-    this.subscribe.add(this.setStepOnInit());
+    // this.subscribe.add(this.setStepOnInit());
     // this.setStepOnInit();
+    this.viewDetail();
+  }
+  viewDetail() {
+    this.router.navigate(['/support-center/live-chat']);
   }
   changeStepQueryParams(step: number): void {
     this.router.navigate(['/support-center'], {queryParams: {step: step.toString()}});

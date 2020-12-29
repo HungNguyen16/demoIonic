@@ -1,23 +1,63 @@
-<ion-header id="app-header" [translucent]="true">
+<!-- <ion-header id="app-header" [translucent]="true">
   <ion-toolbar id="app-header-toolbar">
     <ion-buttons slot="end">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>Tiện ích</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
+<!--  -->
+
+<!-- Header chuyển mạng giữ số -->
+<app-header-sub [title]="'Thông tin chuyển mạng giữ số'" *ngIf="stepPage == stepUtilityPageEnum.NetworkSwitch"></app-header-sub>
+<app-header-sub [title]="'Thông tin chuyển mạng giữ số'" *ngIf="stepPage == stepUtilityPageEnum.ConfirmOtp"></app-header-sub>
+
+<!-- Header đăng ký thông tin thuê bao -->
+<app-header-sub [title]="'Đăng ký TTTB'" *ngIf="stepPage == stepUtilityPageEnum.SimRegistration"></app-header-sub>
+<app-header-sub [title]="'Chứng minh nhân dân'" *ngIf="stepPage == stepUtilityPageEnum.TakeCamera"></app-header-sub>
+<app-header-sub [title]="'Xác nhận thông tin CMND'" *ngIf="stepPage == stepUtilityPageEnum.ConfirmInfo"></app-header-sub>
+<app-header-sub [title]="'Đăng ký TTTB'" *ngIf="stepPage == stepUtilityPageEnum.CompleteSimRegistration"></app-header-sub>
+
+<!-- Header đổi cấp esim -->
+<app-header-sub [title]="'Đổi cấp ESIM'" *ngIf="stepPage == stepUtilityPageEnum.ChangeLevelEsim"></app-header-sub>
+
+
 
 <ion-content>
-  <!-- <app-network-switch *ngIf="stepPage == stepUtilityPageEnum.NetworkSwitch && utilityPageEnum.SimNumber"></app-network-switch>
-  <app-confirm-otp *ngIf="stepPage == stepUtilityPageEnum.ConfirmOtp && utilityPageEnum.SimNumber"></app-confirm-otp>
- 
-  <app-sim-registration *ngIf="stepPage == stepUtilityPageEnum.SimRegistration"></app-sim-registration>
+  <!-- chuyen mang giu so -->
+  <app-network-switch *ngIf="stepPage == stepUtilityPageEnum.NetworkSwitch"></app-network-switch>
+  <app-confirm-otp *ngIf="stepPage == stepUtilityPageEnum.ConfirmOtp"></app-confirm-otp>
+  <app-show-popup *ngIf="stepPage == stepUtilityPageEnum.ShowPopup" [typePopup] = "1"></app-show-popup>
+
+  <!-- dang ky thong tin thue bao -->
+  <app-register-info-subscription *ngIf="stepPage == stepUtilityPageEnum.SimRegistration"></app-register-info-subscription>
+  <app-identity-card *ngIf="stepPage == stepUtilityPageEnum.TakeCamera"></app-identity-card>
+  <!-- <app-confirm-info *ngIf="stepPage == stepUtilityPageEnum.ConfirmInfo" [simRegister]= "1"></app-confirm-info> -->
+  <app-register-info-subscription-final *ngIf="stepPage == stepUtilityPageEnum.CompleteSimRegistration"></app-register-info-subscription-final>
+  <app-show-popup *ngIf="stepPage == stepUtilityPageEnum.ShowPopup" [typePopup] ="1"></app-show-popup>
+
+  <!-- doi cap esim -->
+  <app-change-level-esim *ngIf="stepPage == stepUtilityPageEnum.ChangeLevelEsim"></app-change-level-esim>
+  <app-confirm-info *ngIf="stepPage == stepUtilityPageEnum.ConfirmInfo" [simRegister]= "2"></app-confirm-info>
+  <app-change-level-esim-next *ngIf="stepPage == stepUtilityPageEnum.CompleteEsimRegistration "></app-change-level-esim-next>
+
+
+
+
+  <!-- chuyen chu quyen  -->
+  
+  <!-- <app-register-info-subscription1 *ngIf="stepPage == stepUtilityPageEnum.CompleteSimRegistration"></app-register-info-subscription1> -->
+
+  <!--  -->
+
+  <!-- <app-register-info-subscription1 *ngIf="stepPage == stepUtilityPageEnum.SimRegistration"></app-register-info-subscription1> -->
+  <!-- <app-sim-registration *ngIf="stepPage == stepUtilityPageEnum.SimRegistration"></app-sim-registration>
   <app-confirm-info *ngIf="stepPage == stepUtilityPageEnum.ConfirmInfo"></app-confirm-info>
   <app-identity-card *ngIf="stepPage == stepUtilityPageEnum.TakeCamera"></app-identity-card>
   <app-sim-registration1 *ngIf="stepPage == stepUtilityPageEnum.CompleteSimRegistration"></app-sim-registration1> -->
 
   <!-- <app-register-info-subscription></app-register-info-subscription> -->
-  <app-change-level-esim></app-change-level-esim>
+  <!-- <app-change-level-esim></app-change-level-esim> -->
 </ion-content>
 
 

@@ -1,22 +1,31 @@
 <div class="app-box pack-box has-bg pdr-20">
   <div class="app-detail" *ngIf="documentData != null">
-    <!-- <ion-icon class="app-icon" src="assets/images/support/icon-receive.svg"></ion-icon> -->
     <h2 class="app-title">{{documentData.title}}</h2>
-    <!-- <div class="app-top">
-      <ion-icon class="app-icon" src="assets/images/support/icon-receive.svg"></ion-icon>
-      <h2 class="app-title">{{documentData.title}}</h2>
-    </div> -->
-    <!-- <h2 class="app-title">{{documentData.title}}</h2> -->
     <div class="horizon-box size-one-point8">
-      <ion-list class="faq-items" *ngFor="let item of documentData.documentItems">
-        <ion-item lines="none" class="faq-item" >
+      <ion-list class="faq-items" *ngFor="let item of documentData.documentItems" routerLink="/utilities" [queryParams]="{step: stepEnum.TakeCamera}">
+        <ion-item lines="none" class="faq-item">
           <ion-icon src="{{item.avatar}}"></ion-icon>
           <ion-label class="ion-text-wrap">{{item.titleSim}}</ion-label>
           <ng-container *ngIf="item.showIcon == true ">
-            <ion-icon class="ion-arrow" src="assets/images/support/icon-arrow-right.svg"></ion-icon></ng-container>
-        </ion-item> 
+            <ion-icon class="ion-arrow" src="assets/images/support/icon-arrow-right.svg"></ion-icon>
+          </ng-container>
+        </ion-item>
       </ion-list>
     </div>
   </div>
 </div>
-
+      
+<!-- <div class="app-box pdr-20">
+  <div class="app-detail">
+    <ion-row class="check-box bg-white">
+      <ion-col *ngFor="let item1 of items; let i = index">
+        <ion-item lines="none">
+          <ion-label class="ion-text-wrap">{{item1.title}}
+            <p class="number-identity">{{item1.number}}</p>
+          </ion-label>
+          <ion-checkbox color="light" slot="end" [attr.checked]="i === 0 ? true: null"></ion-checkbox>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </div>
+</div> -->

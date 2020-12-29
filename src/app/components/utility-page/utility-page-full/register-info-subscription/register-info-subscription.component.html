@@ -3,9 +3,8 @@
   <app-choose-document-type  [type] = "'sim'"></app-choose-document-type> 
   <app-choose-document-type  [type] = "'document'"></app-choose-document-type>
   <app-choose-document-type  [type] = "'avatar'"></app-choose-document-type>
-
   
   <div class="app-box pdr-20 pdt-20">
-    <ion-button expand="block">Gửi yêu cầu đăng ký TTTB</ion-button>
+    <ion-button expand="block" routerLink="/utilities" [queryParams]="{step: stepEnum.ConfirmInfo}" >Gửi yêu cầu đăng ký TTTB</ion-button>
   </div>
 </ion-content>

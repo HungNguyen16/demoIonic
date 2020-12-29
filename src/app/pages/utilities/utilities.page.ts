@@ -22,7 +22,6 @@ export class UtilitiesPage implements OnInit {
               private ref: ChangeDetectorRef,
 
               ) { }
-
   ngOnInit() {
     this.setStepOnInit();
   }

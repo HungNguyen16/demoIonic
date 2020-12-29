@@ -8,19 +8,19 @@
     {
         "id": 2,
         "paymentName": "Thanh toán với số dư tài khoản",
-        "paymentImg": "assets/images/payment/icon-payment-2.svg",
+        "paymentImg": "assets/images/payment/icon-payment-1.png",
         "paymentType": 2
     },
     {
         "id": 3,
         "paymentName": "Thanh toán với Visa / Master card",
-        "paymentImg": "assets/images/payment/icon-payment-1.svg",
+        "paymentImg": "assets/images/payment/icon-payment-1.png",
         "paymentType": 3
     },
     {
         "id": 4,
         "paymentName": "Thanh toán chuyển khoản",
-        "paymentImg": "assets/images/payment/icon-payment-1.svg",
+        "paymentImg": "assets/images/payment/icon-payment-1.png",
         "paymentType": 4
     }
 ]

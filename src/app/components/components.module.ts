@@ -46,6 +46,8 @@ import { SignInThreadingComponent } from './boarding/sign-in-threading/sign-in-t
 import { PhoneNumberRegisterComponent } from './utility-page/phone-number-register/phone-number-register.component';
 import { ChangeLevelEsimComponent } from './utility-page/utility-page-full/change-level-esim/change-level-esim.component';
 import { RegisterInfoSubscriptionComponent } from './utility-page/utility-page-full/register-info-subscription/register-info-subscription.component';
+import { RegisterInfoSubscriptionFinalComponent } from './utility-page/utility-page-full/register-info-subscription-final/register-info-subscription-final.component';
+import { ChangeLevelEsimNextComponent } from './utility-page/utility-page-full/change-level-esim-next/change-level-esim-next.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +90,9 @@ import { RegisterInfoSubscriptionComponent } from './utility-page/utility-page-f
     SignInThreadingComponent,
     PhoneNumberRegisterComponent,
     ChangeLevelEsimComponent,
-    RegisterInfoSubscriptionComponent
+    RegisterInfoSubscriptionComponent,
+    RegisterInfoSubscriptionFinalComponent,
+    ChangeLevelEsimNextComponent
   ],
   exports: [
     HeaderComponent,
@@ -130,7 +134,9 @@ import { RegisterInfoSubscriptionComponent } from './utility-page/utility-page-f
     SignInThreadingComponent,
     PhoneNumberRegisterComponent,
     ChangeLevelEsimComponent,
-    RegisterInfoSubscriptionComponent
+    RegisterInfoSubscriptionComponent,
+    RegisterInfoSubscriptionFinalComponent,
+    ChangeLevelEsimNextComponent
   ],
   imports: [
     CommonModule,
