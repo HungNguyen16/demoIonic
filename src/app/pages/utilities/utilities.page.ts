@@ -20,7 +20,6 @@ export class UtilitiesPage implements OnInit {
               private router: Router,
               private commonService: CommonService,
               private ref: ChangeDetectorRef,
-
               ) { }
   ngOnInit() {
     this.setStepOnInit();
@@ -42,7 +41,6 @@ export class UtilitiesPage implements OnInit {
     console.log(step);
     this.stepPage = step;
   }
-  
   // tslint:disable-next-line:use-lifecycle-interface
   ngOnDestroy(): void {
    if (this.subscribe != null) {

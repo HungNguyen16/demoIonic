@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-application-rating',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ApplicationRatingPage implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

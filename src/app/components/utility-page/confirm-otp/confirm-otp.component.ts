@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { StepUtilityPageEnum } from 'src/app/models/step-utility-page-enum';
 
 @Component({
@@ -7,8 +8,10 @@ import { StepUtilityPageEnum } from 'src/app/models/step-utility-page-enum';
   styleUrls: ['./confirm-otp.component.scss'],
 })
 export class ConfirmOtpComponent implements OnInit {
-  stepEnum = StepUtilityPageEnum;
-  constructor() { }
+
+  constructor() {
+
+  }
 
   ngOnInit() {}
 

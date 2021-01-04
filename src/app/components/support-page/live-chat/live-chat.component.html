@@ -1,4 +1,6 @@
 
+<app-header-sub [title]="'Support NV001'"></app-header-sub>
+
 <ion-grid>
   <p class="time-chat">TUE · 14:48 PM</p>
   <ion-row *ngFor="let message of messages">
@@ -15,7 +17,7 @@
     </ion-col>
   </ion-row>
 </ion-grid>
-
+                        
 <ion-footer>
   <ion-toolbar>
     <ion-row>
@@ -44,12 +46,3 @@
     </ion-row>
   </ion-toolbar>
 </ion-footer> 
-
-    <!-- <ion-row>
-      <ion-col size="10">
-        <textarea autosize maxRows = "3" [(ngModel)]="newMsg" class="message-input"></textarea>
-      </ion-col>
-      <ion-col size="2">
-        <ion-button expand="block" fill="clear" color="primary" [disabled]="newMsg === ''" class="msg-btn" (click)="sendMessage()">Gửi</ion-button>
-      </ion-col>
-    </ion-row> -->

@@ -212,7 +212,7 @@ ion-checkbox {
     --checkmark-width: 2px;
     --background-checked: #ED1F24;
     --border-width: 2px;
-    --size	: 23px;
+    /* --size	: 23px; */
 }
 .check-box ion-item {
     --background: #fff;

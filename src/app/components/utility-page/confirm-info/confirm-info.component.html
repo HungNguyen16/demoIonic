@@ -1,52 +1,6 @@
-<div class="app-box pdr-20" *ngIf="this.simRegister == 1; else esimRegister">
-  <h2 class="app-title">Thông tin chi tiết</h2>
-  <div class="app-detail">
-    <div class="size-half">
-      <ion-list>
-        <ion-label>Họ tên</ion-label>
-        <ion-item class="app-input" lines="none">
-          <ion-input placeholder="Nhập từ khóa"></ion-input>
-          <ion-icon class="icon-search" src="assets/images/support/icon-check.svg"></ion-icon>
-        </ion-item>
-      </ion-list>
-      <ion-list>
-        <ion-label>CMND số</ion-label>
-        <ion-item class="app-input" lines="none">
-          <ion-input placeholder="Nhập từ khóa"></ion-input>
-          <ion-icon class="icon-search" src="assets/images/support/icon-check.svg"></ion-icon>
-        </ion-item>
-      </ion-list>
-      <ion-list>
-        <ion-label>Cấp ngày</ion-label>
-        <ion-item class="app-input" lines="none">
-          <ion-datetime displayFormat="DD/MM/YYYY" placeholder="08/12/2020"></ion-datetime>
-          <ion-icon class="icon-search" src="assets/images/support/icon-check.svg"></ion-icon>
-        </ion-item>
-      </ion-list>
-      <ion-list>
-        <ion-label>Nơi cấp</ion-label>
-        <ion-item class="app-input" lines="none">
-          <ion-input placeholder="CA HCM"></ion-input>
-          <ion-icon class="icon-search" src="assets/images/support/icon-check.svg"></ion-icon>
-        </ion-item>
-      </ion-list>
-      <ion-list>
-        <ion-label>Ngày sinh</ion-label>
-        <ion-item class="app-input" lines="none">
-          <ion-datetime placeholder="21/10/19xx"></ion-datetime>
-          <ion-icon class="icon-search" src="assets/images/support/icon-uncheck.svg"></ion-icon>
-        </ion-item>
-      </ion-list>
-    </div>
-  </div>
-  <div class="app-box pdr-20 pdt-20">
-    <ion-button routerLink="/utilities" [queryParams]="{step: stepEnum.CompleteSimRegistration, register: 1}">Xác nhận 1</ion-button>
-  </div>
-</div>
-
-
-<ng-template #esimRegister>
-  <div class="app-box pdr-20">
+<app-header-sub [title] = "'Xác nhận thông tin CMND'"></app-header-sub>
+<ion-content>
+  <div class="app-box pdr-20" >
     <h2 class="app-title">Thông tin chi tiết</h2>
     <div class="app-detail">
       <div class="size-half">
@@ -88,8 +42,7 @@
       </div>
     </div>
     <div class="app-box pdr-20 pdt-20">
-      <ion-button routerLink="/utilities" [queryParams]="{step: stepEnum.CompleteSimRegistration, register: 2}">Xác nhận 2
-      </ion-button>
+      <ion-button routerLink="/utilities/register-info-next">Xác nhận</ion-button>
     </div>
   </div>
-</ng-template>
+</ion-content>

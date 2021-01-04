@@ -1,3 +1,9 @@
+// ion-content {
+//     --ion-background-color: #fff !important;
+// }
+ion-content {
+    --ion-background-color: #fff !important;
+}
 ion-label {
     font-size: 20px;
     font-weight: 700;
@@ -18,5 +24,61 @@ ion-text {
 }
 .has-border {
     border-bottom: 1px solid red;
-    // border-bottom: 1px solid rgba(228, 228, 228, 0.6);
+}
+ion-checkbox.check-policy {
+    --border-radius: 6px;
+    border-width: 0;
+    box-shadow: 0px 4px 4px rgba(50, 50, 71, 0.08), 0px 4px 8px rgba(50, 50, 71, 0.06);
+}
+ion-checkbox .check-payment {
+    --border-color: #444141;
+    border-width: 2px;
+    --size: none;
+    box-shadow: 0px 4px 4px rgba(50, 50, 71, 0.08), 0px 4px 8px rgba(50, 50, 71, 0.06);
+    --border-color: #ED1F24;
+}
+.check-box.bg-white ion-item.item-checkbox-checked{
+    --border-color: #ED1F24;
+}
+.has-line {
+    position: relative;
+    margin-top: 23px;
+    padding: 0;
+}
+.has-line::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.total-price {
+    padding-top: 39px;
+}
+.app-detail.pd-0 {
+    padding: 0;
+}
+ion-col:nth-child(1) {
+    font-size: 16px;
+    font-weight: 400;
+    color: #424242;
+}
+.price-small {
+    font-size: 16px;
+    font-weight: 700;
+    color: #424242;
+}
+.price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #424242;
+}
+.info-policy {
+    margin-top: 138px;
+}
+.info-policy ion-item {
+    border: 2px solid rgba(228, 228, 228, 0.6);
+    --background: #e4e4e4;
 }
