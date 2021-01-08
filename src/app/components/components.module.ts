@@ -42,12 +42,17 @@ import { PayComponent } from './utility-page/pay/pay.component';
 import { HeaderSubComponent } from './header-sub/header-sub.component';
 import { BoardingScreenComponent } from './boarding/boarding-screen/boarding-screen.component';
 import { SplashComponent } from './boarding/splash/splash.component';
-import { SignInThreadingComponent } from './boarding/sign-in-threading/sign-in-threading.component';
+// import { SignInThreadingComponent } from './boarding/sign-in-threading/sign-in-threading.component';
 import { PhoneNumberRegisterComponent } from './utility-page/phone-number-register/phone-number-register.component';
 import { ChangeLevelEsimComponent } from './utility-page/utility-page-full/change-level-esim/change-level-esim.component';
 import { RegisterInfoSubscriptionComponent } from './utility-page/utility-page-full/register-info-subscription/register-info-subscription.component';
 import { RegisterInfoSubscriptionFinalComponent } from './utility-page/utility-page-full/register-info-subscription-final/register-info-subscription-final.component';
 import { ChangeLevelEsimNextComponent } from './utility-page/utility-page-full/change-level-esim-next/change-level-esim-next.component';
+import { SignInThreadingComponent } from './boarding/sign-in-threading/sign-in-threading.component';
+import { AccountLoginComponent } from './boarding/account-login/account-login.component';
+import { SignInCurrentUserComponent } from './boarding/sign-in-current-user/sign-in-current-user.component';
+import { SignInNewUserComponent } from './boarding/sign-in-new-user/sign-in-new-user.component';
+import { AccountRegisterComponent } from './boarding/account-register/account-register.component';
 
 @NgModule({
   declarations: [
@@ -88,11 +93,16 @@ import { ChangeLevelEsimNextComponent } from './utility-page/utility-page-full/c
     BoardingScreenComponent,
     SplashComponent,
     SignInThreadingComponent,
+    // SignInThreadingComponent,
     PhoneNumberRegisterComponent,
     ChangeLevelEsimComponent,
     RegisterInfoSubscriptionComponent,
     RegisterInfoSubscriptionFinalComponent,
-    ChangeLevelEsimNextComponent
+    ChangeLevelEsimNextComponent,
+    AccountLoginComponent,
+    SignInCurrentUserComponent,
+    SignInNewUserComponent,
+    AccountRegisterComponent
   ],
   exports: [
     HeaderComponent,
@@ -132,11 +142,16 @@ import { ChangeLevelEsimNextComponent } from './utility-page/utility-page-full/c
     BoardingScreenComponent,
     SplashComponent,
     SignInThreadingComponent,
+    // SignInThreadingComponent,
     PhoneNumberRegisterComponent,
     ChangeLevelEsimComponent,
     RegisterInfoSubscriptionComponent,
     RegisterInfoSubscriptionFinalComponent,
-    ChangeLevelEsimNextComponent
+    ChangeLevelEsimNextComponent,
+    AccountLoginComponent,
+    SignInNewUserComponent,
+    SignInCurrentUserComponent,
+    AccountRegisterComponent
   ],
   imports: [
     CommonModule,

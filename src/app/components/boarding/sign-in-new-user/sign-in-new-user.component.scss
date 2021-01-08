@@ -8,6 +8,12 @@ ion-button {
     font-size: 20px;
     font-weight: 700;
 }
+ion-button.bg-white {
+    --background: #ffffff;
+    color: #2c2929;
+    --webkit-border-radius: 9px !important;
+    --border-radius: 9px !important;
+}
 ion-icon {
     padding-right: 12px;
 }

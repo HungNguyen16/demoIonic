@@ -74,7 +74,7 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'Đăng xuất',
-      url: '/log-out',
+      url: '/',
       icon: 'log-out'
     }
   ];

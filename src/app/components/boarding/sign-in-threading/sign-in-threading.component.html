@@ -1,7 +1,16 @@
-<ion-content>
-  <!-- <ion-img src="assets/images/boarding/logo.png"></ion-img> -->
-  <ion-label>Xin chào bạn, bạn là</ion-label>
-  <ion-button>
-    <ion-icon></ion-icon>
-  </ion-button>
-</ion-content>
+<div class="app-sign-in">
+  <ion-img class="logo" src="assets/images/boarding/logo.png"></ion-img>
+  <ion-text>
+    <h2>Xin chào bạn, bạn là</h2>
+  </ion-text>
+  <div class="app-box pdr-20 pdt-20">
+    <ion-button routerLink="/sign-in/new-user" routerDirection="root">
+      <ion-icon src="assets/images/boarding/new-user.svg"></ion-icon>
+      Khách hàng mới
+    </ion-button>
+    <ion-button routerLink="/sign-in/current-user" routerDirection="root">
+      <ion-icon src="assets/images/boarding/icon-member.svg"></ion-icon>
+      Thành viên iTel
+    </ion-button>
+  </div>
+</div>

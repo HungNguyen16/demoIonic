@@ -1,0 +1,27 @@
+<ion-content>
+  <div class="app-box pdr-20">
+    <h2 class="app-title">Đăng ký tài khoản bằng email</h2>
+    <div class="app-detail">
+      <div class="size-half">
+        <ion-list>
+          <ion-label>Email của bạn</ion-label>
+          <ion-item class="app-input" lines="none">
+            <ion-input placeholder="Email của bạn" [(ngModel)]="signUpModel.Email"></ion-input>
+          </ion-item>
+        </ion-list>
+        <ion-list>
+          <ion-label>Mật khẩu</ion-label>
+          <ion-item class="app-input" lines="none">
+            <ion-input placeholder="Mật khẩu" type="password" [(ngModel)]="signUpModel.Password"></ion-input>
+          </ion-item>
+        </ion-list>
+        <ion-button (click) = "signUpFunction()">
+          Đăng ký
+        </ion-button>
+        <ion-text>
+          Bạn đã có tài khoản <a routerLink="/sign-in/login-account">Đăng nhập</a>
+        </ion-text>
+      </div>
+    </div>
+  </div>
+</ion-content>

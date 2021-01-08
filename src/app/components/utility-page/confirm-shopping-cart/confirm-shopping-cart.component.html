@@ -1,70 +1,83 @@
 
 <div class="app-box pdr-20">
-  <h2 class="app-title">Thông tin chi tiết</h2>
-  <div class="app-detail">
-    <div class="size-half">
-      <ion-list>
-        <ion-label>Họ tên</ion-label>
-        <ion-item class="app-input" lines="none">
-          <ion-input  placeholder="Nhập từ khóa"></ion-input>
-        </ion-item>
-      </ion-list>
-      <ion-list>
-        <ion-label>Điện thoại liên lạc</ion-label>
-        <ion-item class="app-input" lines="none">
-          <ion-input  placeholder="Số điện thoại"></ion-input>
-        </ion-item>
-      </ion-list>
-      <ion-list>
-        <ion-label>E-mail nhận ESIM</ion-label>
-        <ion-item class="app-input" lines="none">
-          <ion-input placeholder="E-mail của bạn"></ion-input>
-        </ion-item>
-      </ion-list>
-    </div>
-  </div>
-</div>
-<div class="app-box pdr-20 pdt-20">
-  <ion-button>Kế tiếp</ion-button>
-</div>
-
-<!-- <div class="app-box pdr-20">
-  <div class="app-detail">
-    <div class="size-haft">
-      <ion-list>
-        <ion-radio-group value="receiveSim">
-          <ion-item>
-            <ion-label>Địa chỉ nhận Sim</ion-label>
-            <ion-radio slot="end" value="receiveSim1"></ion-radio>
-          </ion-item>
-        </ion-radio-group>
-      </ion-list>
+  <ion-radio-group class="app-radio">
+    <ion-list>
+      <ion-item lines="none" class="check-radio ion-no-padding">
+        <ion-label>Địa chỉ nhận SIM</ion-label>
+        <ion-radio class="check-policy" color="danger" slot="end" value="receiveSim" ></ion-radio>
+      </ion-item>
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-label class="app-caption" position="stacked">Địa chỉ chi tiết</ion-label>
+        <ion-input class="app-input" placeholder="1020 đường 3/2, P6, Quận 10, HCM"></ion-input>
+      </ion-item>
       <ion-row>
         <ion-col>
-          <ion-list>
-            <ion-label>Địa chỉ chi tiết</ion-label>
-            <ion-item class="app-input fs-select" lines="none">
-              <ion-select>
-                <ion-select-option value="">TPHCM</ion-select-option>
-                <ion-select-option>Hà Nội</ion-select-option>
-              </ion-select>
-              <ion-icon src="assets/images/support/icon-arrow-down.svg"></ion-icon>
-            </ion-item>
-          </ion-list>
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-label class="app-caption" position="stacked">Tỉnh / TP</ion-label>
+            <ion-select>
+              <ion-select-option value="01">Tỉnh / TP</ion-select-option>
+              <ion-select-option value="02">TPHCM</ion-select-option>
+              <ion-select-option value="03">Kiên Giang</ion-select-option>
+              <ion-select-option value="04">Nha Trang</ion-select-option>
+              <ion-select-option value="05">Phan Thiết</ion-select-option>
+            </ion-select>
+          </ion-item>
         </ion-col>
         <ion-col>
-          <ion-list>
-            <ion-label>Địa chỉ chi tiết</ion-label>
-            <ion-item class="app-input fs-select" lines="none">
-              <ion-select>
-                <ion-select-option class="select-default">Tỉnh / TP</ion-select-option>
-                <ion-select-option value="">TPHCM</ion-select-option>
-                <ion-select-option>Hà Nội</ion-select-option>
-              </ion-select>
-            </ion-item>
-          </ion-list>
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-label class="app-caption" position="stacked">Quận / huyện</ion-label>
+            <ion-select>
+              <ion-select-option value="01">Quận / huyện</ion-select-option>
+              <ion-select-option value="02">Q1</ion-select-option>
+              <ion-select-option value="03">Q2</ion-select-option>
+              <ion-select-option value="04">Q3</ion-select-option>
+              <ion-select-option value="05">Q4</ion-select-option>
+            </ion-select>
+          </ion-item>
         </ion-col>
       </ion-row>
-    </div>
-  </div>
-</div> -->
+      <ion-row>
+        <ion-col>
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-label class="app-caption" position="stacked">Phường / Xã</ion-label>
+            <ion-select>
+              <ion-select-option value="01">Tỉnh / TP</ion-select-option>
+              <ion-select-option value="02">TPHCM</ion-select-option>
+              <ion-select-option value="03">Kiên Giang</ion-select-option>
+              <ion-select-option value="04">Nha Trang</ion-select-option>
+              <ion-select-option value="05">Phan Thiết</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-label class="app-caption" position="stacked">Ấp / Khu / Tòa</ion-label>
+            <ion-select>
+              <ion-select-option value="01">Quận / huyện</ion-select-option>
+              <ion-select-option value="02">Q1</ion-select-option>
+              <ion-select-option value="03">Q2</ion-select-option>
+              <ion-select-option value="04">Q3</ion-select-option>
+              <ion-select-option value="05">Q4</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-list>
+    <ion-list>
+      <ion-item lines="none" class="check-radio ion-no-padding">
+        <ion-label >Nhận tại phòng đại lý Itel</ion-label>
+        <ion-radio class="check-policy" color="danger" value="receiveAgency"></ion-radio>
+      </ion-item>
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-label position="stacked"></ion-label>
+        <ion-select class="icon-location">
+          <ion-select-option value="01">Bình Dương</ion-select-option>
+          <ion-select-option value="02">Âu Cơ</ion-select-option>
+          <ion-select-option value="03">Phú Quốc</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </ion-radio-group>
+</div>
+
+<app-payment></app-payment>

@@ -11,7 +11,7 @@ import { MessageSubscribeService } from 'src/app/services/message-subscribe.serv
 export class ShowPopupComponent implements OnInit {
   @Input() typePopup: number;
   showPopup = true;
-  listPopup = ConstantValue.ListPopup;
+  // listPopup = ConstantValue.ListPopup;
   currentPopup = 0;
   constructor(private modalCtrl: ModalController, private messageSubscribe: MessageSubscribeService) { }
 
