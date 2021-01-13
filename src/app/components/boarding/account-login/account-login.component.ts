@@ -4,6 +4,7 @@ import { ToastController } from '@ionic/angular';
 import { LoginModel } from 'src/app/models/login-response-model';
 import { CommonService } from 'src/app/services/common.service';
 import { LoginService } from 'src/app/services/login.service';
+import { ShowToastService } from 'src/app/services/show-toast.service';
 
 @Component({
   selector: 'app-account-login',
@@ -15,7 +16,10 @@ export class AccountLoginComponent implements OnInit {
   private isProcessLogin = false;
   private redirectUrl = '';
   private signUpUrl = '';
-  constructor(private loginService: LoginService, private router: Router, public toastController: ToastController) { }
+  constructor(private loginService: LoginService,
+              private router: Router,
+              private showToastService: ShowToastService,
+              public toastController: ToastController) { }
 
   ngOnInit() {
     if (this.router.url === '/home') {
@@ -41,15 +45,13 @@ export class AccountLoginComponent implements OnInit {
         this.isProcessLogin = false
     );
   }
-  isErrorValidationLogin(): boolean {
+  async isErrorValidationLogin(): Promise<boolean> {
     if (CommonService.isNullOrEmpty(this.loginModel.UserName)) {
-      console.log('Username Required');
-      // this.showToast.showError(ErrorHttpLanguageModels.emailRequired);
+      this.showToastService.showError();
       return true;
     }
     if (CommonService.isNullOrEmpty(this.loginModel.PassWord)) {
-      console.log('Password Required');
-      // this.showToast.showError(ErrorHttpLanguageModels.passwordRequired);
+      this.showToastService.showError1();
       return true;
     }
   }
@@ -58,13 +60,5 @@ export class AccountLoginComponent implements OnInit {
     if (event.keyCode === 13) {
       this.loginFunction();
     }
-  }
-  async presentToast() {
-    const toast = await this.toastController.create({
-      color: 'dark',
-      message: 'Đăng nhập thành công',
-      duration: 5000,
-    });
-    toast.present();
   }
 }

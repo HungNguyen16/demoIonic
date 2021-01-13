@@ -7,7 +7,7 @@
             <img width="57" height="57" src="assets/images/avatar.png" alt="avatar">
           </ion-avatar>
           <ion-label class="avatar-info">
-            <p class="avatar-name">Tri Thong</p>
+            <p class="avatar-name" *ngIf="isLogin">{{fullNameUser}}</p>
             <p class="avatar-phone">087 2742 843</p>
           </ion-label>
         </ion-item>
@@ -22,13 +22,6 @@
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
-        <!-- <ion-list id="labels-list">
-          <ion-list-header>Labels</ion-list-header>
-          <ion-item *ngFor="let label of labels" lines="none">
-            <ion-icon slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
-            <ion-label>{{ label }}</ion-label>
-          </ion-item>
-        </ion-list> -->
       </ion-content>
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>

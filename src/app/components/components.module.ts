@@ -53,6 +53,10 @@ import { AccountLoginComponent } from './boarding/account-login/account-login.co
 import { SignInCurrentUserComponent } from './boarding/sign-in-current-user/sign-in-current-user.component';
 import { SignInNewUserComponent } from './boarding/sign-in-new-user/sign-in-new-user.component';
 import { AccountRegisterComponent } from './boarding/account-register/account-register.component';
+import { SelectSimNumberComponent } from './utility-page/select-sim-number/select-sim-number.component';
+import { MenuSimNumberComponent } from './utility-page/menu-sim-number/menu-sim-number.component';
+import { FavoriteNumberComponent } from './utility-page/favorite-number/favorite-number.component';
+import { FavoriteItemComponent } from './utility-page/favorite-item/favorite-item.component';
 
 @NgModule({
   declarations: [
@@ -102,7 +106,11 @@ import { AccountRegisterComponent } from './boarding/account-register/account-re
     AccountLoginComponent,
     SignInCurrentUserComponent,
     SignInNewUserComponent,
-    AccountRegisterComponent
+    AccountRegisterComponent,
+    SelectSimNumberComponent,
+    MenuSimNumberComponent,
+    FavoriteNumberComponent,
+    FavoriteItemComponent
   ],
   exports: [
     HeaderComponent,
@@ -151,7 +159,11 @@ import { AccountRegisterComponent } from './boarding/account-register/account-re
     AccountLoginComponent,
     SignInNewUserComponent,
     SignInCurrentUserComponent,
-    AccountRegisterComponent
+    AccountRegisterComponent,
+    SelectSimNumberComponent,
+    MenuSimNumberComponent,
+    FavoriteNumberComponent,
+    FavoriteItemComponent
   ],
   imports: [
     CommonModule,

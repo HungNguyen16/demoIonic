@@ -8,13 +8,13 @@
     <div class="size-haft">
       <ion-radio-group value="prices" class="radio-box">
         <ion-row>
-          <ion-col >
+          <ion-col>
             <ion-item lines="none">
               <ion-radio value="1" ></ion-radio>
               <ion-label>Mobifone</ion-label>
             </ion-item>
           </ion-col>
-          <ion-col >
+          <ion-col>
             <ion-item lines="none">
               <ion-radio value="2"></ion-radio>
               <ion-label>Viettel</ion-label>
@@ -26,5 +26,5 @@
   </div>
 </div>
 <div class="app-box pdr-20 pdt-20">
-  <ion-button>Kế tiếp</ion-button>
+  <ion-button [routerLink]="['/utilities/confirm-otp']" >Kế tiếp</ion-button>
 </div>

@@ -8,11 +8,20 @@ export class ShowToastService {
 
   constructor(public toastController: ToastController) { }
 
-  async showSuccess(title: string = '') {
+  async showError() {
     const toast = await this.toastController.create({
-      message: 'Your settings have been saved.',
+      color: 'dark',
+      message: 'Vui lòng nhập Email',
       duration: 2000
     });
-    toast.present();
+    await toast.present();
+  }
+  async showError1() {
+    const toast = await this.toastController.create({
+      color: 'dark',
+      message: 'Vui lòng nhập mật khẩu',
+      duration: 2000
+    });
+    await toast.present();
   }
 }

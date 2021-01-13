@@ -1,4 +1,7 @@
-
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}
 ion-content{
     --ion-background-color:#F3F3F3;
 }

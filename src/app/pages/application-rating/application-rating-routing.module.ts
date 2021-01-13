@@ -12,16 +12,6 @@ const routes: Routes = [
   {
     path: '',
     component: ApplicationRatingPage,
-    // children: [
-    //   {
-    //     path: 'regis',
-    //     component: NetworkSwitchComponent
-    //   },
-    //   {
-    //     path: 'otp',
-    //     component: ConfirmOtpComponent
-    //   },
-    // ]
   }
 ];
 

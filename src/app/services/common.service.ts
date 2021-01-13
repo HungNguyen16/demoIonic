@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { ConstantValue } from '../configs/constant-value-config.js';
+import { LoginResponseModel } from '../models/login-response-model';
 
 @Injectable({
   providedIn: 'root'
@@ -27,7 +29,41 @@ export class CommonService {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
   }
+
   static isValidatePassword(pass): any {
     return (pass.length >= 6 && pass.length <= 32);
+  }
+
+  static getCookie<T>(cname: string): any {
+    const name = cname + '=';
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const ca = decodedCookie.split(';');
+    for (let cookieItem of ca) {
+      while (cookieItem.charAt(0) === ' ') {
+        cookieItem = cookieItem.substring(1);
+      }
+      if (cookieItem.indexOf(name) === 0) {
+        const res = cookieItem.substring(name.length, cookieItem.length);
+        try {
+          return JSON.parse(res) as T;
+        } catch (e) {
+          return res;
+        }
+      }
+    }
+    return null;
+  }
+
+  static checkLogin(): boolean {
+    const dataCookie = this.getCookie<LoginResponseModel>(ConstantValue.AuthorizationDataKey);
+    return dataCookie != null && dataCookie.AccessToken !== undefined;
+  }
+
+  static getUserName(): string {
+    const dataCookie = this.getCookie<LoginResponseModel>(ConstantValue.AuthorizationDataKey);
+    if (dataCookie != null && dataCookie.AccessToken !== undefined) {
+      return dataCookie.FullName !== '' ? dataCookie.FullName : 'Thoát';
+    }
+    return '';
   }
 }

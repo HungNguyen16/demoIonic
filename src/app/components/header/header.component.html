@@ -1,18 +1,4 @@
-<!-- <ion-header class="ion-padding-horizontal ion-no-border">
-  <ion-toolbar class="toolbar">
-    <ion-avatar class="avatar">
-      <img width="33" height="33" src="assets/images/avatar-1.png" alt="">
-      <ion-badge>8</ion-badge>
-    </ion-avatar>
-    <ion-title>{{title}}</ion-title>
-    <ion-buttons slot="end">
-      <ion-menu-button>
-        <ion-icon src="assets/icon/icon-toggle.svg"></ion-icon>
-      </ion-menu-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header> -->
-
+<!-- 
 <ion-header [translucent]="true" class="ion-no-border">
   <ion-toolbar>
     <ion-avatar class="avatar" slot="start">
@@ -24,5 +10,20 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
+
+<ion-header id="app-header" [translucent]="true" >
+  <ion-toolbar id="app-header-toolbar">
+    <ion-item lines="none">
+      <ion-avatar>
+        <img width="57" height="57" src="assets/images/avatar.png" alt="avatar">
+      </ion-avatar>
+    </ion-item>
+    <!-- <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons> -->
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+  <app-hot-menu [hotIndex]="0"></app-hot-menu>
+</ion-header> 

@@ -36,7 +36,6 @@ export class MyVoucherComponent implements OnInit {
   constructor(private voucherService: VoucherService) { }
 
   ngOnInit() {
-
     this.voucherService.getAllVoucher().subscribe(res => {
       this.voucherData = res;
       console.log('voucher data', this.voucherData);

@@ -1,5 +1,16 @@
 import { ResponseModel } from './response-model';
 
+
+export class LoginResponseModel {
+    constructor(
+        public AccessToken: AccessTokenResponse,
+        public RefreshToken: string,
+        public Errors: LoginErrorResponse[],
+        public IsClearToken = false,
+        public FullName = '') {
+    }
+}
+
 export class AccessTokenResponse {
 
     constructor(

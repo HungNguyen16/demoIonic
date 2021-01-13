@@ -1,19 +1,19 @@
 <div class="facility-box">
   <h2 class="app-title">Tiện ích</h2>
   <ion-row id="id-facility">
-    <ion-col routerLink="/utilities" [queryParams] = "{step: stepEnum.NetworkSwitch}" routerDirection="root">
+    <ion-col routerLink="/utilities/sim-number" routerDirection="root">
       <ion-img src="assets/images/facilities/sim-so.png"></ion-img>
       <ion-label>Sim số</ion-label>
     </ion-col>
-    <ion-col routerLink="/utilities/"routerDirection="root">
+    <ion-col routerLink="/utilities/register-info" routerDirection="root">
       <ion-img src="assets/images/facilities/profile.png"></ion-img>
       <ion-label>Đăng ký <br>TTTB</ion-label>
     </ion-col>
-    <ion-col routerLink="/utilities" [queryParams] = "{step: stepEnum.ChangeLevelEsim}" routerDirection="root">
+    <ion-col routerLink="/utilities/" routerDirection="root">
       <ion-img src="assets/images/facilities/doi-sim.png"></ion-img>
       <ion-label>Đổi/Cấp <br>mới SIM</ion-label>
     </ion-col>
-    <ion-col>
+    <ion-col  routerDirection="root">
       <ion-img src="assets/images/facilities/chuyen-chu-quyen.png"></ion-img>
       <ion-label>Chuyển <br>chủ quyền</ion-label>
     </ion-col>

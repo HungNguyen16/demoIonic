@@ -1,0 +1,17 @@
+#app-header {
+    --background: #ed1f24;
+}
+
+ion-content {
+    --background: #ffffff !important;
+}
+.app-box {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+.app-box ion-button {
+    --background: #ffffff !important;
+    color: #424242;
+    font-size: 16px;
+    padding-bottom: 19px;
+}
